@@ -1,0 +1,17 @@
+/home/troels/Projects/hi/lib/dlib-19.13/CMakeFiles/install/strip.dir
+/home/troels/Projects/hi/lib/dlib-19.13/CMakeFiles/install/local.dir
+/home/troels/Projects/hi/lib/dlib-19.13/CMakeFiles/package_source.dir
+/home/troels/Projects/hi/lib/dlib-19.13/CMakeFiles/package.dir
+/home/troels/Projects/hi/lib/dlib-19.13/CMakeFiles/install.dir
+/home/troels/Projects/hi/lib/dlib-19.13/CMakeFiles/edit_cache.dir
+/home/troels/Projects/hi/lib/dlib-19.13/CMakeFiles/rebuild_cache.dir
+/home/troels/Projects/hi/lib/dlib-19.13/CMakeFiles/list_install_components.dir
+/home/troels/Projects/hi/lib/dlib-19.13/dlib/CMakeFiles/install/strip.dir
+/home/troels/Projects/hi/lib/dlib-19.13/dlib/CMakeFiles/install/local.dir
+/home/troels/Projects/hi/lib/dlib-19.13/dlib/CMakeFiles/install.dir
+/home/troels/Projects/hi/lib/dlib-19.13/dlib/CMakeFiles/package.dir
+/home/troels/Projects/hi/lib/dlib-19.13/dlib/CMakeFiles/package_source.dir
+/home/troels/Projects/hi/lib/dlib-19.13/dlib/CMakeFiles/dlib.dir
+/home/troels/Projects/hi/lib/dlib-19.13/dlib/CMakeFiles/rebuild_cache.dir
+/home/troels/Projects/hi/lib/dlib-19.13/dlib/CMakeFiles/edit_cache.dir
+/home/troels/Projects/hi/lib/dlib-19.13/dlib/CMakeFiles/list_install_components.dir
