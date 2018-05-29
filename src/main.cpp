@@ -44,11 +44,8 @@ using anet_type = loss_metric<fc_no_bias<128,avg_pool_everything<
                             input_rgb_image_sized<150>
                             >>>>>>>>>>>>;
 
-// The following defines jitters for face encoding
-
-std::vector<matrix<rgb_pixel>> jitter_image(
-        const matrix<rgb_pixel> &img
-);
+// Defines jitter function for face encoding
+std::vector<matrix<rgb_pixel>> jitter_image(const matrix<rgb_pixel> &img);
 
 int main() try {
 
@@ -85,17 +82,16 @@ int main() try {
         cout << "No faces found in image!" << endl;
         return 1;
     }
-    /*
-        // This call asks the DNN to convert each face image in faces into a 128D vector.
-        // In this 128D vector space, images from the same person will be close to each other
-        // but vectors from different people will be far apart.  So we can use these vectors to
-        // identify if a pair of images are from the same person or from different people.
-        std::vector<matrix<float, 0, 1>> face_descriptors = net(faces);
-        std::cout << "face descriptor for one face: " << trans(face_descriptors[0]) << endl;
 
-        matrix<float, 0, 1> face_descriptor = mean(mat(net(jitter_image(faces[0]))));
-        std::cout << "jittered face descriptor for one face: " << trans(face_descriptor) << endl;
-       */
+    // This call asks the DNN to convert each face image in faces into a 128D vector.
+    // In this 128D vector space, images from the same person will be close to each other
+    // but vectors from different people will be far apart.  So we can use these vectors to
+    // identify if a pair of images are from the same person or from different people.
+    std::vector<matrix<float, 0, 1>> face_descriptors = net(faces);
+    std::cout << "face descriptor for one face: " << trans(face_descriptors[0]) << endl;
+
+    matrix<float, 0, 1> face_descriptor = mean(mat(net(jitter_image(faces[0]))));
+    std::cout << "jittered face descriptor for one face: " << trans(face_descriptor) << endl;
 
     return 0;
 }
@@ -103,12 +99,12 @@ catch (std::exception &e) {
     cout << e.what() << endl;
 }
 
-std::vector<matrix<rgb_pixel>> jitter_image(
-        const matrix<rgb_pixel> &img
-) {
-    // All this function does is make 100 copies of img, all slightly jittered by being
-    // zoomed, rotated, and translated a little bit differently. They are also randomly
-    // mirrored left to right.
+/**
+ * All this function does is make 100 copies of img, all slightly jittered by being
+ * zoomed, rotated, and translated a little bit differently. They are also randomly
+ * mirrored left to right.
+ */
+std::vector<matrix<rgb_pixel>> jitter_image(const matrix<rgb_pixel> &img) {
     thread_local dlib::rand rnd;
 
     std::vector<matrix<rgb_pixel>> crops;

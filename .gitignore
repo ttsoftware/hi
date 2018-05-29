@@ -33,10 +33,6 @@
 *.out
 *.app
 
-.idea/codeStyles/
-.idea/hi.iml
-.idea/misc.xml
-.idea/modules.xml
 .idea/workspace.xml
 cmake-build-debug/
 /**/CMakeFiles/
