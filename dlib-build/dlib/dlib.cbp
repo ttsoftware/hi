@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="dlib"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;CMake Files\lib\;CMake Files\lib\dlib-19.13\;CMake Files\lib\dlib-19.13\dlib\;CMake Files\lib\dlib-19.13\dlib\cmake_utils\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/home/troels/Projects/hi/dlib-build/dlib"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/troels/Projects/hi/dlib-build/dlib/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/troels/Projects/hi/dlib-build/dlib/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/troels/Projects/hi/dlib-build/dlib/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/troels/Projects/hi/dlib-build/dlib/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="dlib">
+				<Option output="/home/troels/Projects/hi/dlib-build/dlib/libdlib.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/troels/Projects/hi/dlib-build/dlib"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/troels/Projects/hi/dlib-build/dlib/Makefile&quot;  VERBOSE=1 dlib"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/troels/Projects/hi/dlib-build/dlib/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/troels/Projects/hi/dlib-build/dlib/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/troels/Projects/hi/dlib-build/dlib/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="dlib/fast">
+				<Option output="/home/troels/Projects/hi/dlib-build/dlib/libdlib.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/troels/Projects/hi/dlib-build/dlib"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/troels/Projects/hi/dlib-build/dlib/Makefile&quot;  VERBOSE=1 dlib/fast"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/troels/Projects/hi/dlib-build/dlib/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/troels/Projects/hi/dlib-build/dlib/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/troels/Projects/hi/dlib-build/dlib/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/home/troels/Projects/hi/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+		<Unit filename="/home/troels/Projects/hi/lib/dlib-19.13/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\lib\dlib-19.13\"/>
+		</Unit>
+		<Unit filename="/home/troels/Projects/hi/lib/dlib-19.13/dlib/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\lib\dlib-19.13\dlib\"/>
+		</Unit>
+		<Unit filename="/home/troels/Projects/hi/lib/dlib-19.13/dlib/cmake_utils/release_build_by_default">
+			<Option virtualFolder="CMake Files\lib\dlib-19.13\dlib\cmake_utils\"/>
+		</Unit>
+		<Unit filename="/home/troels/Projects/hi/lib/dlib-19.13/dlib/cmake_utils/set_compiler_specific_options.cmake">
+			<Option virtualFolder="CMake Files\lib\dlib-19.13\dlib\cmake_utils\"/>
+		</Unit>
+		<Unit filename="/home/troels/Projects/hi/lib/dlib-19.13/dlib/cmake_utils/use_cpp_11.cmake">
+			<Option virtualFolder="CMake Files\lib\dlib-19.13\dlib\cmake_utils\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>
