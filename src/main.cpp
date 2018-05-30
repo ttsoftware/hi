@@ -3,6 +3,7 @@
 #include <chrono>
 
 #include "Hi.h"
+#include "HiCamera.h"
 
 //#include <opencv2/objdetect/objdetect.hpp>
 //#include <opencv2/highgui/highgui.hpp>
@@ -13,6 +14,9 @@ using namespace std::chrono;
 
 int main() try {
 
+    HiCamera::capture();
+
+    /*
     // init time
     auto time0 = (duration_cast<milliseconds>(system_clock::now().time_since_epoch())).count();
 
@@ -22,10 +26,10 @@ int main() try {
 
     cout << "Loaded neural networks in " << time1 - time0 << " ms" << endl;
 
-    /*auto descriptor = hi.createDescriptor("data/faces/troels.png", 100);
+    *//*auto descriptor = hi.createDescriptor("data/faces/troels.png", 100);
     cout << "Found a face descriptor." << endl;
     hi.storeDescriptor(descriptor, "data/face_descriptors/troels.dat");
-    return 0;*/
+    return 0;*//*
 
     auto troels_descriptor = hi.loadDescriptor("data/face_descriptors/troels.dat");
     auto time2 = (duration_cast<milliseconds>(system_clock::now().time_since_epoch())).count();
@@ -54,7 +58,7 @@ int main() try {
 
             cout << "Comparison took " << time4 - time3 << " ms." << endl;
         }
-    }
+    }*/
 
     return 0;
 }
