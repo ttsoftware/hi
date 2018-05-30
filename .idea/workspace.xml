@@ -14,20 +14,6 @@
   <component name="ChangeListManager">
     <list default="true" id="cc404298-a4b6-4202-bea4-a33156d2fce0" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/faces/test/not-troels-1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/faces/test/not-troels-2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/faces/test/not-troels-3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/faces/test/not-troels-4.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/faces/test/troels-easy.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/faces/test/troels-hands.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/faces/test/troels-hard-hard.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/faces/test/troels-hard.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/faces/test/troels-medium-easy.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/faces/test/troels-medium-hard.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/faces/test/troels-medium.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Hi.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/Hi.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.cpp" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/CMakeFiles/" />
     <ignored path="$PROJECT_DIR$/lib/dlib-19.13/dlib/CMakeFiles/" />
@@ -42,11 +28,11 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="main.cpp" pinned="false" current-in-tab="false">
+      <file leaf-file-name="main.cpp" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main.cpp">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="380">
-              <caret line="45" column="33" selection-start-line="45" selection-start-column="33" selection-end-line="45" selection-end-column="33" />
+              <caret line="48" selection-start-line="48" selection-end-line="48" />
               <folding>
                 <element signature="e#0#19#0" expanded="true" />
               </folding>
@@ -54,11 +40,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Hi.cpp" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Hi.cpp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Hi.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="80">
-              <caret line="83" column="49" selection-start-line="83" selection-start-column="49" selection-end-line="83" selection-end-column="49" />
+            <state relative-caret-position="344">
+              <caret line="95" column="28" selection-start-line="95" selection-start-column="28" selection-end-line="95" selection-end-column="28" />
             </state>
           </provider>
         </entry>
@@ -172,7 +158,7 @@
       <updated>1527696346531</updated>
       <workItem from="1527696349179" duration="191000" />
       <workItem from="1527696563107" duration="395000" />
-      <workItem from="1527698648769" duration="4190000" />
+      <workItem from="1527698648769" duration="4473000" />
     </task>
     <task id="LOCAL-00001" summary="Merge branch 'master' of github.com:ttsoftware/hi&#10;&#10;# Conflicts:&#10;#&#9;.idea/misc.xml&#10;#&#9;CMakeLists.txt&#10;#&#9;lib/dlib-19.13/CMakeLists.txt&#10;#&#9;lib/dlib-19.13/dlib/any/any_function_impl.h&#10;#&#9;lib/dlib-19.13/dlib/cmake_utils/tell_visual_studio_to_use_static_runtime.cmake&#10;#&#9;lib/dlib-19.13/dlib/cmake_utils/test_for_cudnn/CMakeLists.txt&#10;#&#9;lib/dlib-19.13/dlib/external/pybind11/tools/check-style.sh&#10;#&#9;lib/dlib-19.13/dlib/java/run_test.sh&#10;#&#9;lib/dlib-19.13/dlib/test/WINDOWS_build_and_run_all_unit_tests.bat&#10;#&#9;lib/dlib-19.13/dlib/test/threads.cpp&#10;#&#9;lib/dlib-19.13/dlib/travis/build-and-test.sh&#10;#&#9;lib/dlib-19.13/dlib/travis/get-old-cmakes.sh&#10;#&#9;lib/dlib-19.13/docs/dlib/any/any_function_impl.h.html&#10;#&#9;lib/dlib-19.13/docs/dlib/test/threads.cpp.html&#10;#&#9;lib/dlib-19.13/docs/vs-cmake-gui.png&#10;#&#9;lib/dlib-19.13/docs/vs_mode_1.png&#10;#&#9;lib/dlib-19.13/docs/vs_mode_2.png&#10;#&#9;lib/dlib-19.13/docs/vs_mode_3.png&#10;#&#9;lib/dlib-19.13/examples/faces/2007_007763.jpg&#10;#&#9;lib/dlib-19.13/examples/faces/2008_001009.jpg&#10;#&#9;lib/dlib-19.13/examples/faces/2008_001322.jpg&#10;#&#9;lib/dlib-19.13/examples/faces/2008_002079.jpg&#10;#&#9;lib/dlib-19.13/examples/faces/2008_002470.jpg&#10;#&#9;lib/dlib-19.13/examples/faces/2008_002506.jpg&#10;#&#9;lib/dlib-19.13/examples/faces/2008_004176.jpg&#10;#&#9;lib/dlib-19.13/examples/faces/2008_007676.jpg&#10;#&#9;lib/dlib-19.13/examples/faces/2009_004587.jpg&#10;#&#9;lib/dlib-19.13/examples/max_cost_assignment_ex.cpp&#10;#&#9;lib/dlib-19.13/python_examples/cnn_face_detector.py&#10;#&#9;lib/dlib-19.13/python_examples/correlation_tracker.py&#10;#&#9;lib/dlib-19.13/python_examples/face_alignment.py&#10;#&#9;lib/dlib-19.13/python_examples/face_clustering.py&#10;#&#9;lib/dlib-19.13/python_examples/face_detector.py&#10;#&#9;lib/dlib-19.13/python_examples/face_jitter.py&#10;#&#9;lib/dlib-19.13/python_examples/face_landmark_detection.py&#10;#&#9;lib/dlib-19.13/python_examples/face_recognition.py&#10;#&#9;lib/dlib-19.13/python_examples/find_candidate_object_locations.py&#10;#&#9;lib/dlib-19.13/python_examples/global_optimization.py&#10;#&#9;lib/dlib-19.13/python_examples/max_cost_assignment.py&#10;#&#9;lib/dlib-19.13/python_examples/opencv_webcam_face_detection.py&#10;#&#9;lib/dlib-19.13/python_examples/sequence_segmenter.py&#10;#&#9;lib/dlib-19.13/python_examples/svm_binary_classifier.py&#10;#&#9;lib/dlib-19.13/python_examples/svm_rank.py&#10;#&#9;lib/dlib-19.13/python_examples/svm_struct.py&#10;#&#9;lib/dlib-19.13/python_examples/train_object_detector.py&#10;#&#9;lib/dlib-19.13/python_examples/train_shape_predictor.py&#10;#&#9;lib/dlib-19.13/tools/convert_dlib_nets_to_caffe/running_a_dlib_model_with_caffe_example.py&#10;#&#9;lib/dlib-19.13/tools/imglab/convert_imglab_paths_to_relative&#10;#&#9;lib/dlib-19.13/tools/imglab/copy_imglab_dataset&#10;#&#9;lib/dlib-19.13/tools/visual_studio_natvis/dlib.natvis&#10;#&#9;src/Hi.cpp&#10;#&#9;src/Hi.h&#10;#&#9;src/main.cpp">
       <created>1527698731836</created>
@@ -188,11 +174,18 @@
       <option name="project" value="LOCAL" />
       <updated>1527700991334</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Expected number of false-negatives and no false-positives">
+      <created>1527703159431</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1527703159431</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="4940000" />
+    <option name="totallyTimeSpent" value="5223000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="67" y="27" width="1981" height="1125" extended-state="6" />
@@ -224,7 +217,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Merge branch 'master' of github.com:ttsoftware/hi&#10;&#10;# Conflicts:&#10;#&#9;.idea/misc.xml&#10;#&#9;CMakeLists.txt&#10;#&#9;lib/dlib-19.13/CMakeLists.txt&#10;#&#9;lib/dlib-19.13/dlib/any/any_function_impl.h&#10;#&#9;lib/dlib-19.13/dlib/cmake_utils/tell_visual_studio_to_use_static_runtime.cmake&#10;#&#9;lib/dlib-19.13/dlib/cmake_utils/test_for_cudnn/CMakeLists.txt&#10;#&#9;lib/dlib-19.13/dlib/external/pybind11/tools/check-style.sh&#10;#&#9;lib/dlib-19.13/dlib/java/run_test.sh&#10;#&#9;lib/dlib-19.13/dlib/test/WINDOWS_build_and_run_all_unit_tests.bat&#10;#&#9;lib/dlib-19.13/dlib/test/threads.cpp&#10;#&#9;lib/dlib-19.13/dlib/travis/build-and-test.sh&#10;#&#9;lib/dlib-19.13/dlib/travis/get-old-cmakes.sh&#10;#&#9;lib/dlib-19.13/docs/dlib/any/any_function_impl.h.html&#10;#&#9;lib/dlib-19.13/docs/dlib/test/threads.cpp.html&#10;#&#9;lib/dlib-19.13/docs/vs-cmake-gui.png&#10;#&#9;lib/dlib-19.13/docs/vs_mode_1.png&#10;#&#9;lib/dlib-19.13/docs/vs_mode_2.png&#10;#&#9;lib/dlib-19.13/docs/vs_mode_3.png&#10;#&#9;lib/dlib-19.13/examples/faces/2007_007763.jpg&#10;#&#9;lib/dlib-19.13/examples/faces/2008_001009.jpg&#10;#&#9;lib/dlib-19.13/examples/faces/2008_001322.jpg&#10;#&#9;lib/dlib-19.13/examples/faces/2008_002079.jpg&#10;#&#9;lib/dlib-19.13/examples/faces/2008_002470.jpg&#10;#&#9;lib/dlib-19.13/examples/faces/2008_002506.jpg&#10;#&#9;lib/dlib-19.13/examples/faces/2008_004176.jpg&#10;#&#9;lib/dlib-19.13/examples/faces/2008_007676.jpg&#10;#&#9;lib/dlib-19.13/examples/faces/2009_004587.jpg&#10;#&#9;lib/dlib-19.13/examples/max_cost_assignment_ex.cpp&#10;#&#9;lib/dlib-19.13/python_examples/cnn_face_detector.py&#10;#&#9;lib/dlib-19.13/python_examples/correlation_tracker.py&#10;#&#9;lib/dlib-19.13/python_examples/face_alignment.py&#10;#&#9;lib/dlib-19.13/python_examples/face_clustering.py&#10;#&#9;lib/dlib-19.13/python_examples/face_detector.py&#10;#&#9;lib/dlib-19.13/python_examples/face_jitter.py&#10;#&#9;lib/dlib-19.13/python_examples/face_landmark_detection.py&#10;#&#9;lib/dlib-19.13/python_examples/face_recognition.py&#10;#&#9;lib/dlib-19.13/python_examples/find_candidate_object_locations.py&#10;#&#9;lib/dlib-19.13/python_examples/global_optimization.py&#10;#&#9;lib/dlib-19.13/python_examples/max_cost_assignment.py&#10;#&#9;lib/dlib-19.13/python_examples/opencv_webcam_face_detection.py&#10;#&#9;lib/dlib-19.13/python_examples/sequence_segmenter.py&#10;#&#9;lib/dlib-19.13/python_examples/svm_binary_classifier.py&#10;#&#9;lib/dlib-19.13/python_examples/svm_rank.py&#10;#&#9;lib/dlib-19.13/python_examples/svm_struct.py&#10;#&#9;lib/dlib-19.13/python_examples/train_object_detector.py&#10;#&#9;lib/dlib-19.13/python_examples/train_shape_predictor.py&#10;#&#9;lib/dlib-19.13/tools/convert_dlib_nets_to_caffe/running_a_dlib_model_with_caffe_example.py&#10;#&#9;lib/dlib-19.13/tools/imglab/convert_imglab_paths_to_relative&#10;#&#9;lib/dlib-19.13/tools/imglab/copy_imglab_dataset&#10;#&#9;lib/dlib-19.13/tools/visual_studio_natvis/dlib.natvis&#10;#&#9;src/Hi.cpp&#10;#&#9;src/Hi.h&#10;#&#9;src/main.cpp" />
     <MESSAGE value="Everything works - expect c++ std filesystem" />
-    <option name="LAST_COMMIT_MESSAGE" value="Everything works - expect c++ std filesystem" />
+    <MESSAGE value="Expected number of false-negatives and no false-positives" />
+    <option name="LAST_COMMIT_MESSAGE" value="Expected number of false-negatives and no false-positives" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/Hi.cpp">
@@ -337,16 +331,6 @@
         <state relative-caret-position="-10353" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="380">
-          <caret line="45" column="33" selection-start-line="45" selection-start-column="33" selection-end-line="45" selection-end-column="33" />
-          <folding>
-            <element signature="e#0#19#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/lib/dlib-19.13/dlib/image_transforms/interpolation.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="311">
@@ -356,8 +340,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Hi.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="80">
-          <caret line="83" column="49" selection-start-line="83" selection-start-column="49" selection-end-line="83" selection-end-column="49" />
+        <state relative-caret-position="344">
+          <caret line="95" column="28" selection-start-line="95" selection-start-column="28" selection-end-line="95" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="380">
+          <caret line="48" selection-start-line="48" selection-end-line="48" />
+          <folding>
+            <element signature="e#0#19#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
