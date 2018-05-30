@@ -1,5 +1,5 @@
 #include <iostream>
-#include <filesystem>
+#include <experimental/filesystem>
 #include <chrono>
 
 #include "Hi.h"
@@ -10,7 +10,6 @@
 
 using namespace std;
 using namespace std::chrono;
-namespace fs = filesystem;
 
 int main() try {
 
@@ -22,7 +21,7 @@ int main() try {
 
     auto time1 = (duration_cast<milliseconds>(system_clock::now().time_since_epoch())).count();
 
-    cout << time1 - time0 << ": loaded neural networks." << endl;
+    cout << "Loaded neural networks in " << time1 - time0 << " ms" << endl;
 
     /*auto descriptor = hi.createDescriptor("data/faces/troels.png", 25);
 
@@ -35,30 +34,33 @@ int main() try {
 
     auto time2 = (duration_cast<milliseconds>(system_clock::now().time_since_epoch())).count();
 
-    cout << time2 - time1 << ": loaded Troels face descriptor: " << trans(troels_descriptor) << endl;
+    cout << "Loaded Troels face descriptor in " << time2 - time1 << " ms" << endl;
 
-    auto testfolder = fs::u8path("data/faces/test");
-    for (auto &path : fs::directory_iterator(testfolder)) {
+    auto testfolder = std::experimental::filesystem::u8path("data/faces/test");
+    for (auto &path : std::experimental::filesystem::directory_iterator(testfolder)) {
 
-        auto time3 = (duration_cast<milliseconds>(system_clock::now().time_since_epoch())).count();
+        if (path.path().has_extension()) { // don't compare directories
 
-        cout << "\nComparing with " << path << endl;
+            auto time3 = (duration_cast<milliseconds>(system_clock::now().time_since_epoch())).count();
 
-        auto descriptors = hi.getDescriptors(path.path().string());
+            cout << "\nComparing with " << path << endl;
 
-        cout << "Found " << descriptors.size() << " other face descriptors." << endl;
+            auto descriptors = hi.getDescriptors(path.path().string());
 
-        auto result = hi.contains(descriptors, troels_descriptor);
+            // cout << "Found " << descriptors.size() << " other face descriptors." << endl;
 
-        if (result) {
-            cout << "Troels is contained in " << path << endl;
-        } else {
-            cout << "Troels is not contained in " << path << endl;
+            auto result = hi.contains(descriptors, troels_descriptor, 0.5);
+
+            if (result) {
+                cout << "Troels is contained in " << path << endl;
+            } else {
+                cout << "Troels is not contained in " << path << endl;
+            }
+
+            auto time4 = (duration_cast<milliseconds>(system_clock::now().time_since_epoch())).count();
+
+            cout << "Comparison took " << time4 - time3 << " ms." << endl;
         }
-
-        auto time4 = (duration_cast<milliseconds>(system_clock::now().time_since_epoch())).count();
-
-        cout << "Comparison took " << time4 - time3 << " ms." << endl;
     }
 
     return 0;

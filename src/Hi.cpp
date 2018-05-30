@@ -122,7 +122,7 @@ bool Hi::contains(std::vector<matrix<float, 0, 1>> face_descriptors,
     bool has_face = false;
     for (size_t i = 0; i < face_descriptors.size(); ++i) {
 
-        std::cout << "Reference face is " << length(face_reference - face_descriptors[i]) << " from incoming face " << i << endl;
+        // std::cout << "Reference face is " << length(face_reference - face_descriptors[i]) << " from incoming face " << i << endl;
 
         if (length(face_reference - face_descriptors[i]) < confidence_threshold) {
             has_face = true;
