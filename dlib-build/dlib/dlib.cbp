@@ -11,10 +11,10 @@
 				<Option working_dir="/home/troels/Projects/hi/dlib-build/dlib"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -f &quot;/home/troels/Projects/hi/dlib-build/dlib/Makefile&quot;  VERBOSE=1 all"/>
-					<CompileFile command="/usr/bin/make -f &quot;/home/troels/Projects/hi/dlib-build/dlib/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -f &quot;/home/troels/Projects/hi/dlib-build/dlib/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -f &quot;/home/troels/Projects/hi/dlib-build/dlib/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/troels/Projects/hi/dlib-build/dlib/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/troels/Projects/hi/dlib-build/dlib/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/troels/Projects/hi/dlib-build/dlib/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/troels/Projects/hi/dlib-build/dlib/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="dlib">
@@ -23,12 +23,21 @@
 				<Option object_output="./"/>
 				<Option type="2"/>
 				<Option compiler="gcc"/>
-				<Compiler/>
+				<Compiler>
+					<Add directory="/usr/include/c++/8"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/8"/>
+					<Add directory="/usr/include/c++/8/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/8/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/8/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -f &quot;/home/troels/Projects/hi/dlib-build/dlib/Makefile&quot;  VERBOSE=1 dlib"/>
-					<CompileFile command="/usr/bin/make -f &quot;/home/troels/Projects/hi/dlib-build/dlib/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -f &quot;/home/troels/Projects/hi/dlib-build/dlib/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -f &quot;/home/troels/Projects/hi/dlib-build/dlib/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/troels/Projects/hi/dlib-build/dlib/Makefile&quot;  VERBOSE=1 dlib"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/troels/Projects/hi/dlib-build/dlib/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/troels/Projects/hi/dlib-build/dlib/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/troels/Projects/hi/dlib-build/dlib/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="dlib/fast">
@@ -37,15 +46,366 @@
 				<Option object_output="./"/>
 				<Option type="2"/>
 				<Option compiler="gcc"/>
-				<Compiler/>
+				<Compiler>
+					<Add directory="/usr/include/c++/8"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/8"/>
+					<Add directory="/usr/include/c++/8/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/8/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/8/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -f &quot;/home/troels/Projects/hi/dlib-build/dlib/Makefile&quot;  VERBOSE=1 dlib/fast"/>
-					<CompileFile command="/usr/bin/make -f &quot;/home/troels/Projects/hi/dlib-build/dlib/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -f &quot;/home/troels/Projects/hi/dlib-build/dlib/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -f &quot;/home/troels/Projects/hi/dlib-build/dlib/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/troels/Projects/hi/dlib-build/dlib/Makefile&quot;  VERBOSE=1 dlib/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/troels/Projects/hi/dlib-build/dlib/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/troels/Projects/hi/dlib-build/dlib/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/troels/Projects/hi/dlib-build/dlib/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/home/troels/Projects/hi/lib/dlib-19.13/dlib/base64/base64_kernel_1.cpp">
+			<Option target="dlib"/>
+		</Unit>
+		<Unit filename="/home/troels/Projects/hi/lib/dlib-19.13/dlib/base64/base64_kernel_1.h">
+			<Option target="dlib"/>
+		</Unit>
+		<Unit filename="/home/troels/Projects/hi/lib/dlib-19.13/dlib/bigint/bigint_kernel_1.cpp">
+			<Option target="dlib"/>
+		</Unit>
+		<Unit filename="/home/troels/Projects/hi/lib/dlib-19.13/dlib/bigint/bigint_kernel_1.h">
+			<Option target="dlib"/>
+		</Unit>
+		<Unit filename="/home/troels/Projects/hi/lib/dlib-19.13/dlib/bigint/bigint_kernel_2.cpp">
+			<Option target="dlib"/>
+		</Unit>
+		<Unit filename="/home/troels/Projects/hi/lib/dlib-19.13/dlib/bigint/bigint_kernel_2.h">
+			<Option target="dlib"/>
+		</Unit>
+		<Unit filename="/home/troels/Projects/hi/lib/dlib-19.13/dlib/bit_stream/bit_stream_kernel_1.cpp">
+			<Option target="dlib"/>
+		</Unit>
+		<Unit filename="/home/troels/Projects/hi/lib/dlib-19.13/dlib/bit_stream/bit_stream_kernel_1.h">
+			<Option target="dlib"/>
+		</Unit>
+		<Unit filename="/home/troels/Projects/hi/lib/dlib-19.13/dlib/bsp/bsp.cpp">
+			<Option target="dlib"/>
+		</Unit>
+		<Unit filename="/home/troels/Projects/hi/lib/dlib-19.13/dlib/bsp/bsp.h">
+			<Option target="dlib"/>
+		</Unit>
+		<Unit filename="/home/troels/Projects/hi/lib/dlib-19.13/dlib/cuda/cpu_dlib.cpp">
+			<Option target="dlib"/>
+		</Unit>
+		<Unit filename="/home/troels/Projects/hi/lib/dlib-19.13/dlib/cuda/cpu_dlib.h">
+			<Option target="dlib"/>
+		</Unit>
+		<Unit filename="/home/troels/Projects/hi/lib/dlib-19.13/dlib/cuda/tensor_tools.cpp">
+			<Option target="dlib"/>
+		</Unit>
+		<Unit filename="/home/troels/Projects/hi/lib/dlib-19.13/dlib/cuda/tensor_tools.h">
+			<Option target="dlib"/>
+		</Unit>
+		<Unit filename="/home/troels/Projects/hi/lib/dlib-19.13/dlib/data_io/image_dataset_metadata.cpp">
+			<Option target="dlib"/>
+		</Unit>
+		<Unit filename="/home/troels/Projects/hi/lib/dlib-19.13/dlib/data_io/image_dataset_metadata.h">
+			<Option target="dlib"/>
+		</Unit>
+		<Unit filename="/home/troels/Projects/hi/lib/dlib-19.13/dlib/data_io/mnist.cpp">
+			<Option target="dlib"/>
+		</Unit>
+		<Unit filename="/home/troels/Projects/hi/lib/dlib-19.13/dlib/data_io/mnist.h">
+			<Option target="dlib"/>
+		</Unit>
+		<Unit filename="/home/troels/Projects/hi/lib/dlib-19.13/dlib/dir_nav/dir_nav_extensions.cpp">
+			<Option target="dlib"/>
+		</Unit>
+		<Unit filename="/home/troels/Projects/hi/lib/dlib-19.13/dlib/dir_nav/dir_nav_extensions.h">
+			<Option target="dlib"/>
+		</Unit>
+		<Unit filename="/home/troels/Projects/hi/lib/dlib-19.13/dlib/dir_nav/dir_nav_kernel_1.cpp">
+			<Option target="dlib"/>
+		</Unit>
+		<Unit filename="/home/troels/Projects/hi/lib/dlib-19.13/dlib/dir_nav/dir_nav_kernel_1.h">
+			<Option target="dlib"/>
+		</Unit>
+		<Unit filename="/home/troels/Projects/hi/lib/dlib-19.13/dlib/dir_nav/dir_nav_kernel_2.cpp">
+			<Option target="dlib"/>
+		</Unit>
+		<Unit filename="/home/troels/Projects/hi/lib/dlib-19.13/dlib/dir_nav/dir_nav_kernel_2.h">
+			<Option target="dlib"/>
+		</Unit>
+		<Unit filename="/home/troels/Projects/hi/lib/dlib-19.13/dlib/entropy_decoder/entropy_decoder_kernel_1.cpp">
+			<Option target="dlib"/>
+		</Unit>
+		<Unit filename="/home/troels/Projects/hi/lib/dlib-19.13/dlib/entropy_decoder/entropy_decoder_kernel_1.h">
+			<Option target="dlib"/>
+		</Unit>
+		<Unit filename="/home/troels/Projects/hi/lib/dlib-19.13/dlib/entropy_decoder/entropy_decoder_kernel_2.cpp">
+			<Option target="dlib"/>
+		</Unit>
+		<Unit filename="/home/troels/Projects/hi/lib/dlib-19.13/dlib/entropy_decoder/entropy_decoder_kernel_2.h">
+			<Option target="dlib"/>
+		</Unit>
+		<Unit filename="/home/troels/Projects/hi/lib/dlib-19.13/dlib/entropy_encoder/entropy_encoder_kernel_1.cpp">
+			<Option target="dlib"/>
+		</Unit>
+		<Unit filename="/home/troels/Projects/hi/lib/dlib-19.13/dlib/entropy_encoder/entropy_encoder_kernel_1.h">
+			<Option target="dlib"/>
+		</Unit>
+		<Unit filename="/home/troels/Projects/hi/lib/dlib-19.13/dlib/entropy_encoder/entropy_encoder_kernel_2.cpp">
+			<Option target="dlib"/>
+		</Unit>
+		<Unit filename="/home/troels/Projects/hi/lib/dlib-19.13/dlib/entropy_encoder/entropy_encoder_kernel_2.h">
+			<Option target="dlib"/>
+		</Unit>
+		<Unit filename="/home/troels/Projects/hi/lib/dlib-19.13/dlib/filtering/kalman_filter.cpp">
+			<Option target="dlib"/>
+		</Unit>
+		<Unit filename="/home/troels/Projects/hi/lib/dlib-19.13/dlib/filtering/kalman_filter.h">
+			<Option target="dlib"/>
+		</Unit>
+		<Unit filename="/home/troels/Projects/hi/lib/dlib-19.13/dlib/global_optimization/global_function_search.cpp">
+			<Option target="dlib"/>
+		</Unit>
+		<Unit filename="/home/troels/Projects/hi/lib/dlib-19.13/dlib/global_optimization/global_function_search.h">
+			<Option target="dlib"/>
+		</Unit>
+		<Unit filename="/home/troels/Projects/hi/lib/dlib-19.13/dlib/gui_core/gui_core_kernel_1.cpp">
+			<Option target="dlib"/>
+		</Unit>
+		<Unit filename="/home/troels/Projects/hi/lib/dlib-19.13/dlib/gui_core/gui_core_kernel_1.h">
+			<Option target="dlib"/>
+		</Unit>
+		<Unit filename="/home/troels/Projects/hi/lib/dlib-19.13/dlib/gui_core/gui_core_kernel_2.cpp">
+			<Option target="dlib"/>
+		</Unit>
+		<Unit filename="/home/troels/Projects/hi/lib/dlib-19.13/dlib/gui_core/gui_core_kernel_2.h">
+			<Option target="dlib"/>
+		</Unit>
+		<Unit filename="/home/troels/Projects/hi/lib/dlib-19.13/dlib/gui_widgets/base_widgets.cpp">
+			<Option target="dlib"/>
+		</Unit>
+		<Unit filename="/home/troels/Projects/hi/lib/dlib-19.13/dlib/gui_widgets/base_widgets.h">
+			<Option target="dlib"/>
+		</Unit>
+		<Unit filename="/home/troels/Projects/hi/lib/dlib-19.13/dlib/gui_widgets/canvas_drawing.cpp">
+			<Option target="dlib"/>
+		</Unit>
+		<Unit filename="/home/troels/Projects/hi/lib/dlib-19.13/dlib/gui_widgets/canvas_drawing.h">
+			<Option target="dlib"/>
+		</Unit>
+		<Unit filename="/home/troels/Projects/hi/lib/dlib-19.13/dlib/gui_widgets/drawable.cpp">
+			<Option target="dlib"/>
+		</Unit>
+		<Unit filename="/home/troels/Projects/hi/lib/dlib-19.13/dlib/gui_widgets/drawable.h">
+			<Option target="dlib"/>
+		</Unit>
+		<Unit filename="/home/troels/Projects/hi/lib/dlib-19.13/dlib/gui_widgets/fonts.cpp">
+			<Option target="dlib"/>
+		</Unit>
+		<Unit filename="/home/troels/Projects/hi/lib/dlib-19.13/dlib/gui_widgets/fonts.h">
+			<Option target="dlib"/>
+		</Unit>
+		<Unit filename="/home/troels/Projects/hi/lib/dlib-19.13/dlib/gui_widgets/style.cpp">
+			<Option target="dlib"/>
+		</Unit>
+		<Unit filename="/home/troels/Projects/hi/lib/dlib-19.13/dlib/gui_widgets/style.h">
+			<Option target="dlib"/>
+		</Unit>
+		<Unit filename="/home/troels/Projects/hi/lib/dlib-19.13/dlib/gui_widgets/widgets.cpp">
+			<Option target="dlib"/>
+		</Unit>
+		<Unit filename="/home/troels/Projects/hi/lib/dlib-19.13/dlib/gui_widgets/widgets.h">
+			<Option target="dlib"/>
+		</Unit>
+		<Unit filename="/home/troels/Projects/hi/lib/dlib-19.13/dlib/image_loader/jpeg_loader.cpp">
+			<Option target="dlib"/>
+		</Unit>
+		<Unit filename="/home/troels/Projects/hi/lib/dlib-19.13/dlib/image_loader/jpeg_loader.h">
+			<Option target="dlib"/>
+		</Unit>
+		<Unit filename="/home/troels/Projects/hi/lib/dlib-19.13/dlib/image_loader/png_loader.cpp">
+			<Option target="dlib"/>
+		</Unit>
+		<Unit filename="/home/troels/Projects/hi/lib/dlib-19.13/dlib/image_loader/png_loader.h">
+			<Option target="dlib"/>
+		</Unit>
+		<Unit filename="/home/troels/Projects/hi/lib/dlib-19.13/dlib/image_saver/save_jpeg.cpp">
+			<Option target="dlib"/>
+		</Unit>
+		<Unit filename="/home/troels/Projects/hi/lib/dlib-19.13/dlib/image_saver/save_jpeg.h">
+			<Option target="dlib"/>
+		</Unit>
+		<Unit filename="/home/troels/Projects/hi/lib/dlib-19.13/dlib/image_saver/save_png.cpp">
+			<Option target="dlib"/>
+		</Unit>
+		<Unit filename="/home/troels/Projects/hi/lib/dlib-19.13/dlib/image_saver/save_png.h">
+			<Option target="dlib"/>
+		</Unit>
+		<Unit filename="/home/troels/Projects/hi/lib/dlib-19.13/dlib/linker/linker_kernel_1.cpp">
+			<Option target="dlib"/>
+		</Unit>
+		<Unit filename="/home/troels/Projects/hi/lib/dlib-19.13/dlib/linker/linker_kernel_1.h">
+			<Option target="dlib"/>
+		</Unit>
+		<Unit filename="/home/troels/Projects/hi/lib/dlib-19.13/dlib/logger/extra_logger_headers.cpp">
+			<Option target="dlib"/>
+		</Unit>
+		<Unit filename="/home/troels/Projects/hi/lib/dlib-19.13/dlib/logger/extra_logger_headers.h">
+			<Option target="dlib"/>
+		</Unit>
+		<Unit filename="/home/troels/Projects/hi/lib/dlib-19.13/dlib/logger/logger_config_file.cpp">
+			<Option target="dlib"/>
+		</Unit>
+		<Unit filename="/home/troels/Projects/hi/lib/dlib-19.13/dlib/logger/logger_config_file.h">
+			<Option target="dlib"/>
+		</Unit>
+		<Unit filename="/home/troels/Projects/hi/lib/dlib-19.13/dlib/logger/logger_kernel_1.cpp">
+			<Option target="dlib"/>
+		</Unit>
+		<Unit filename="/home/troels/Projects/hi/lib/dlib-19.13/dlib/logger/logger_kernel_1.h">
+			<Option target="dlib"/>
+		</Unit>
+		<Unit filename="/home/troels/Projects/hi/lib/dlib-19.13/dlib/md5/md5_kernel_1.cpp">
+			<Option target="dlib"/>
+		</Unit>
+		<Unit filename="/home/troels/Projects/hi/lib/dlib-19.13/dlib/md5/md5_kernel_1.h">
+			<Option target="dlib"/>
+		</Unit>
+		<Unit filename="/home/troels/Projects/hi/lib/dlib-19.13/dlib/misc_api/misc_api_kernel_1.cpp">
+			<Option target="dlib"/>
+		</Unit>
+		<Unit filename="/home/troels/Projects/hi/lib/dlib-19.13/dlib/misc_api/misc_api_kernel_1.h">
+			<Option target="dlib"/>
+		</Unit>
+		<Unit filename="/home/troels/Projects/hi/lib/dlib-19.13/dlib/misc_api/misc_api_kernel_2.cpp">
+			<Option target="dlib"/>
+		</Unit>
+		<Unit filename="/home/troels/Projects/hi/lib/dlib-19.13/dlib/misc_api/misc_api_kernel_2.h">
+			<Option target="dlib"/>
+		</Unit>
+		<Unit filename="/home/troels/Projects/hi/lib/dlib-19.13/dlib/server/server_http.cpp">
+			<Option target="dlib"/>
+		</Unit>
+		<Unit filename="/home/troels/Projects/hi/lib/dlib-19.13/dlib/server/server_http.h">
+			<Option target="dlib"/>
+		</Unit>
+		<Unit filename="/home/troels/Projects/hi/lib/dlib-19.13/dlib/server/server_iostream.cpp">
+			<Option target="dlib"/>
+		</Unit>
+		<Unit filename="/home/troels/Projects/hi/lib/dlib-19.13/dlib/server/server_iostream.h">
+			<Option target="dlib"/>
+		</Unit>
+		<Unit filename="/home/troels/Projects/hi/lib/dlib-19.13/dlib/server/server_kernel.cpp">
+			<Option target="dlib"/>
+		</Unit>
+		<Unit filename="/home/troels/Projects/hi/lib/dlib-19.13/dlib/server/server_kernel.h">
+			<Option target="dlib"/>
+		</Unit>
+		<Unit filename="/home/troels/Projects/hi/lib/dlib-19.13/dlib/sockets/sockets_extensions.cpp">
+			<Option target="dlib"/>
+		</Unit>
+		<Unit filename="/home/troels/Projects/hi/lib/dlib-19.13/dlib/sockets/sockets_extensions.h">
+			<Option target="dlib"/>
+		</Unit>
+		<Unit filename="/home/troels/Projects/hi/lib/dlib-19.13/dlib/sockets/sockets_kernel_1.cpp">
+			<Option target="dlib"/>
+		</Unit>
+		<Unit filename="/home/troels/Projects/hi/lib/dlib-19.13/dlib/sockets/sockets_kernel_1.h">
+			<Option target="dlib"/>
+		</Unit>
+		<Unit filename="/home/troels/Projects/hi/lib/dlib-19.13/dlib/sockets/sockets_kernel_2.cpp">
+			<Option target="dlib"/>
+		</Unit>
+		<Unit filename="/home/troels/Projects/hi/lib/dlib-19.13/dlib/sockets/sockets_kernel_2.h">
+			<Option target="dlib"/>
+		</Unit>
+		<Unit filename="/home/troels/Projects/hi/lib/dlib-19.13/dlib/sockstreambuf/sockstreambuf.cpp">
+			<Option target="dlib"/>
+		</Unit>
+		<Unit filename="/home/troels/Projects/hi/lib/dlib-19.13/dlib/sockstreambuf/sockstreambuf.h">
+			<Option target="dlib"/>
+		</Unit>
+		<Unit filename="/home/troels/Projects/hi/lib/dlib-19.13/dlib/sockstreambuf/sockstreambuf_unbuffered.cpp">
+			<Option target="dlib"/>
+		</Unit>
+		<Unit filename="/home/troels/Projects/hi/lib/dlib-19.13/dlib/sockstreambuf/sockstreambuf_unbuffered.h">
+			<Option target="dlib"/>
+		</Unit>
+		<Unit filename="/home/troels/Projects/hi/lib/dlib-19.13/dlib/stack_trace.cpp">
+			<Option target="dlib"/>
+		</Unit>
+		<Unit filename="/home/troels/Projects/hi/lib/dlib-19.13/dlib/stack_trace.h">
+			<Option target="dlib"/>
+		</Unit>
+		<Unit filename="/home/troels/Projects/hi/lib/dlib-19.13/dlib/test_for_odr_violations.cpp">
+			<Option target="dlib"/>
+		</Unit>
+		<Unit filename="/home/troels/Projects/hi/lib/dlib-19.13/dlib/test_for_odr_violations.h">
+			<Option target="dlib"/>
+		</Unit>
+		<Unit filename="/home/troels/Projects/hi/lib/dlib-19.13/dlib/threads/async.cpp">
+			<Option target="dlib"/>
+		</Unit>
+		<Unit filename="/home/troels/Projects/hi/lib/dlib-19.13/dlib/threads/async.h">
+			<Option target="dlib"/>
+		</Unit>
+		<Unit filename="/home/troels/Projects/hi/lib/dlib-19.13/dlib/threads/multithreaded_object_extension.cpp">
+			<Option target="dlib"/>
+		</Unit>
+		<Unit filename="/home/troels/Projects/hi/lib/dlib-19.13/dlib/threads/multithreaded_object_extension.h">
+			<Option target="dlib"/>
+		</Unit>
+		<Unit filename="/home/troels/Projects/hi/lib/dlib-19.13/dlib/threads/thread_pool_extension.cpp">
+			<Option target="dlib"/>
+		</Unit>
+		<Unit filename="/home/troels/Projects/hi/lib/dlib-19.13/dlib/threads/thread_pool_extension.h">
+			<Option target="dlib"/>
+		</Unit>
+		<Unit filename="/home/troels/Projects/hi/lib/dlib-19.13/dlib/threads/threaded_object_extension.cpp">
+			<Option target="dlib"/>
+		</Unit>
+		<Unit filename="/home/troels/Projects/hi/lib/dlib-19.13/dlib/threads/threaded_object_extension.h">
+			<Option target="dlib"/>
+		</Unit>
+		<Unit filename="/home/troels/Projects/hi/lib/dlib-19.13/dlib/threads/threads_kernel_1.cpp">
+			<Option target="dlib"/>
+		</Unit>
+		<Unit filename="/home/troels/Projects/hi/lib/dlib-19.13/dlib/threads/threads_kernel_1.h">
+			<Option target="dlib"/>
+		</Unit>
+		<Unit filename="/home/troels/Projects/hi/lib/dlib-19.13/dlib/threads/threads_kernel_2.cpp">
+			<Option target="dlib"/>
+		</Unit>
+		<Unit filename="/home/troels/Projects/hi/lib/dlib-19.13/dlib/threads/threads_kernel_2.h">
+			<Option target="dlib"/>
+		</Unit>
+		<Unit filename="/home/troels/Projects/hi/lib/dlib-19.13/dlib/threads/threads_kernel_shared.cpp">
+			<Option target="dlib"/>
+		</Unit>
+		<Unit filename="/home/troels/Projects/hi/lib/dlib-19.13/dlib/threads/threads_kernel_shared.h">
+			<Option target="dlib"/>
+		</Unit>
+		<Unit filename="/home/troels/Projects/hi/lib/dlib-19.13/dlib/timer/timer.cpp">
+			<Option target="dlib"/>
+		</Unit>
+		<Unit filename="/home/troels/Projects/hi/lib/dlib-19.13/dlib/timer/timer.h">
+			<Option target="dlib"/>
+		</Unit>
+		<Unit filename="/home/troels/Projects/hi/lib/dlib-19.13/dlib/tokenizer/tokenizer_kernel_1.cpp">
+			<Option target="dlib"/>
+		</Unit>
+		<Unit filename="/home/troels/Projects/hi/lib/dlib-19.13/dlib/tokenizer/tokenizer_kernel_1.h">
+			<Option target="dlib"/>
+		</Unit>
+		<Unit filename="/home/troels/Projects/hi/lib/dlib-19.13/dlib/unicode/unicode.cpp">
+			<Option target="dlib"/>
+		</Unit>
+		<Unit filename="/home/troels/Projects/hi/lib/dlib-19.13/dlib/unicode/unicode.h">
+			<Option target="dlib"/>
+		</Unit>
 		<Unit filename="/home/troels/Projects/hi/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
@@ -54,6 +414,9 @@
 		</Unit>
 		<Unit filename="/home/troels/Projects/hi/lib/dlib-19.13/dlib/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\lib\dlib-19.13\dlib\"/>
+		</Unit>
+		<Unit filename="/home/troels/Projects/hi/lib/dlib-19.13/dlib/cmake_utils/find_blas.cmake">
+			<Option virtualFolder="CMake Files\lib\dlib-19.13\dlib\cmake_utils\"/>
 		</Unit>
 		<Unit filename="/home/troels/Projects/hi/lib/dlib-19.13/dlib/cmake_utils/release_build_by_default">
 			<Option virtualFolder="CMake Files\lib\dlib-19.13\dlib\cmake_utils\"/>

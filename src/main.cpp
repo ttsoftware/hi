@@ -1,5 +1,5 @@
 #include <iostream>
-#include <experimental/filesystem>
+#include <filesystem>
 #include <chrono>
 
 #include "Hi.h"
@@ -10,6 +10,7 @@
 
 using namespace std;
 using namespace std::chrono;
+namespace fs = filesystem;
 
 int main() try {
 
@@ -36,8 +37,8 @@ int main() try {
 
     cout << time2 - time1 << ": loaded Troels face descriptor: " << trans(troels_descriptor) << endl;
 
-    auto testfolder = "data/faces/test";
-    for (auto &path : experimental::filesystem::directory_iterator(testfolder)) {
+    auto testfolder = fs::u8path("data/faces/test");
+    for (auto &path : fs::directory_iterator(testfolder)) {
 
         auto time3 = (duration_cast<milliseconds>(system_clock::now().time_since_epoch())).count();
 

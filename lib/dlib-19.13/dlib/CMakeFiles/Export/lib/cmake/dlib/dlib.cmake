@@ -57,7 +57,7 @@ set_target_properties(dlib::dlib PROPERTIES
   INTERFACE_COMPILE_FEATURES "cxx_rvalue_references;cxx_variadic_templates;cxx_lambdas;cxx_defaulted_move_initializers;cxx_delegating_constructors;cxx_thread_local;cxx_constexpr;cxx_auto_type"
   INTERFACE_COMPILE_OPTIONS "\$<\$<COMPILE_LANGUAGE:CXX>:-Wreturn-type>"
   INTERFACE_INCLUDE_DIRECTORIES "${_IMPORT_PREFIX}/include;/usr/include"
-  INTERFACE_LINK_LIBRARIES "-lpthread;/usr/lib/x86_64-linux-gnu/libnsl.so;/usr/lib/x86_64-linux-gnu/libX11.so;/usr/lib/x86_64-linux-gnu/libXext.so;/usr/lib/x86_64-linux-gnu/libpng.so;/usr/lib/x86_64-linux-gnu/libz.so;/usr/lib/x86_64-linux-gnu/libjpeg.so;/usr/lib/x86_64-linux-gnu/libsqlite3.so"
+  INTERFACE_LINK_LIBRARIES "-lpthread;/usr/lib/x86_64-linux-gnu/libnsl.so;/usr/lib/x86_64-linux-gnu/libSM.so;/usr/lib/x86_64-linux-gnu/libICE.so;/usr/lib/x86_64-linux-gnu/libX11.so;/usr/lib/x86_64-linux-gnu/libXext.so;/usr/lib/x86_64-linux-gnu/libpng.so;/usr/lib/x86_64-linux-gnu/libz.so;/usr/lib/x86_64-linux-gnu/libjpeg.so;/usr/lib/x86_64-linux-gnu/libsqlite3.so"
 )
 
 if(CMAKE_VERSION VERSION_LESS 2.8.12)
