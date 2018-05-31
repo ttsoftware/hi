@@ -1,6 +1,7 @@
 #include <iostream>
 #include <experimental/filesystem>
 #include <chrono>
+#include <dlib/gui_widgets.h>
 
 #include "Hi.h"
 #include "HiCamera.h"
@@ -14,9 +15,6 @@ using namespace std::chrono;
 
 int main() try {
 
-    HiCamera::capture();
-
-    /*
     // init time
     auto time0 = (duration_cast<milliseconds>(system_clock::now().time_since_epoch())).count();
 
@@ -26,7 +24,38 @@ int main() try {
 
     cout << "Loaded neural networks in " << time1 - time0 << " ms" << endl;
 
-    *//*auto descriptor = hi.createDescriptor("data/faces/troels.png", 100);
+    auto frames = HiCamera::capture();
+
+    cout << frames.size() << endl;
+
+    image_window win;
+
+    std::vector<pair<matrix<rgb_pixel>, rectangle>> framesFace;
+    for (auto frame : frames) {
+
+        std::map<rectangle, matrix<rgb_pixel>> face_map = hi.findFaces(frame);
+        std::vector<rectangle> face_rectangles;
+        face_rectangles.reserve(face_map.size());
+
+        transform(begin(face_map), end(face_map), back_inserter(face_rectangles),
+                  [](auto const &pair) {
+                      return pair.first;
+                  });
+
+        framesFace.emplace_back(frame, face_rectangles[0]);
+    }
+
+    while (true) {
+        for (auto frameFace : framesFace) {
+            win.set_image(frameFace.first);
+            win.clear_overlay();
+            win.add_overlay(frameFace.second);
+
+            usleep(static_cast<__useconds_t>(1e5));
+        }
+    }
+
+/*auto descriptor = hi.createDescriptor("data/faces/troels.png", 100);
     cout << "Found a face descriptor." << endl;
     hi.storeDescriptor(descriptor, "data/face_descriptors/troels.dat");
     return 0;*//*
