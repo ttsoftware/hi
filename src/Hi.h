@@ -17,12 +17,20 @@ public:
     Hi();
 
     /**
-     * Returns a map of rectangles of faces and their corresponding matrices found in image matrix
+     * Returns a lsit of faces and their corresponding matrices found in image
      *
      * @param img
-     * @return std::vector<pair<rectangle, matrix<rgb_pixel>>>
+     * @return std::vector<matrix<rgb_pixel>>
      */
-    std::map<rectangle, matrix<rgb_pixel>> findFaces(matrix<rgb_pixel> &img);
+    std::vector<matrix<rgb_pixel>> findFaces(matrix<rgb_pixel> &img);
+
+    /**
+     * For each face extract a rectangle describing its location
+     *
+     * @param img
+     * @return std::vector<rectangle>
+     */
+    std::vector<rectangle> findFaceLocations(matrix<rgb_pixel> &img);
 
     /**
      * Finds all (simple) face descriptors in image.
@@ -31,6 +39,13 @@ public:
      * @return std::vector<matrix<float, 0, 1>>
      */
     std::vector<matrix<float, 0, 1>> getDescriptors(string img_location);
+    /**
+     * Finds all (simple) face descriptors in image.
+     *
+     * @param img image to create descriptors of
+     * @return std::vector<matrix<float, 0, 1>>
+     */
+    std::vector<matrix<float, 0, 1>> getDescriptors(matrix<rgb_pixel> &img);
 
     /**
      * Creates a new detailed face descriptor from image. Assumes only one face in image.

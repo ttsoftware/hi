@@ -35,34 +35,29 @@ std::vector<matrix<rgb_pixel>> Hi::jitter(matrix<rgb_pixel> &img, int rounds) {
     return crops;
 }
 
-std::map<rectangle, matrix<rgb_pixel>> Hi::findFaces(matrix<rgb_pixel> &img) {
+std::vector<matrix<rgb_pixel>> Hi::findFaces(matrix<rgb_pixel> &img) {
     // Run the face detector on the image, and for each face extract a
     // copy that has been normalized to 150x150 pixels in size and appropriately rotated
     // and centered.
-    std::map<rectangle, matrix<rgb_pixel>> faces;
+    std::vector<matrix<rgb_pixel>> faces;
     for (rectangle face : detector(img)) {
         matrix<rgb_pixel> face_chip;
         extract_image_chip(img, get_face_chip_details(sp(img, face), 150, 0.25), face_chip);
-        faces[face] = move(face_chip);
+        faces.push_back(move(face_chip));
     }
 
     return faces;
+}
+
+std::vector<rectangle> Hi::findFaceLocations(matrix<rgb_pixel> &img) {
+    return detector(img);
 }
 
 matrix<float, 0, 1> Hi::createDescriptor(string img_location, int num_jitters) {
     matrix<rgb_pixel> img;
     load_image(img, img_location);
 
-    std::map<rectangle, matrix<rgb_pixel>> face_map = findFaces(img);
-    std::vector<matrix<rgb_pixel>> face_matrices;
-    face_matrices.reserve(face_map.size());
-
-    transform(begin(face_map), end(face_map), back_inserter(face_matrices),
-              [](auto const& pair) {
-                  return pair.second;
-              });
-
-    std::vector<matrix<rgb_pixel>> faces = face_matrices;
+    std::vector<matrix<rgb_pixel>> faces = findFaces(img);
 
     if (faces.size() == 1) {
         // Use DNN to convert each face image in faces into a 128D std::vector.
@@ -104,16 +99,11 @@ bool Hi::contains(std::vector<matrix<float, 0, 1>> face_descriptors,
 std::vector<matrix<float, 0, 1>> Hi::getDescriptors(string img_location) {
     matrix<rgb_pixel> img;
     load_image(img, img_location);
-
-    std::map<rectangle, matrix<rgb_pixel>> face_map = findFaces(img);
-    std::vector<matrix<rgb_pixel>> face_matrices;
-    face_matrices.reserve(face_map.size());
-
-    transform(begin(face_map), end(face_map), back_inserter(face_matrices),
-              [](auto const& pair) {
-                  return pair.second;
-              });
-
     // Convert each face image in faces into a 128D std::vector.
-    return net(face_matrices);
+    return getDescriptors(img);
+}
+
+std::vector<matrix<float, 0, 1>> Hi::getDescriptors(matrix<rgb_pixel> &img) {
+    // Convert each face image in faces into a 128D std::vector.
+    return net(findFaces(img));
 }
