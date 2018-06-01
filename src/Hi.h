@@ -17,12 +17,20 @@ public:
     Hi();
 
     /**
-     * Returns a lsit of faces and their corresponding matrices found in image
+     * Returns a list of faces and their corresponding matrices found in image
      *
      * @param img
      * @return std::vector<matrix<rgb_pixel>>
      */
     std::vector<matrix<rgb_pixel>> findFaces(matrix<rgb_pixel> &img);
+
+    /**
+     * Returns the first face and its corresponding matrices found in image
+     *
+     * @param img
+     * @return std::vector<matrix<rgb_pixel>>
+     */
+    matrix<rgb_pixel> findFace(matrix<rgb_pixel> &img);
 
     /**
      * For each face extract a rectangle describing its location
@@ -35,17 +43,10 @@ public:
     /**
      * Finds all (simple) face descriptors in image.
      *
-     * @param img_location location of image to create descriptors
+     * @param face image to create descriptors of
      * @return std::vector<matrix<float, 0, 1>>
      */
-    std::vector<matrix<float, 0, 1>> getDescriptors(string img_location);
-    /**
-     * Finds all (simple) face descriptors in image.
-     *
-     * @param img image to create descriptors of
-     * @return std::vector<matrix<float, 0, 1>>
-     */
-    std::vector<matrix<float, 0, 1>> getDescriptors(matrix<rgb_pixel> &img);
+    std::vector<matrix<float, 0, 1>> getDescriptors(matrix<rgb_pixel> &face);
 
     /**
      * Creates a new detailed face descriptor from image. Assumes only one face in image.
@@ -120,7 +121,7 @@ private:
                                                             input_rgb_image_sized<150>
                                                     >>>>>>>>>>>>;
     frontal_face_detector detector;
-    shape_predictor sp;
+    shape_predictor shape_corrector;
     anet_type net;
 
     /**

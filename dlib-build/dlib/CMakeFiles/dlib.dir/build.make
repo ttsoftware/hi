@@ -60,15 +60,15 @@ include dlib-build/dlib/CMakeFiles/dlib.dir/flags.make
 dlib-build/dlib/CMakeFiles/dlib.dir/base64/base64_kernel_1.cpp.o: dlib-build/dlib/CMakeFiles/dlib.dir/flags.make
 dlib-build/dlib/CMakeFiles/dlib.dir/base64/base64_kernel_1.cpp.o: lib/dlib-19.13/dlib/base64/base64_kernel_1.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/troels/Projects/hi/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object dlib-build/dlib/CMakeFiles/dlib.dir/base64/base64_kernel_1.cpp.o"
-	cd /home/troels/Projects/hi/dlib-build/dlib && /usr/bin/g++-8  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/dlib.dir/base64/base64_kernel_1.cpp.o -c /home/troels/Projects/hi/lib/dlib-19.13/dlib/base64/base64_kernel_1.cpp
+	cd /home/troels/Projects/hi/dlib-build/dlib && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/dlib.dir/base64/base64_kernel_1.cpp.o -c /home/troels/Projects/hi/lib/dlib-19.13/dlib/base64/base64_kernel_1.cpp
 
 dlib-build/dlib/CMakeFiles/dlib.dir/base64/base64_kernel_1.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/dlib.dir/base64/base64_kernel_1.cpp.i"
-	cd /home/troels/Projects/hi/dlib-build/dlib && /usr/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/troels/Projects/hi/lib/dlib-19.13/dlib/base64/base64_kernel_1.cpp > CMakeFiles/dlib.dir/base64/base64_kernel_1.cpp.i
+	cd /home/troels/Projects/hi/dlib-build/dlib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/troels/Projects/hi/lib/dlib-19.13/dlib/base64/base64_kernel_1.cpp > CMakeFiles/dlib.dir/base64/base64_kernel_1.cpp.i
 
 dlib-build/dlib/CMakeFiles/dlib.dir/base64/base64_kernel_1.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/dlib.dir/base64/base64_kernel_1.cpp.s"
-	cd /home/troels/Projects/hi/dlib-build/dlib && /usr/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/troels/Projects/hi/lib/dlib-19.13/dlib/base64/base64_kernel_1.cpp -o CMakeFiles/dlib.dir/base64/base64_kernel_1.cpp.s
+	cd /home/troels/Projects/hi/dlib-build/dlib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/troels/Projects/hi/lib/dlib-19.13/dlib/base64/base64_kernel_1.cpp -o CMakeFiles/dlib.dir/base64/base64_kernel_1.cpp.s
 
 dlib-build/dlib/CMakeFiles/dlib.dir/base64/base64_kernel_1.cpp.o.requires:
 
@@ -84,15 +84,15 @@ dlib-build/dlib/CMakeFiles/dlib.dir/base64/base64_kernel_1.cpp.o.provides.build:
 dlib-build/dlib/CMakeFiles/dlib.dir/bigint/bigint_kernel_1.cpp.o: dlib-build/dlib/CMakeFiles/dlib.dir/flags.make
 dlib-build/dlib/CMakeFiles/dlib.dir/bigint/bigint_kernel_1.cpp.o: lib/dlib-19.13/dlib/bigint/bigint_kernel_1.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/troels/Projects/hi/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object dlib-build/dlib/CMakeFiles/dlib.dir/bigint/bigint_kernel_1.cpp.o"
-	cd /home/troels/Projects/hi/dlib-build/dlib && /usr/bin/g++-8  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/dlib.dir/bigint/bigint_kernel_1.cpp.o -c /home/troels/Projects/hi/lib/dlib-19.13/dlib/bigint/bigint_kernel_1.cpp
+	cd /home/troels/Projects/hi/dlib-build/dlib && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/dlib.dir/bigint/bigint_kernel_1.cpp.o -c /home/troels/Projects/hi/lib/dlib-19.13/dlib/bigint/bigint_kernel_1.cpp
 
 dlib-build/dlib/CMakeFiles/dlib.dir/bigint/bigint_kernel_1.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/dlib.dir/bigint/bigint_kernel_1.cpp.i"
-	cd /home/troels/Projects/hi/dlib-build/dlib && /usr/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/troels/Projects/hi/lib/dlib-19.13/dlib/bigint/bigint_kernel_1.cpp > CMakeFiles/dlib.dir/bigint/bigint_kernel_1.cpp.i
+	cd /home/troels/Projects/hi/dlib-build/dlib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/troels/Projects/hi/lib/dlib-19.13/dlib/bigint/bigint_kernel_1.cpp > CMakeFiles/dlib.dir/bigint/bigint_kernel_1.cpp.i
 
 dlib-build/dlib/CMakeFiles/dlib.dir/bigint/bigint_kernel_1.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/dlib.dir/bigint/bigint_kernel_1.cpp.s"
-	cd /home/troels/Projects/hi/dlib-build/dlib && /usr/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/troels/Projects/hi/lib/dlib-19.13/dlib/bigint/bigint_kernel_1.cpp -o CMakeFiles/dlib.dir/bigint/bigint_kernel_1.cpp.s
+	cd /home/troels/Projects/hi/dlib-build/dlib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/troels/Projects/hi/lib/dlib-19.13/dlib/bigint/bigint_kernel_1.cpp -o CMakeFiles/dlib.dir/bigint/bigint_kernel_1.cpp.s
 
 dlib-build/dlib/CMakeFiles/dlib.dir/bigint/bigint_kernel_1.cpp.o.requires:
 
@@ -108,15 +108,15 @@ dlib-build/dlib/CMakeFiles/dlib.dir/bigint/bigint_kernel_1.cpp.o.provides.build:
 dlib-build/dlib/CMakeFiles/dlib.dir/bigint/bigint_kernel_2.cpp.o: dlib-build/dlib/CMakeFiles/dlib.dir/flags.make
 dlib-build/dlib/CMakeFiles/dlib.dir/bigint/bigint_kernel_2.cpp.o: lib/dlib-19.13/dlib/bigint/bigint_kernel_2.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/troels/Projects/hi/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object dlib-build/dlib/CMakeFiles/dlib.dir/bigint/bigint_kernel_2.cpp.o"
-	cd /home/troels/Projects/hi/dlib-build/dlib && /usr/bin/g++-8  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/dlib.dir/bigint/bigint_kernel_2.cpp.o -c /home/troels/Projects/hi/lib/dlib-19.13/dlib/bigint/bigint_kernel_2.cpp
+	cd /home/troels/Projects/hi/dlib-build/dlib && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/dlib.dir/bigint/bigint_kernel_2.cpp.o -c /home/troels/Projects/hi/lib/dlib-19.13/dlib/bigint/bigint_kernel_2.cpp
 
 dlib-build/dlib/CMakeFiles/dlib.dir/bigint/bigint_kernel_2.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/dlib.dir/bigint/bigint_kernel_2.cpp.i"
-	cd /home/troels/Projects/hi/dlib-build/dlib && /usr/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/troels/Projects/hi/lib/dlib-19.13/dlib/bigint/bigint_kernel_2.cpp > CMakeFiles/dlib.dir/bigint/bigint_kernel_2.cpp.i
+	cd /home/troels/Projects/hi/dlib-build/dlib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/troels/Projects/hi/lib/dlib-19.13/dlib/bigint/bigint_kernel_2.cpp > CMakeFiles/dlib.dir/bigint/bigint_kernel_2.cpp.i
 
 dlib-build/dlib/CMakeFiles/dlib.dir/bigint/bigint_kernel_2.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/dlib.dir/bigint/bigint_kernel_2.cpp.s"
-	cd /home/troels/Projects/hi/dlib-build/dlib && /usr/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/troels/Projects/hi/lib/dlib-19.13/dlib/bigint/bigint_kernel_2.cpp -o CMakeFiles/dlib.dir/bigint/bigint_kernel_2.cpp.s
+	cd /home/troels/Projects/hi/dlib-build/dlib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/troels/Projects/hi/lib/dlib-19.13/dlib/bigint/bigint_kernel_2.cpp -o CMakeFiles/dlib.dir/bigint/bigint_kernel_2.cpp.s
 
 dlib-build/dlib/CMakeFiles/dlib.dir/bigint/bigint_kernel_2.cpp.o.requires:
 
@@ -132,15 +132,15 @@ dlib-build/dlib/CMakeFiles/dlib.dir/bigint/bigint_kernel_2.cpp.o.provides.build:
 dlib-build/dlib/CMakeFiles/dlib.dir/bit_stream/bit_stream_kernel_1.cpp.o: dlib-build/dlib/CMakeFiles/dlib.dir/flags.make
 dlib-build/dlib/CMakeFiles/dlib.dir/bit_stream/bit_stream_kernel_1.cpp.o: lib/dlib-19.13/dlib/bit_stream/bit_stream_kernel_1.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/troels/Projects/hi/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object dlib-build/dlib/CMakeFiles/dlib.dir/bit_stream/bit_stream_kernel_1.cpp.o"
-	cd /home/troels/Projects/hi/dlib-build/dlib && /usr/bin/g++-8  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/dlib.dir/bit_stream/bit_stream_kernel_1.cpp.o -c /home/troels/Projects/hi/lib/dlib-19.13/dlib/bit_stream/bit_stream_kernel_1.cpp
+	cd /home/troels/Projects/hi/dlib-build/dlib && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/dlib.dir/bit_stream/bit_stream_kernel_1.cpp.o -c /home/troels/Projects/hi/lib/dlib-19.13/dlib/bit_stream/bit_stream_kernel_1.cpp
 
 dlib-build/dlib/CMakeFiles/dlib.dir/bit_stream/bit_stream_kernel_1.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/dlib.dir/bit_stream/bit_stream_kernel_1.cpp.i"
-	cd /home/troels/Projects/hi/dlib-build/dlib && /usr/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/troels/Projects/hi/lib/dlib-19.13/dlib/bit_stream/bit_stream_kernel_1.cpp > CMakeFiles/dlib.dir/bit_stream/bit_stream_kernel_1.cpp.i
+	cd /home/troels/Projects/hi/dlib-build/dlib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/troels/Projects/hi/lib/dlib-19.13/dlib/bit_stream/bit_stream_kernel_1.cpp > CMakeFiles/dlib.dir/bit_stream/bit_stream_kernel_1.cpp.i
 
 dlib-build/dlib/CMakeFiles/dlib.dir/bit_stream/bit_stream_kernel_1.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/dlib.dir/bit_stream/bit_stream_kernel_1.cpp.s"
-	cd /home/troels/Projects/hi/dlib-build/dlib && /usr/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/troels/Projects/hi/lib/dlib-19.13/dlib/bit_stream/bit_stream_kernel_1.cpp -o CMakeFiles/dlib.dir/bit_stream/bit_stream_kernel_1.cpp.s
+	cd /home/troels/Projects/hi/dlib-build/dlib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/troels/Projects/hi/lib/dlib-19.13/dlib/bit_stream/bit_stream_kernel_1.cpp -o CMakeFiles/dlib.dir/bit_stream/bit_stream_kernel_1.cpp.s
 
 dlib-build/dlib/CMakeFiles/dlib.dir/bit_stream/bit_stream_kernel_1.cpp.o.requires:
 
@@ -156,15 +156,15 @@ dlib-build/dlib/CMakeFiles/dlib.dir/bit_stream/bit_stream_kernel_1.cpp.o.provide
 dlib-build/dlib/CMakeFiles/dlib.dir/entropy_decoder/entropy_decoder_kernel_1.cpp.o: dlib-build/dlib/CMakeFiles/dlib.dir/flags.make
 dlib-build/dlib/CMakeFiles/dlib.dir/entropy_decoder/entropy_decoder_kernel_1.cpp.o: lib/dlib-19.13/dlib/entropy_decoder/entropy_decoder_kernel_1.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/troels/Projects/hi/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object dlib-build/dlib/CMakeFiles/dlib.dir/entropy_decoder/entropy_decoder_kernel_1.cpp.o"
-	cd /home/troels/Projects/hi/dlib-build/dlib && /usr/bin/g++-8  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/dlib.dir/entropy_decoder/entropy_decoder_kernel_1.cpp.o -c /home/troels/Projects/hi/lib/dlib-19.13/dlib/entropy_decoder/entropy_decoder_kernel_1.cpp
+	cd /home/troels/Projects/hi/dlib-build/dlib && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/dlib.dir/entropy_decoder/entropy_decoder_kernel_1.cpp.o -c /home/troels/Projects/hi/lib/dlib-19.13/dlib/entropy_decoder/entropy_decoder_kernel_1.cpp
 
 dlib-build/dlib/CMakeFiles/dlib.dir/entropy_decoder/entropy_decoder_kernel_1.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/dlib.dir/entropy_decoder/entropy_decoder_kernel_1.cpp.i"
-	cd /home/troels/Projects/hi/dlib-build/dlib && /usr/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/troels/Projects/hi/lib/dlib-19.13/dlib/entropy_decoder/entropy_decoder_kernel_1.cpp > CMakeFiles/dlib.dir/entropy_decoder/entropy_decoder_kernel_1.cpp.i
+	cd /home/troels/Projects/hi/dlib-build/dlib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/troels/Projects/hi/lib/dlib-19.13/dlib/entropy_decoder/entropy_decoder_kernel_1.cpp > CMakeFiles/dlib.dir/entropy_decoder/entropy_decoder_kernel_1.cpp.i
 
 dlib-build/dlib/CMakeFiles/dlib.dir/entropy_decoder/entropy_decoder_kernel_1.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/dlib.dir/entropy_decoder/entropy_decoder_kernel_1.cpp.s"
-	cd /home/troels/Projects/hi/dlib-build/dlib && /usr/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/troels/Projects/hi/lib/dlib-19.13/dlib/entropy_decoder/entropy_decoder_kernel_1.cpp -o CMakeFiles/dlib.dir/entropy_decoder/entropy_decoder_kernel_1.cpp.s
+	cd /home/troels/Projects/hi/dlib-build/dlib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/troels/Projects/hi/lib/dlib-19.13/dlib/entropy_decoder/entropy_decoder_kernel_1.cpp -o CMakeFiles/dlib.dir/entropy_decoder/entropy_decoder_kernel_1.cpp.s
 
 dlib-build/dlib/CMakeFiles/dlib.dir/entropy_decoder/entropy_decoder_kernel_1.cpp.o.requires:
 
@@ -180,15 +180,15 @@ dlib-build/dlib/CMakeFiles/dlib.dir/entropy_decoder/entropy_decoder_kernel_1.cpp
 dlib-build/dlib/CMakeFiles/dlib.dir/entropy_decoder/entropy_decoder_kernel_2.cpp.o: dlib-build/dlib/CMakeFiles/dlib.dir/flags.make
 dlib-build/dlib/CMakeFiles/dlib.dir/entropy_decoder/entropy_decoder_kernel_2.cpp.o: lib/dlib-19.13/dlib/entropy_decoder/entropy_decoder_kernel_2.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/troels/Projects/hi/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object dlib-build/dlib/CMakeFiles/dlib.dir/entropy_decoder/entropy_decoder_kernel_2.cpp.o"
-	cd /home/troels/Projects/hi/dlib-build/dlib && /usr/bin/g++-8  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/dlib.dir/entropy_decoder/entropy_decoder_kernel_2.cpp.o -c /home/troels/Projects/hi/lib/dlib-19.13/dlib/entropy_decoder/entropy_decoder_kernel_2.cpp
+	cd /home/troels/Projects/hi/dlib-build/dlib && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/dlib.dir/entropy_decoder/entropy_decoder_kernel_2.cpp.o -c /home/troels/Projects/hi/lib/dlib-19.13/dlib/entropy_decoder/entropy_decoder_kernel_2.cpp
 
 dlib-build/dlib/CMakeFiles/dlib.dir/entropy_decoder/entropy_decoder_kernel_2.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/dlib.dir/entropy_decoder/entropy_decoder_kernel_2.cpp.i"
-	cd /home/troels/Projects/hi/dlib-build/dlib && /usr/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/troels/Projects/hi/lib/dlib-19.13/dlib/entropy_decoder/entropy_decoder_kernel_2.cpp > CMakeFiles/dlib.dir/entropy_decoder/entropy_decoder_kernel_2.cpp.i
+	cd /home/troels/Projects/hi/dlib-build/dlib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/troels/Projects/hi/lib/dlib-19.13/dlib/entropy_decoder/entropy_decoder_kernel_2.cpp > CMakeFiles/dlib.dir/entropy_decoder/entropy_decoder_kernel_2.cpp.i
 
 dlib-build/dlib/CMakeFiles/dlib.dir/entropy_decoder/entropy_decoder_kernel_2.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/dlib.dir/entropy_decoder/entropy_decoder_kernel_2.cpp.s"
-	cd /home/troels/Projects/hi/dlib-build/dlib && /usr/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/troels/Projects/hi/lib/dlib-19.13/dlib/entropy_decoder/entropy_decoder_kernel_2.cpp -o CMakeFiles/dlib.dir/entropy_decoder/entropy_decoder_kernel_2.cpp.s
+	cd /home/troels/Projects/hi/dlib-build/dlib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/troels/Projects/hi/lib/dlib-19.13/dlib/entropy_decoder/entropy_decoder_kernel_2.cpp -o CMakeFiles/dlib.dir/entropy_decoder/entropy_decoder_kernel_2.cpp.s
 
 dlib-build/dlib/CMakeFiles/dlib.dir/entropy_decoder/entropy_decoder_kernel_2.cpp.o.requires:
 
@@ -204,15 +204,15 @@ dlib-build/dlib/CMakeFiles/dlib.dir/entropy_decoder/entropy_decoder_kernel_2.cpp
 dlib-build/dlib/CMakeFiles/dlib.dir/entropy_encoder/entropy_encoder_kernel_1.cpp.o: dlib-build/dlib/CMakeFiles/dlib.dir/flags.make
 dlib-build/dlib/CMakeFiles/dlib.dir/entropy_encoder/entropy_encoder_kernel_1.cpp.o: lib/dlib-19.13/dlib/entropy_encoder/entropy_encoder_kernel_1.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/troels/Projects/hi/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object dlib-build/dlib/CMakeFiles/dlib.dir/entropy_encoder/entropy_encoder_kernel_1.cpp.o"
-	cd /home/troels/Projects/hi/dlib-build/dlib && /usr/bin/g++-8  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/dlib.dir/entropy_encoder/entropy_encoder_kernel_1.cpp.o -c /home/troels/Projects/hi/lib/dlib-19.13/dlib/entropy_encoder/entropy_encoder_kernel_1.cpp
+	cd /home/troels/Projects/hi/dlib-build/dlib && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/dlib.dir/entropy_encoder/entropy_encoder_kernel_1.cpp.o -c /home/troels/Projects/hi/lib/dlib-19.13/dlib/entropy_encoder/entropy_encoder_kernel_1.cpp
 
 dlib-build/dlib/CMakeFiles/dlib.dir/entropy_encoder/entropy_encoder_kernel_1.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/dlib.dir/entropy_encoder/entropy_encoder_kernel_1.cpp.i"
-	cd /home/troels/Projects/hi/dlib-build/dlib && /usr/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/troels/Projects/hi/lib/dlib-19.13/dlib/entropy_encoder/entropy_encoder_kernel_1.cpp > CMakeFiles/dlib.dir/entropy_encoder/entropy_encoder_kernel_1.cpp.i
+	cd /home/troels/Projects/hi/dlib-build/dlib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/troels/Projects/hi/lib/dlib-19.13/dlib/entropy_encoder/entropy_encoder_kernel_1.cpp > CMakeFiles/dlib.dir/entropy_encoder/entropy_encoder_kernel_1.cpp.i
 
 dlib-build/dlib/CMakeFiles/dlib.dir/entropy_encoder/entropy_encoder_kernel_1.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/dlib.dir/entropy_encoder/entropy_encoder_kernel_1.cpp.s"
-	cd /home/troels/Projects/hi/dlib-build/dlib && /usr/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/troels/Projects/hi/lib/dlib-19.13/dlib/entropy_encoder/entropy_encoder_kernel_1.cpp -o CMakeFiles/dlib.dir/entropy_encoder/entropy_encoder_kernel_1.cpp.s
+	cd /home/troels/Projects/hi/dlib-build/dlib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/troels/Projects/hi/lib/dlib-19.13/dlib/entropy_encoder/entropy_encoder_kernel_1.cpp -o CMakeFiles/dlib.dir/entropy_encoder/entropy_encoder_kernel_1.cpp.s
 
 dlib-build/dlib/CMakeFiles/dlib.dir/entropy_encoder/entropy_encoder_kernel_1.cpp.o.requires:
 
@@ -228,15 +228,15 @@ dlib-build/dlib/CMakeFiles/dlib.dir/entropy_encoder/entropy_encoder_kernel_1.cpp
 dlib-build/dlib/CMakeFiles/dlib.dir/entropy_encoder/entropy_encoder_kernel_2.cpp.o: dlib-build/dlib/CMakeFiles/dlib.dir/flags.make
 dlib-build/dlib/CMakeFiles/dlib.dir/entropy_encoder/entropy_encoder_kernel_2.cpp.o: lib/dlib-19.13/dlib/entropy_encoder/entropy_encoder_kernel_2.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/troels/Projects/hi/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object dlib-build/dlib/CMakeFiles/dlib.dir/entropy_encoder/entropy_encoder_kernel_2.cpp.o"
-	cd /home/troels/Projects/hi/dlib-build/dlib && /usr/bin/g++-8  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/dlib.dir/entropy_encoder/entropy_encoder_kernel_2.cpp.o -c /home/troels/Projects/hi/lib/dlib-19.13/dlib/entropy_encoder/entropy_encoder_kernel_2.cpp
+	cd /home/troels/Projects/hi/dlib-build/dlib && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/dlib.dir/entropy_encoder/entropy_encoder_kernel_2.cpp.o -c /home/troels/Projects/hi/lib/dlib-19.13/dlib/entropy_encoder/entropy_encoder_kernel_2.cpp
 
 dlib-build/dlib/CMakeFiles/dlib.dir/entropy_encoder/entropy_encoder_kernel_2.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/dlib.dir/entropy_encoder/entropy_encoder_kernel_2.cpp.i"
-	cd /home/troels/Projects/hi/dlib-build/dlib && /usr/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/troels/Projects/hi/lib/dlib-19.13/dlib/entropy_encoder/entropy_encoder_kernel_2.cpp > CMakeFiles/dlib.dir/entropy_encoder/entropy_encoder_kernel_2.cpp.i
+	cd /home/troels/Projects/hi/dlib-build/dlib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/troels/Projects/hi/lib/dlib-19.13/dlib/entropy_encoder/entropy_encoder_kernel_2.cpp > CMakeFiles/dlib.dir/entropy_encoder/entropy_encoder_kernel_2.cpp.i
 
 dlib-build/dlib/CMakeFiles/dlib.dir/entropy_encoder/entropy_encoder_kernel_2.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/dlib.dir/entropy_encoder/entropy_encoder_kernel_2.cpp.s"
-	cd /home/troels/Projects/hi/dlib-build/dlib && /usr/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/troels/Projects/hi/lib/dlib-19.13/dlib/entropy_encoder/entropy_encoder_kernel_2.cpp -o CMakeFiles/dlib.dir/entropy_encoder/entropy_encoder_kernel_2.cpp.s
+	cd /home/troels/Projects/hi/dlib-build/dlib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/troels/Projects/hi/lib/dlib-19.13/dlib/entropy_encoder/entropy_encoder_kernel_2.cpp -o CMakeFiles/dlib.dir/entropy_encoder/entropy_encoder_kernel_2.cpp.s
 
 dlib-build/dlib/CMakeFiles/dlib.dir/entropy_encoder/entropy_encoder_kernel_2.cpp.o.requires:
 
@@ -252,15 +252,15 @@ dlib-build/dlib/CMakeFiles/dlib.dir/entropy_encoder/entropy_encoder_kernel_2.cpp
 dlib-build/dlib/CMakeFiles/dlib.dir/md5/md5_kernel_1.cpp.o: dlib-build/dlib/CMakeFiles/dlib.dir/flags.make
 dlib-build/dlib/CMakeFiles/dlib.dir/md5/md5_kernel_1.cpp.o: lib/dlib-19.13/dlib/md5/md5_kernel_1.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/troels/Projects/hi/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object dlib-build/dlib/CMakeFiles/dlib.dir/md5/md5_kernel_1.cpp.o"
-	cd /home/troels/Projects/hi/dlib-build/dlib && /usr/bin/g++-8  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/dlib.dir/md5/md5_kernel_1.cpp.o -c /home/troels/Projects/hi/lib/dlib-19.13/dlib/md5/md5_kernel_1.cpp
+	cd /home/troels/Projects/hi/dlib-build/dlib && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/dlib.dir/md5/md5_kernel_1.cpp.o -c /home/troels/Projects/hi/lib/dlib-19.13/dlib/md5/md5_kernel_1.cpp
 
 dlib-build/dlib/CMakeFiles/dlib.dir/md5/md5_kernel_1.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/dlib.dir/md5/md5_kernel_1.cpp.i"
-	cd /home/troels/Projects/hi/dlib-build/dlib && /usr/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/troels/Projects/hi/lib/dlib-19.13/dlib/md5/md5_kernel_1.cpp > CMakeFiles/dlib.dir/md5/md5_kernel_1.cpp.i
+	cd /home/troels/Projects/hi/dlib-build/dlib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/troels/Projects/hi/lib/dlib-19.13/dlib/md5/md5_kernel_1.cpp > CMakeFiles/dlib.dir/md5/md5_kernel_1.cpp.i
 
 dlib-build/dlib/CMakeFiles/dlib.dir/md5/md5_kernel_1.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/dlib.dir/md5/md5_kernel_1.cpp.s"
-	cd /home/troels/Projects/hi/dlib-build/dlib && /usr/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/troels/Projects/hi/lib/dlib-19.13/dlib/md5/md5_kernel_1.cpp -o CMakeFiles/dlib.dir/md5/md5_kernel_1.cpp.s
+	cd /home/troels/Projects/hi/dlib-build/dlib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/troels/Projects/hi/lib/dlib-19.13/dlib/md5/md5_kernel_1.cpp -o CMakeFiles/dlib.dir/md5/md5_kernel_1.cpp.s
 
 dlib-build/dlib/CMakeFiles/dlib.dir/md5/md5_kernel_1.cpp.o.requires:
 
@@ -276,15 +276,15 @@ dlib-build/dlib/CMakeFiles/dlib.dir/md5/md5_kernel_1.cpp.o.provides.build: dlib-
 dlib-build/dlib/CMakeFiles/dlib.dir/tokenizer/tokenizer_kernel_1.cpp.o: dlib-build/dlib/CMakeFiles/dlib.dir/flags.make
 dlib-build/dlib/CMakeFiles/dlib.dir/tokenizer/tokenizer_kernel_1.cpp.o: lib/dlib-19.13/dlib/tokenizer/tokenizer_kernel_1.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/troels/Projects/hi/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object dlib-build/dlib/CMakeFiles/dlib.dir/tokenizer/tokenizer_kernel_1.cpp.o"
-	cd /home/troels/Projects/hi/dlib-build/dlib && /usr/bin/g++-8  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/dlib.dir/tokenizer/tokenizer_kernel_1.cpp.o -c /home/troels/Projects/hi/lib/dlib-19.13/dlib/tokenizer/tokenizer_kernel_1.cpp
+	cd /home/troels/Projects/hi/dlib-build/dlib && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/dlib.dir/tokenizer/tokenizer_kernel_1.cpp.o -c /home/troels/Projects/hi/lib/dlib-19.13/dlib/tokenizer/tokenizer_kernel_1.cpp
 
 dlib-build/dlib/CMakeFiles/dlib.dir/tokenizer/tokenizer_kernel_1.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/dlib.dir/tokenizer/tokenizer_kernel_1.cpp.i"
-	cd /home/troels/Projects/hi/dlib-build/dlib && /usr/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/troels/Projects/hi/lib/dlib-19.13/dlib/tokenizer/tokenizer_kernel_1.cpp > CMakeFiles/dlib.dir/tokenizer/tokenizer_kernel_1.cpp.i
+	cd /home/troels/Projects/hi/dlib-build/dlib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/troels/Projects/hi/lib/dlib-19.13/dlib/tokenizer/tokenizer_kernel_1.cpp > CMakeFiles/dlib.dir/tokenizer/tokenizer_kernel_1.cpp.i
 
 dlib-build/dlib/CMakeFiles/dlib.dir/tokenizer/tokenizer_kernel_1.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/dlib.dir/tokenizer/tokenizer_kernel_1.cpp.s"
-	cd /home/troels/Projects/hi/dlib-build/dlib && /usr/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/troels/Projects/hi/lib/dlib-19.13/dlib/tokenizer/tokenizer_kernel_1.cpp -o CMakeFiles/dlib.dir/tokenizer/tokenizer_kernel_1.cpp.s
+	cd /home/troels/Projects/hi/dlib-build/dlib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/troels/Projects/hi/lib/dlib-19.13/dlib/tokenizer/tokenizer_kernel_1.cpp -o CMakeFiles/dlib.dir/tokenizer/tokenizer_kernel_1.cpp.s
 
 dlib-build/dlib/CMakeFiles/dlib.dir/tokenizer/tokenizer_kernel_1.cpp.o.requires:
 
@@ -300,15 +300,15 @@ dlib-build/dlib/CMakeFiles/dlib.dir/tokenizer/tokenizer_kernel_1.cpp.o.provides.
 dlib-build/dlib/CMakeFiles/dlib.dir/unicode/unicode.cpp.o: dlib-build/dlib/CMakeFiles/dlib.dir/flags.make
 dlib-build/dlib/CMakeFiles/dlib.dir/unicode/unicode.cpp.o: lib/dlib-19.13/dlib/unicode/unicode.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/troels/Projects/hi/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object dlib-build/dlib/CMakeFiles/dlib.dir/unicode/unicode.cpp.o"
-	cd /home/troels/Projects/hi/dlib-build/dlib && /usr/bin/g++-8  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/dlib.dir/unicode/unicode.cpp.o -c /home/troels/Projects/hi/lib/dlib-19.13/dlib/unicode/unicode.cpp
+	cd /home/troels/Projects/hi/dlib-build/dlib && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/dlib.dir/unicode/unicode.cpp.o -c /home/troels/Projects/hi/lib/dlib-19.13/dlib/unicode/unicode.cpp
 
 dlib-build/dlib/CMakeFiles/dlib.dir/unicode/unicode.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/dlib.dir/unicode/unicode.cpp.i"
-	cd /home/troels/Projects/hi/dlib-build/dlib && /usr/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/troels/Projects/hi/lib/dlib-19.13/dlib/unicode/unicode.cpp > CMakeFiles/dlib.dir/unicode/unicode.cpp.i
+	cd /home/troels/Projects/hi/dlib-build/dlib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/troels/Projects/hi/lib/dlib-19.13/dlib/unicode/unicode.cpp > CMakeFiles/dlib.dir/unicode/unicode.cpp.i
 
 dlib-build/dlib/CMakeFiles/dlib.dir/unicode/unicode.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/dlib.dir/unicode/unicode.cpp.s"
-	cd /home/troels/Projects/hi/dlib-build/dlib && /usr/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/troels/Projects/hi/lib/dlib-19.13/dlib/unicode/unicode.cpp -o CMakeFiles/dlib.dir/unicode/unicode.cpp.s
+	cd /home/troels/Projects/hi/dlib-build/dlib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/troels/Projects/hi/lib/dlib-19.13/dlib/unicode/unicode.cpp -o CMakeFiles/dlib.dir/unicode/unicode.cpp.s
 
 dlib-build/dlib/CMakeFiles/dlib.dir/unicode/unicode.cpp.o.requires:
 
@@ -324,15 +324,15 @@ dlib-build/dlib/CMakeFiles/dlib.dir/unicode/unicode.cpp.o.provides.build: dlib-b
 dlib-build/dlib/CMakeFiles/dlib.dir/data_io/image_dataset_metadata.cpp.o: dlib-build/dlib/CMakeFiles/dlib.dir/flags.make
 dlib-build/dlib/CMakeFiles/dlib.dir/data_io/image_dataset_metadata.cpp.o: lib/dlib-19.13/dlib/data_io/image_dataset_metadata.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/troels/Projects/hi/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object dlib-build/dlib/CMakeFiles/dlib.dir/data_io/image_dataset_metadata.cpp.o"
-	cd /home/troels/Projects/hi/dlib-build/dlib && /usr/bin/g++-8  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/dlib.dir/data_io/image_dataset_metadata.cpp.o -c /home/troels/Projects/hi/lib/dlib-19.13/dlib/data_io/image_dataset_metadata.cpp
+	cd /home/troels/Projects/hi/dlib-build/dlib && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/dlib.dir/data_io/image_dataset_metadata.cpp.o -c /home/troels/Projects/hi/lib/dlib-19.13/dlib/data_io/image_dataset_metadata.cpp
 
 dlib-build/dlib/CMakeFiles/dlib.dir/data_io/image_dataset_metadata.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/dlib.dir/data_io/image_dataset_metadata.cpp.i"
-	cd /home/troels/Projects/hi/dlib-build/dlib && /usr/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/troels/Projects/hi/lib/dlib-19.13/dlib/data_io/image_dataset_metadata.cpp > CMakeFiles/dlib.dir/data_io/image_dataset_metadata.cpp.i
+	cd /home/troels/Projects/hi/dlib-build/dlib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/troels/Projects/hi/lib/dlib-19.13/dlib/data_io/image_dataset_metadata.cpp > CMakeFiles/dlib.dir/data_io/image_dataset_metadata.cpp.i
 
 dlib-build/dlib/CMakeFiles/dlib.dir/data_io/image_dataset_metadata.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/dlib.dir/data_io/image_dataset_metadata.cpp.s"
-	cd /home/troels/Projects/hi/dlib-build/dlib && /usr/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/troels/Projects/hi/lib/dlib-19.13/dlib/data_io/image_dataset_metadata.cpp -o CMakeFiles/dlib.dir/data_io/image_dataset_metadata.cpp.s
+	cd /home/troels/Projects/hi/dlib-build/dlib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/troels/Projects/hi/lib/dlib-19.13/dlib/data_io/image_dataset_metadata.cpp -o CMakeFiles/dlib.dir/data_io/image_dataset_metadata.cpp.s
 
 dlib-build/dlib/CMakeFiles/dlib.dir/data_io/image_dataset_metadata.cpp.o.requires:
 
@@ -348,15 +348,15 @@ dlib-build/dlib/CMakeFiles/dlib.dir/data_io/image_dataset_metadata.cpp.o.provide
 dlib-build/dlib/CMakeFiles/dlib.dir/data_io/mnist.cpp.o: dlib-build/dlib/CMakeFiles/dlib.dir/flags.make
 dlib-build/dlib/CMakeFiles/dlib.dir/data_io/mnist.cpp.o: lib/dlib-19.13/dlib/data_io/mnist.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/troels/Projects/hi/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object dlib-build/dlib/CMakeFiles/dlib.dir/data_io/mnist.cpp.o"
-	cd /home/troels/Projects/hi/dlib-build/dlib && /usr/bin/g++-8  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/dlib.dir/data_io/mnist.cpp.o -c /home/troels/Projects/hi/lib/dlib-19.13/dlib/data_io/mnist.cpp
+	cd /home/troels/Projects/hi/dlib-build/dlib && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/dlib.dir/data_io/mnist.cpp.o -c /home/troels/Projects/hi/lib/dlib-19.13/dlib/data_io/mnist.cpp
 
 dlib-build/dlib/CMakeFiles/dlib.dir/data_io/mnist.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/dlib.dir/data_io/mnist.cpp.i"
-	cd /home/troels/Projects/hi/dlib-build/dlib && /usr/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/troels/Projects/hi/lib/dlib-19.13/dlib/data_io/mnist.cpp > CMakeFiles/dlib.dir/data_io/mnist.cpp.i
+	cd /home/troels/Projects/hi/dlib-build/dlib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/troels/Projects/hi/lib/dlib-19.13/dlib/data_io/mnist.cpp > CMakeFiles/dlib.dir/data_io/mnist.cpp.i
 
 dlib-build/dlib/CMakeFiles/dlib.dir/data_io/mnist.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/dlib.dir/data_io/mnist.cpp.s"
-	cd /home/troels/Projects/hi/dlib-build/dlib && /usr/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/troels/Projects/hi/lib/dlib-19.13/dlib/data_io/mnist.cpp -o CMakeFiles/dlib.dir/data_io/mnist.cpp.s
+	cd /home/troels/Projects/hi/dlib-build/dlib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/troels/Projects/hi/lib/dlib-19.13/dlib/data_io/mnist.cpp -o CMakeFiles/dlib.dir/data_io/mnist.cpp.s
 
 dlib-build/dlib/CMakeFiles/dlib.dir/data_io/mnist.cpp.o.requires:
 
@@ -372,15 +372,15 @@ dlib-build/dlib/CMakeFiles/dlib.dir/data_io/mnist.cpp.o.provides.build: dlib-bui
 dlib-build/dlib/CMakeFiles/dlib.dir/global_optimization/global_function_search.cpp.o: dlib-build/dlib/CMakeFiles/dlib.dir/flags.make
 dlib-build/dlib/CMakeFiles/dlib.dir/global_optimization/global_function_search.cpp.o: lib/dlib-19.13/dlib/global_optimization/global_function_search.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/troels/Projects/hi/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object dlib-build/dlib/CMakeFiles/dlib.dir/global_optimization/global_function_search.cpp.o"
-	cd /home/troels/Projects/hi/dlib-build/dlib && /usr/bin/g++-8  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/dlib.dir/global_optimization/global_function_search.cpp.o -c /home/troels/Projects/hi/lib/dlib-19.13/dlib/global_optimization/global_function_search.cpp
+	cd /home/troels/Projects/hi/dlib-build/dlib && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/dlib.dir/global_optimization/global_function_search.cpp.o -c /home/troels/Projects/hi/lib/dlib-19.13/dlib/global_optimization/global_function_search.cpp
 
 dlib-build/dlib/CMakeFiles/dlib.dir/global_optimization/global_function_search.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/dlib.dir/global_optimization/global_function_search.cpp.i"
-	cd /home/troels/Projects/hi/dlib-build/dlib && /usr/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/troels/Projects/hi/lib/dlib-19.13/dlib/global_optimization/global_function_search.cpp > CMakeFiles/dlib.dir/global_optimization/global_function_search.cpp.i
+	cd /home/troels/Projects/hi/dlib-build/dlib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/troels/Projects/hi/lib/dlib-19.13/dlib/global_optimization/global_function_search.cpp > CMakeFiles/dlib.dir/global_optimization/global_function_search.cpp.i
 
 dlib-build/dlib/CMakeFiles/dlib.dir/global_optimization/global_function_search.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/dlib.dir/global_optimization/global_function_search.cpp.s"
-	cd /home/troels/Projects/hi/dlib-build/dlib && /usr/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/troels/Projects/hi/lib/dlib-19.13/dlib/global_optimization/global_function_search.cpp -o CMakeFiles/dlib.dir/global_optimization/global_function_search.cpp.s
+	cd /home/troels/Projects/hi/dlib-build/dlib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/troels/Projects/hi/lib/dlib-19.13/dlib/global_optimization/global_function_search.cpp -o CMakeFiles/dlib.dir/global_optimization/global_function_search.cpp.s
 
 dlib-build/dlib/CMakeFiles/dlib.dir/global_optimization/global_function_search.cpp.o.requires:
 
@@ -396,15 +396,15 @@ dlib-build/dlib/CMakeFiles/dlib.dir/global_optimization/global_function_search.c
 dlib-build/dlib/CMakeFiles/dlib.dir/filtering/kalman_filter.cpp.o: dlib-build/dlib/CMakeFiles/dlib.dir/flags.make
 dlib-build/dlib/CMakeFiles/dlib.dir/filtering/kalman_filter.cpp.o: lib/dlib-19.13/dlib/filtering/kalman_filter.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/troels/Projects/hi/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object dlib-build/dlib/CMakeFiles/dlib.dir/filtering/kalman_filter.cpp.o"
-	cd /home/troels/Projects/hi/dlib-build/dlib && /usr/bin/g++-8  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/dlib.dir/filtering/kalman_filter.cpp.o -c /home/troels/Projects/hi/lib/dlib-19.13/dlib/filtering/kalman_filter.cpp
+	cd /home/troels/Projects/hi/dlib-build/dlib && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/dlib.dir/filtering/kalman_filter.cpp.o -c /home/troels/Projects/hi/lib/dlib-19.13/dlib/filtering/kalman_filter.cpp
 
 dlib-build/dlib/CMakeFiles/dlib.dir/filtering/kalman_filter.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/dlib.dir/filtering/kalman_filter.cpp.i"
-	cd /home/troels/Projects/hi/dlib-build/dlib && /usr/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/troels/Projects/hi/lib/dlib-19.13/dlib/filtering/kalman_filter.cpp > CMakeFiles/dlib.dir/filtering/kalman_filter.cpp.i
+	cd /home/troels/Projects/hi/dlib-build/dlib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/troels/Projects/hi/lib/dlib-19.13/dlib/filtering/kalman_filter.cpp > CMakeFiles/dlib.dir/filtering/kalman_filter.cpp.i
 
 dlib-build/dlib/CMakeFiles/dlib.dir/filtering/kalman_filter.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/dlib.dir/filtering/kalman_filter.cpp.s"
-	cd /home/troels/Projects/hi/dlib-build/dlib && /usr/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/troels/Projects/hi/lib/dlib-19.13/dlib/filtering/kalman_filter.cpp -o CMakeFiles/dlib.dir/filtering/kalman_filter.cpp.s
+	cd /home/troels/Projects/hi/dlib-build/dlib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/troels/Projects/hi/lib/dlib-19.13/dlib/filtering/kalman_filter.cpp -o CMakeFiles/dlib.dir/filtering/kalman_filter.cpp.s
 
 dlib-build/dlib/CMakeFiles/dlib.dir/filtering/kalman_filter.cpp.o.requires:
 
@@ -420,15 +420,15 @@ dlib-build/dlib/CMakeFiles/dlib.dir/filtering/kalman_filter.cpp.o.provides.build
 dlib-build/dlib/CMakeFiles/dlib.dir/test_for_odr_violations.cpp.o: dlib-build/dlib/CMakeFiles/dlib.dir/flags.make
 dlib-build/dlib/CMakeFiles/dlib.dir/test_for_odr_violations.cpp.o: lib/dlib-19.13/dlib/test_for_odr_violations.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/troels/Projects/hi/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object dlib-build/dlib/CMakeFiles/dlib.dir/test_for_odr_violations.cpp.o"
-	cd /home/troels/Projects/hi/dlib-build/dlib && /usr/bin/g++-8  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/dlib.dir/test_for_odr_violations.cpp.o -c /home/troels/Projects/hi/lib/dlib-19.13/dlib/test_for_odr_violations.cpp
+	cd /home/troels/Projects/hi/dlib-build/dlib && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/dlib.dir/test_for_odr_violations.cpp.o -c /home/troels/Projects/hi/lib/dlib-19.13/dlib/test_for_odr_violations.cpp
 
 dlib-build/dlib/CMakeFiles/dlib.dir/test_for_odr_violations.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/dlib.dir/test_for_odr_violations.cpp.i"
-	cd /home/troels/Projects/hi/dlib-build/dlib && /usr/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/troels/Projects/hi/lib/dlib-19.13/dlib/test_for_odr_violations.cpp > CMakeFiles/dlib.dir/test_for_odr_violations.cpp.i
+	cd /home/troels/Projects/hi/dlib-build/dlib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/troels/Projects/hi/lib/dlib-19.13/dlib/test_for_odr_violations.cpp > CMakeFiles/dlib.dir/test_for_odr_violations.cpp.i
 
 dlib-build/dlib/CMakeFiles/dlib.dir/test_for_odr_violations.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/dlib.dir/test_for_odr_violations.cpp.s"
-	cd /home/troels/Projects/hi/dlib-build/dlib && /usr/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/troels/Projects/hi/lib/dlib-19.13/dlib/test_for_odr_violations.cpp -o CMakeFiles/dlib.dir/test_for_odr_violations.cpp.s
+	cd /home/troels/Projects/hi/dlib-build/dlib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/troels/Projects/hi/lib/dlib-19.13/dlib/test_for_odr_violations.cpp -o CMakeFiles/dlib.dir/test_for_odr_violations.cpp.s
 
 dlib-build/dlib/CMakeFiles/dlib.dir/test_for_odr_violations.cpp.o.requires:
 
@@ -444,15 +444,15 @@ dlib-build/dlib/CMakeFiles/dlib.dir/test_for_odr_violations.cpp.o.provides.build
 dlib-build/dlib/CMakeFiles/dlib.dir/sockets/sockets_kernel_1.cpp.o: dlib-build/dlib/CMakeFiles/dlib.dir/flags.make
 dlib-build/dlib/CMakeFiles/dlib.dir/sockets/sockets_kernel_1.cpp.o: lib/dlib-19.13/dlib/sockets/sockets_kernel_1.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/troels/Projects/hi/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object dlib-build/dlib/CMakeFiles/dlib.dir/sockets/sockets_kernel_1.cpp.o"
-	cd /home/troels/Projects/hi/dlib-build/dlib && /usr/bin/g++-8  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/dlib.dir/sockets/sockets_kernel_1.cpp.o -c /home/troels/Projects/hi/lib/dlib-19.13/dlib/sockets/sockets_kernel_1.cpp
+	cd /home/troels/Projects/hi/dlib-build/dlib && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/dlib.dir/sockets/sockets_kernel_1.cpp.o -c /home/troels/Projects/hi/lib/dlib-19.13/dlib/sockets/sockets_kernel_1.cpp
 
 dlib-build/dlib/CMakeFiles/dlib.dir/sockets/sockets_kernel_1.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/dlib.dir/sockets/sockets_kernel_1.cpp.i"
-	cd /home/troels/Projects/hi/dlib-build/dlib && /usr/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/troels/Projects/hi/lib/dlib-19.13/dlib/sockets/sockets_kernel_1.cpp > CMakeFiles/dlib.dir/sockets/sockets_kernel_1.cpp.i
+	cd /home/troels/Projects/hi/dlib-build/dlib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/troels/Projects/hi/lib/dlib-19.13/dlib/sockets/sockets_kernel_1.cpp > CMakeFiles/dlib.dir/sockets/sockets_kernel_1.cpp.i
 
 dlib-build/dlib/CMakeFiles/dlib.dir/sockets/sockets_kernel_1.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/dlib.dir/sockets/sockets_kernel_1.cpp.s"
-	cd /home/troels/Projects/hi/dlib-build/dlib && /usr/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/troels/Projects/hi/lib/dlib-19.13/dlib/sockets/sockets_kernel_1.cpp -o CMakeFiles/dlib.dir/sockets/sockets_kernel_1.cpp.s
+	cd /home/troels/Projects/hi/dlib-build/dlib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/troels/Projects/hi/lib/dlib-19.13/dlib/sockets/sockets_kernel_1.cpp -o CMakeFiles/dlib.dir/sockets/sockets_kernel_1.cpp.s
 
 dlib-build/dlib/CMakeFiles/dlib.dir/sockets/sockets_kernel_1.cpp.o.requires:
 
@@ -468,15 +468,15 @@ dlib-build/dlib/CMakeFiles/dlib.dir/sockets/sockets_kernel_1.cpp.o.provides.buil
 dlib-build/dlib/CMakeFiles/dlib.dir/bsp/bsp.cpp.o: dlib-build/dlib/CMakeFiles/dlib.dir/flags.make
 dlib-build/dlib/CMakeFiles/dlib.dir/bsp/bsp.cpp.o: lib/dlib-19.13/dlib/bsp/bsp.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/troels/Projects/hi/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object dlib-build/dlib/CMakeFiles/dlib.dir/bsp/bsp.cpp.o"
-	cd /home/troels/Projects/hi/dlib-build/dlib && /usr/bin/g++-8  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/dlib.dir/bsp/bsp.cpp.o -c /home/troels/Projects/hi/lib/dlib-19.13/dlib/bsp/bsp.cpp
+	cd /home/troels/Projects/hi/dlib-build/dlib && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/dlib.dir/bsp/bsp.cpp.o -c /home/troels/Projects/hi/lib/dlib-19.13/dlib/bsp/bsp.cpp
 
 dlib-build/dlib/CMakeFiles/dlib.dir/bsp/bsp.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/dlib.dir/bsp/bsp.cpp.i"
-	cd /home/troels/Projects/hi/dlib-build/dlib && /usr/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/troels/Projects/hi/lib/dlib-19.13/dlib/bsp/bsp.cpp > CMakeFiles/dlib.dir/bsp/bsp.cpp.i
+	cd /home/troels/Projects/hi/dlib-build/dlib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/troels/Projects/hi/lib/dlib-19.13/dlib/bsp/bsp.cpp > CMakeFiles/dlib.dir/bsp/bsp.cpp.i
 
 dlib-build/dlib/CMakeFiles/dlib.dir/bsp/bsp.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/dlib.dir/bsp/bsp.cpp.s"
-	cd /home/troels/Projects/hi/dlib-build/dlib && /usr/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/troels/Projects/hi/lib/dlib-19.13/dlib/bsp/bsp.cpp -o CMakeFiles/dlib.dir/bsp/bsp.cpp.s
+	cd /home/troels/Projects/hi/dlib-build/dlib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/troels/Projects/hi/lib/dlib-19.13/dlib/bsp/bsp.cpp -o CMakeFiles/dlib.dir/bsp/bsp.cpp.s
 
 dlib-build/dlib/CMakeFiles/dlib.dir/bsp/bsp.cpp.o.requires:
 
@@ -492,15 +492,15 @@ dlib-build/dlib/CMakeFiles/dlib.dir/bsp/bsp.cpp.o.provides.build: dlib-build/dli
 dlib-build/dlib/CMakeFiles/dlib.dir/dir_nav/dir_nav_kernel_1.cpp.o: dlib-build/dlib/CMakeFiles/dlib.dir/flags.make
 dlib-build/dlib/CMakeFiles/dlib.dir/dir_nav/dir_nav_kernel_1.cpp.o: lib/dlib-19.13/dlib/dir_nav/dir_nav_kernel_1.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/troels/Projects/hi/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building CXX object dlib-build/dlib/CMakeFiles/dlib.dir/dir_nav/dir_nav_kernel_1.cpp.o"
-	cd /home/troels/Projects/hi/dlib-build/dlib && /usr/bin/g++-8  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/dlib.dir/dir_nav/dir_nav_kernel_1.cpp.o -c /home/troels/Projects/hi/lib/dlib-19.13/dlib/dir_nav/dir_nav_kernel_1.cpp
+	cd /home/troels/Projects/hi/dlib-build/dlib && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/dlib.dir/dir_nav/dir_nav_kernel_1.cpp.o -c /home/troels/Projects/hi/lib/dlib-19.13/dlib/dir_nav/dir_nav_kernel_1.cpp
 
 dlib-build/dlib/CMakeFiles/dlib.dir/dir_nav/dir_nav_kernel_1.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/dlib.dir/dir_nav/dir_nav_kernel_1.cpp.i"
-	cd /home/troels/Projects/hi/dlib-build/dlib && /usr/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/troels/Projects/hi/lib/dlib-19.13/dlib/dir_nav/dir_nav_kernel_1.cpp > CMakeFiles/dlib.dir/dir_nav/dir_nav_kernel_1.cpp.i
+	cd /home/troels/Projects/hi/dlib-build/dlib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/troels/Projects/hi/lib/dlib-19.13/dlib/dir_nav/dir_nav_kernel_1.cpp > CMakeFiles/dlib.dir/dir_nav/dir_nav_kernel_1.cpp.i
 
 dlib-build/dlib/CMakeFiles/dlib.dir/dir_nav/dir_nav_kernel_1.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/dlib.dir/dir_nav/dir_nav_kernel_1.cpp.s"
-	cd /home/troels/Projects/hi/dlib-build/dlib && /usr/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/troels/Projects/hi/lib/dlib-19.13/dlib/dir_nav/dir_nav_kernel_1.cpp -o CMakeFiles/dlib.dir/dir_nav/dir_nav_kernel_1.cpp.s
+	cd /home/troels/Projects/hi/dlib-build/dlib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/troels/Projects/hi/lib/dlib-19.13/dlib/dir_nav/dir_nav_kernel_1.cpp -o CMakeFiles/dlib.dir/dir_nav/dir_nav_kernel_1.cpp.s
 
 dlib-build/dlib/CMakeFiles/dlib.dir/dir_nav/dir_nav_kernel_1.cpp.o.requires:
 
@@ -516,15 +516,15 @@ dlib-build/dlib/CMakeFiles/dlib.dir/dir_nav/dir_nav_kernel_1.cpp.o.provides.buil
 dlib-build/dlib/CMakeFiles/dlib.dir/dir_nav/dir_nav_kernel_2.cpp.o: dlib-build/dlib/CMakeFiles/dlib.dir/flags.make
 dlib-build/dlib/CMakeFiles/dlib.dir/dir_nav/dir_nav_kernel_2.cpp.o: lib/dlib-19.13/dlib/dir_nav/dir_nav_kernel_2.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/troels/Projects/hi/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building CXX object dlib-build/dlib/CMakeFiles/dlib.dir/dir_nav/dir_nav_kernel_2.cpp.o"
-	cd /home/troels/Projects/hi/dlib-build/dlib && /usr/bin/g++-8  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/dlib.dir/dir_nav/dir_nav_kernel_2.cpp.o -c /home/troels/Projects/hi/lib/dlib-19.13/dlib/dir_nav/dir_nav_kernel_2.cpp
+	cd /home/troels/Projects/hi/dlib-build/dlib && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/dlib.dir/dir_nav/dir_nav_kernel_2.cpp.o -c /home/troels/Projects/hi/lib/dlib-19.13/dlib/dir_nav/dir_nav_kernel_2.cpp
 
 dlib-build/dlib/CMakeFiles/dlib.dir/dir_nav/dir_nav_kernel_2.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/dlib.dir/dir_nav/dir_nav_kernel_2.cpp.i"
-	cd /home/troels/Projects/hi/dlib-build/dlib && /usr/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/troels/Projects/hi/lib/dlib-19.13/dlib/dir_nav/dir_nav_kernel_2.cpp > CMakeFiles/dlib.dir/dir_nav/dir_nav_kernel_2.cpp.i
+	cd /home/troels/Projects/hi/dlib-build/dlib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/troels/Projects/hi/lib/dlib-19.13/dlib/dir_nav/dir_nav_kernel_2.cpp > CMakeFiles/dlib.dir/dir_nav/dir_nav_kernel_2.cpp.i
 
 dlib-build/dlib/CMakeFiles/dlib.dir/dir_nav/dir_nav_kernel_2.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/dlib.dir/dir_nav/dir_nav_kernel_2.cpp.s"
-	cd /home/troels/Projects/hi/dlib-build/dlib && /usr/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/troels/Projects/hi/lib/dlib-19.13/dlib/dir_nav/dir_nav_kernel_2.cpp -o CMakeFiles/dlib.dir/dir_nav/dir_nav_kernel_2.cpp.s
+	cd /home/troels/Projects/hi/dlib-build/dlib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/troels/Projects/hi/lib/dlib-19.13/dlib/dir_nav/dir_nav_kernel_2.cpp -o CMakeFiles/dlib.dir/dir_nav/dir_nav_kernel_2.cpp.s
 
 dlib-build/dlib/CMakeFiles/dlib.dir/dir_nav/dir_nav_kernel_2.cpp.o.requires:
 
@@ -540,15 +540,15 @@ dlib-build/dlib/CMakeFiles/dlib.dir/dir_nav/dir_nav_kernel_2.cpp.o.provides.buil
 dlib-build/dlib/CMakeFiles/dlib.dir/dir_nav/dir_nav_extensions.cpp.o: dlib-build/dlib/CMakeFiles/dlib.dir/flags.make
 dlib-build/dlib/CMakeFiles/dlib.dir/dir_nav/dir_nav_extensions.cpp.o: lib/dlib-19.13/dlib/dir_nav/dir_nav_extensions.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/troels/Projects/hi/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building CXX object dlib-build/dlib/CMakeFiles/dlib.dir/dir_nav/dir_nav_extensions.cpp.o"
-	cd /home/troels/Projects/hi/dlib-build/dlib && /usr/bin/g++-8  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/dlib.dir/dir_nav/dir_nav_extensions.cpp.o -c /home/troels/Projects/hi/lib/dlib-19.13/dlib/dir_nav/dir_nav_extensions.cpp
+	cd /home/troels/Projects/hi/dlib-build/dlib && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/dlib.dir/dir_nav/dir_nav_extensions.cpp.o -c /home/troels/Projects/hi/lib/dlib-19.13/dlib/dir_nav/dir_nav_extensions.cpp
 
 dlib-build/dlib/CMakeFiles/dlib.dir/dir_nav/dir_nav_extensions.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/dlib.dir/dir_nav/dir_nav_extensions.cpp.i"
-	cd /home/troels/Projects/hi/dlib-build/dlib && /usr/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/troels/Projects/hi/lib/dlib-19.13/dlib/dir_nav/dir_nav_extensions.cpp > CMakeFiles/dlib.dir/dir_nav/dir_nav_extensions.cpp.i
+	cd /home/troels/Projects/hi/dlib-build/dlib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/troels/Projects/hi/lib/dlib-19.13/dlib/dir_nav/dir_nav_extensions.cpp > CMakeFiles/dlib.dir/dir_nav/dir_nav_extensions.cpp.i
 
 dlib-build/dlib/CMakeFiles/dlib.dir/dir_nav/dir_nav_extensions.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/dlib.dir/dir_nav/dir_nav_extensions.cpp.s"
-	cd /home/troels/Projects/hi/dlib-build/dlib && /usr/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/troels/Projects/hi/lib/dlib-19.13/dlib/dir_nav/dir_nav_extensions.cpp -o CMakeFiles/dlib.dir/dir_nav/dir_nav_extensions.cpp.s
+	cd /home/troels/Projects/hi/dlib-build/dlib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/troels/Projects/hi/lib/dlib-19.13/dlib/dir_nav/dir_nav_extensions.cpp -o CMakeFiles/dlib.dir/dir_nav/dir_nav_extensions.cpp.s
 
 dlib-build/dlib/CMakeFiles/dlib.dir/dir_nav/dir_nav_extensions.cpp.o.requires:
 
@@ -564,15 +564,15 @@ dlib-build/dlib/CMakeFiles/dlib.dir/dir_nav/dir_nav_extensions.cpp.o.provides.bu
 dlib-build/dlib/CMakeFiles/dlib.dir/linker/linker_kernel_1.cpp.o: dlib-build/dlib/CMakeFiles/dlib.dir/flags.make
 dlib-build/dlib/CMakeFiles/dlib.dir/linker/linker_kernel_1.cpp.o: lib/dlib-19.13/dlib/linker/linker_kernel_1.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/troels/Projects/hi/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building CXX object dlib-build/dlib/CMakeFiles/dlib.dir/linker/linker_kernel_1.cpp.o"
-	cd /home/troels/Projects/hi/dlib-build/dlib && /usr/bin/g++-8  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/dlib.dir/linker/linker_kernel_1.cpp.o -c /home/troels/Projects/hi/lib/dlib-19.13/dlib/linker/linker_kernel_1.cpp
+	cd /home/troels/Projects/hi/dlib-build/dlib && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/dlib.dir/linker/linker_kernel_1.cpp.o -c /home/troels/Projects/hi/lib/dlib-19.13/dlib/linker/linker_kernel_1.cpp
 
 dlib-build/dlib/CMakeFiles/dlib.dir/linker/linker_kernel_1.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/dlib.dir/linker/linker_kernel_1.cpp.i"
-	cd /home/troels/Projects/hi/dlib-build/dlib && /usr/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/troels/Projects/hi/lib/dlib-19.13/dlib/linker/linker_kernel_1.cpp > CMakeFiles/dlib.dir/linker/linker_kernel_1.cpp.i
+	cd /home/troels/Projects/hi/dlib-build/dlib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/troels/Projects/hi/lib/dlib-19.13/dlib/linker/linker_kernel_1.cpp > CMakeFiles/dlib.dir/linker/linker_kernel_1.cpp.i
 
 dlib-build/dlib/CMakeFiles/dlib.dir/linker/linker_kernel_1.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/dlib.dir/linker/linker_kernel_1.cpp.s"
-	cd /home/troels/Projects/hi/dlib-build/dlib && /usr/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/troels/Projects/hi/lib/dlib-19.13/dlib/linker/linker_kernel_1.cpp -o CMakeFiles/dlib.dir/linker/linker_kernel_1.cpp.s
+	cd /home/troels/Projects/hi/dlib-build/dlib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/troels/Projects/hi/lib/dlib-19.13/dlib/linker/linker_kernel_1.cpp -o CMakeFiles/dlib.dir/linker/linker_kernel_1.cpp.s
 
 dlib-build/dlib/CMakeFiles/dlib.dir/linker/linker_kernel_1.cpp.o.requires:
 
@@ -588,15 +588,15 @@ dlib-build/dlib/CMakeFiles/dlib.dir/linker/linker_kernel_1.cpp.o.provides.build:
 dlib-build/dlib/CMakeFiles/dlib.dir/logger/extra_logger_headers.cpp.o: dlib-build/dlib/CMakeFiles/dlib.dir/flags.make
 dlib-build/dlib/CMakeFiles/dlib.dir/logger/extra_logger_headers.cpp.o: lib/dlib-19.13/dlib/logger/extra_logger_headers.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/troels/Projects/hi/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building CXX object dlib-build/dlib/CMakeFiles/dlib.dir/logger/extra_logger_headers.cpp.o"
-	cd /home/troels/Projects/hi/dlib-build/dlib && /usr/bin/g++-8  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/dlib.dir/logger/extra_logger_headers.cpp.o -c /home/troels/Projects/hi/lib/dlib-19.13/dlib/logger/extra_logger_headers.cpp
+	cd /home/troels/Projects/hi/dlib-build/dlib && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/dlib.dir/logger/extra_logger_headers.cpp.o -c /home/troels/Projects/hi/lib/dlib-19.13/dlib/logger/extra_logger_headers.cpp
 
 dlib-build/dlib/CMakeFiles/dlib.dir/logger/extra_logger_headers.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/dlib.dir/logger/extra_logger_headers.cpp.i"
-	cd /home/troels/Projects/hi/dlib-build/dlib && /usr/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/troels/Projects/hi/lib/dlib-19.13/dlib/logger/extra_logger_headers.cpp > CMakeFiles/dlib.dir/logger/extra_logger_headers.cpp.i
+	cd /home/troels/Projects/hi/dlib-build/dlib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/troels/Projects/hi/lib/dlib-19.13/dlib/logger/extra_logger_headers.cpp > CMakeFiles/dlib.dir/logger/extra_logger_headers.cpp.i
 
 dlib-build/dlib/CMakeFiles/dlib.dir/logger/extra_logger_headers.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/dlib.dir/logger/extra_logger_headers.cpp.s"
-	cd /home/troels/Projects/hi/dlib-build/dlib && /usr/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/troels/Projects/hi/lib/dlib-19.13/dlib/logger/extra_logger_headers.cpp -o CMakeFiles/dlib.dir/logger/extra_logger_headers.cpp.s
+	cd /home/troels/Projects/hi/dlib-build/dlib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/troels/Projects/hi/lib/dlib-19.13/dlib/logger/extra_logger_headers.cpp -o CMakeFiles/dlib.dir/logger/extra_logger_headers.cpp.s
 
 dlib-build/dlib/CMakeFiles/dlib.dir/logger/extra_logger_headers.cpp.o.requires:
 
@@ -612,15 +612,15 @@ dlib-build/dlib/CMakeFiles/dlib.dir/logger/extra_logger_headers.cpp.o.provides.b
 dlib-build/dlib/CMakeFiles/dlib.dir/logger/logger_kernel_1.cpp.o: dlib-build/dlib/CMakeFiles/dlib.dir/flags.make
 dlib-build/dlib/CMakeFiles/dlib.dir/logger/logger_kernel_1.cpp.o: lib/dlib-19.13/dlib/logger/logger_kernel_1.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/troels/Projects/hi/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building CXX object dlib-build/dlib/CMakeFiles/dlib.dir/logger/logger_kernel_1.cpp.o"
-	cd /home/troels/Projects/hi/dlib-build/dlib && /usr/bin/g++-8  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/dlib.dir/logger/logger_kernel_1.cpp.o -c /home/troels/Projects/hi/lib/dlib-19.13/dlib/logger/logger_kernel_1.cpp
+	cd /home/troels/Projects/hi/dlib-build/dlib && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/dlib.dir/logger/logger_kernel_1.cpp.o -c /home/troels/Projects/hi/lib/dlib-19.13/dlib/logger/logger_kernel_1.cpp
 
 dlib-build/dlib/CMakeFiles/dlib.dir/logger/logger_kernel_1.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/dlib.dir/logger/logger_kernel_1.cpp.i"
-	cd /home/troels/Projects/hi/dlib-build/dlib && /usr/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/troels/Projects/hi/lib/dlib-19.13/dlib/logger/logger_kernel_1.cpp > CMakeFiles/dlib.dir/logger/logger_kernel_1.cpp.i
+	cd /home/troels/Projects/hi/dlib-build/dlib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/troels/Projects/hi/lib/dlib-19.13/dlib/logger/logger_kernel_1.cpp > CMakeFiles/dlib.dir/logger/logger_kernel_1.cpp.i
 
 dlib-build/dlib/CMakeFiles/dlib.dir/logger/logger_kernel_1.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/dlib.dir/logger/logger_kernel_1.cpp.s"
-	cd /home/troels/Projects/hi/dlib-build/dlib && /usr/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/troels/Projects/hi/lib/dlib-19.13/dlib/logger/logger_kernel_1.cpp -o CMakeFiles/dlib.dir/logger/logger_kernel_1.cpp.s
+	cd /home/troels/Projects/hi/dlib-build/dlib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/troels/Projects/hi/lib/dlib-19.13/dlib/logger/logger_kernel_1.cpp -o CMakeFiles/dlib.dir/logger/logger_kernel_1.cpp.s
 
 dlib-build/dlib/CMakeFiles/dlib.dir/logger/logger_kernel_1.cpp.o.requires:
 
@@ -636,15 +636,15 @@ dlib-build/dlib/CMakeFiles/dlib.dir/logger/logger_kernel_1.cpp.o.provides.build:
 dlib-build/dlib/CMakeFiles/dlib.dir/logger/logger_config_file.cpp.o: dlib-build/dlib/CMakeFiles/dlib.dir/flags.make
 dlib-build/dlib/CMakeFiles/dlib.dir/logger/logger_config_file.cpp.o: lib/dlib-19.13/dlib/logger/logger_config_file.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/troels/Projects/hi/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building CXX object dlib-build/dlib/CMakeFiles/dlib.dir/logger/logger_config_file.cpp.o"
-	cd /home/troels/Projects/hi/dlib-build/dlib && /usr/bin/g++-8  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/dlib.dir/logger/logger_config_file.cpp.o -c /home/troels/Projects/hi/lib/dlib-19.13/dlib/logger/logger_config_file.cpp
+	cd /home/troels/Projects/hi/dlib-build/dlib && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/dlib.dir/logger/logger_config_file.cpp.o -c /home/troels/Projects/hi/lib/dlib-19.13/dlib/logger/logger_config_file.cpp
 
 dlib-build/dlib/CMakeFiles/dlib.dir/logger/logger_config_file.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/dlib.dir/logger/logger_config_file.cpp.i"
-	cd /home/troels/Projects/hi/dlib-build/dlib && /usr/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/troels/Projects/hi/lib/dlib-19.13/dlib/logger/logger_config_file.cpp > CMakeFiles/dlib.dir/logger/logger_config_file.cpp.i
+	cd /home/troels/Projects/hi/dlib-build/dlib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/troels/Projects/hi/lib/dlib-19.13/dlib/logger/logger_config_file.cpp > CMakeFiles/dlib.dir/logger/logger_config_file.cpp.i
 
 dlib-build/dlib/CMakeFiles/dlib.dir/logger/logger_config_file.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/dlib.dir/logger/logger_config_file.cpp.s"
-	cd /home/troels/Projects/hi/dlib-build/dlib && /usr/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/troels/Projects/hi/lib/dlib-19.13/dlib/logger/logger_config_file.cpp -o CMakeFiles/dlib.dir/logger/logger_config_file.cpp.s
+	cd /home/troels/Projects/hi/dlib-build/dlib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/troels/Projects/hi/lib/dlib-19.13/dlib/logger/logger_config_file.cpp -o CMakeFiles/dlib.dir/logger/logger_config_file.cpp.s
 
 dlib-build/dlib/CMakeFiles/dlib.dir/logger/logger_config_file.cpp.o.requires:
 
@@ -660,15 +660,15 @@ dlib-build/dlib/CMakeFiles/dlib.dir/logger/logger_config_file.cpp.o.provides.bui
 dlib-build/dlib/CMakeFiles/dlib.dir/misc_api/misc_api_kernel_1.cpp.o: dlib-build/dlib/CMakeFiles/dlib.dir/flags.make
 dlib-build/dlib/CMakeFiles/dlib.dir/misc_api/misc_api_kernel_1.cpp.o: lib/dlib-19.13/dlib/misc_api/misc_api_kernel_1.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/troels/Projects/hi/CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building CXX object dlib-build/dlib/CMakeFiles/dlib.dir/misc_api/misc_api_kernel_1.cpp.o"
-	cd /home/troels/Projects/hi/dlib-build/dlib && /usr/bin/g++-8  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/dlib.dir/misc_api/misc_api_kernel_1.cpp.o -c /home/troels/Projects/hi/lib/dlib-19.13/dlib/misc_api/misc_api_kernel_1.cpp
+	cd /home/troels/Projects/hi/dlib-build/dlib && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/dlib.dir/misc_api/misc_api_kernel_1.cpp.o -c /home/troels/Projects/hi/lib/dlib-19.13/dlib/misc_api/misc_api_kernel_1.cpp
 
 dlib-build/dlib/CMakeFiles/dlib.dir/misc_api/misc_api_kernel_1.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/dlib.dir/misc_api/misc_api_kernel_1.cpp.i"
-	cd /home/troels/Projects/hi/dlib-build/dlib && /usr/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/troels/Projects/hi/lib/dlib-19.13/dlib/misc_api/misc_api_kernel_1.cpp > CMakeFiles/dlib.dir/misc_api/misc_api_kernel_1.cpp.i
+	cd /home/troels/Projects/hi/dlib-build/dlib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/troels/Projects/hi/lib/dlib-19.13/dlib/misc_api/misc_api_kernel_1.cpp > CMakeFiles/dlib.dir/misc_api/misc_api_kernel_1.cpp.i
 
 dlib-build/dlib/CMakeFiles/dlib.dir/misc_api/misc_api_kernel_1.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/dlib.dir/misc_api/misc_api_kernel_1.cpp.s"
-	cd /home/troels/Projects/hi/dlib-build/dlib && /usr/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/troels/Projects/hi/lib/dlib-19.13/dlib/misc_api/misc_api_kernel_1.cpp -o CMakeFiles/dlib.dir/misc_api/misc_api_kernel_1.cpp.s
+	cd /home/troels/Projects/hi/dlib-build/dlib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/troels/Projects/hi/lib/dlib-19.13/dlib/misc_api/misc_api_kernel_1.cpp -o CMakeFiles/dlib.dir/misc_api/misc_api_kernel_1.cpp.s
 
 dlib-build/dlib/CMakeFiles/dlib.dir/misc_api/misc_api_kernel_1.cpp.o.requires:
 
@@ -684,15 +684,15 @@ dlib-build/dlib/CMakeFiles/dlib.dir/misc_api/misc_api_kernel_1.cpp.o.provides.bu
 dlib-build/dlib/CMakeFiles/dlib.dir/misc_api/misc_api_kernel_2.cpp.o: dlib-build/dlib/CMakeFiles/dlib.dir/flags.make
 dlib-build/dlib/CMakeFiles/dlib.dir/misc_api/misc_api_kernel_2.cpp.o: lib/dlib-19.13/dlib/misc_api/misc_api_kernel_2.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/troels/Projects/hi/CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Building CXX object dlib-build/dlib/CMakeFiles/dlib.dir/misc_api/misc_api_kernel_2.cpp.o"
-	cd /home/troels/Projects/hi/dlib-build/dlib && /usr/bin/g++-8  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/dlib.dir/misc_api/misc_api_kernel_2.cpp.o -c /home/troels/Projects/hi/lib/dlib-19.13/dlib/misc_api/misc_api_kernel_2.cpp
+	cd /home/troels/Projects/hi/dlib-build/dlib && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/dlib.dir/misc_api/misc_api_kernel_2.cpp.o -c /home/troels/Projects/hi/lib/dlib-19.13/dlib/misc_api/misc_api_kernel_2.cpp
 
 dlib-build/dlib/CMakeFiles/dlib.dir/misc_api/misc_api_kernel_2.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/dlib.dir/misc_api/misc_api_kernel_2.cpp.i"
-	cd /home/troels/Projects/hi/dlib-build/dlib && /usr/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/troels/Projects/hi/lib/dlib-19.13/dlib/misc_api/misc_api_kernel_2.cpp > CMakeFiles/dlib.dir/misc_api/misc_api_kernel_2.cpp.i
+	cd /home/troels/Projects/hi/dlib-build/dlib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/troels/Projects/hi/lib/dlib-19.13/dlib/misc_api/misc_api_kernel_2.cpp > CMakeFiles/dlib.dir/misc_api/misc_api_kernel_2.cpp.i
 
 dlib-build/dlib/CMakeFiles/dlib.dir/misc_api/misc_api_kernel_2.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/dlib.dir/misc_api/misc_api_kernel_2.cpp.s"
-	cd /home/troels/Projects/hi/dlib-build/dlib && /usr/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/troels/Projects/hi/lib/dlib-19.13/dlib/misc_api/misc_api_kernel_2.cpp -o CMakeFiles/dlib.dir/misc_api/misc_api_kernel_2.cpp.s
+	cd /home/troels/Projects/hi/dlib-build/dlib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/troels/Projects/hi/lib/dlib-19.13/dlib/misc_api/misc_api_kernel_2.cpp -o CMakeFiles/dlib.dir/misc_api/misc_api_kernel_2.cpp.s
 
 dlib-build/dlib/CMakeFiles/dlib.dir/misc_api/misc_api_kernel_2.cpp.o.requires:
 
@@ -708,15 +708,15 @@ dlib-build/dlib/CMakeFiles/dlib.dir/misc_api/misc_api_kernel_2.cpp.o.provides.bu
 dlib-build/dlib/CMakeFiles/dlib.dir/sockets/sockets_extensions.cpp.o: dlib-build/dlib/CMakeFiles/dlib.dir/flags.make
 dlib-build/dlib/CMakeFiles/dlib.dir/sockets/sockets_extensions.cpp.o: lib/dlib-19.13/dlib/sockets/sockets_extensions.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/troels/Projects/hi/CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Building CXX object dlib-build/dlib/CMakeFiles/dlib.dir/sockets/sockets_extensions.cpp.o"
-	cd /home/troels/Projects/hi/dlib-build/dlib && /usr/bin/g++-8  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/dlib.dir/sockets/sockets_extensions.cpp.o -c /home/troels/Projects/hi/lib/dlib-19.13/dlib/sockets/sockets_extensions.cpp
+	cd /home/troels/Projects/hi/dlib-build/dlib && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/dlib.dir/sockets/sockets_extensions.cpp.o -c /home/troels/Projects/hi/lib/dlib-19.13/dlib/sockets/sockets_extensions.cpp
 
 dlib-build/dlib/CMakeFiles/dlib.dir/sockets/sockets_extensions.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/dlib.dir/sockets/sockets_extensions.cpp.i"
-	cd /home/troels/Projects/hi/dlib-build/dlib && /usr/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/troels/Projects/hi/lib/dlib-19.13/dlib/sockets/sockets_extensions.cpp > CMakeFiles/dlib.dir/sockets/sockets_extensions.cpp.i
+	cd /home/troels/Projects/hi/dlib-build/dlib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/troels/Projects/hi/lib/dlib-19.13/dlib/sockets/sockets_extensions.cpp > CMakeFiles/dlib.dir/sockets/sockets_extensions.cpp.i
 
 dlib-build/dlib/CMakeFiles/dlib.dir/sockets/sockets_extensions.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/dlib.dir/sockets/sockets_extensions.cpp.s"
-	cd /home/troels/Projects/hi/dlib-build/dlib && /usr/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/troels/Projects/hi/lib/dlib-19.13/dlib/sockets/sockets_extensions.cpp -o CMakeFiles/dlib.dir/sockets/sockets_extensions.cpp.s
+	cd /home/troels/Projects/hi/dlib-build/dlib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/troels/Projects/hi/lib/dlib-19.13/dlib/sockets/sockets_extensions.cpp -o CMakeFiles/dlib.dir/sockets/sockets_extensions.cpp.s
 
 dlib-build/dlib/CMakeFiles/dlib.dir/sockets/sockets_extensions.cpp.o.requires:
 
@@ -732,15 +732,15 @@ dlib-build/dlib/CMakeFiles/dlib.dir/sockets/sockets_extensions.cpp.o.provides.bu
 dlib-build/dlib/CMakeFiles/dlib.dir/sockets/sockets_kernel_2.cpp.o: dlib-build/dlib/CMakeFiles/dlib.dir/flags.make
 dlib-build/dlib/CMakeFiles/dlib.dir/sockets/sockets_kernel_2.cpp.o: lib/dlib-19.13/dlib/sockets/sockets_kernel_2.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/troels/Projects/hi/CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Building CXX object dlib-build/dlib/CMakeFiles/dlib.dir/sockets/sockets_kernel_2.cpp.o"
-	cd /home/troels/Projects/hi/dlib-build/dlib && /usr/bin/g++-8  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/dlib.dir/sockets/sockets_kernel_2.cpp.o -c /home/troels/Projects/hi/lib/dlib-19.13/dlib/sockets/sockets_kernel_2.cpp
+	cd /home/troels/Projects/hi/dlib-build/dlib && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/dlib.dir/sockets/sockets_kernel_2.cpp.o -c /home/troels/Projects/hi/lib/dlib-19.13/dlib/sockets/sockets_kernel_2.cpp
 
 dlib-build/dlib/CMakeFiles/dlib.dir/sockets/sockets_kernel_2.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/dlib.dir/sockets/sockets_kernel_2.cpp.i"
-	cd /home/troels/Projects/hi/dlib-build/dlib && /usr/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/troels/Projects/hi/lib/dlib-19.13/dlib/sockets/sockets_kernel_2.cpp > CMakeFiles/dlib.dir/sockets/sockets_kernel_2.cpp.i
+	cd /home/troels/Projects/hi/dlib-build/dlib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/troels/Projects/hi/lib/dlib-19.13/dlib/sockets/sockets_kernel_2.cpp > CMakeFiles/dlib.dir/sockets/sockets_kernel_2.cpp.i
 
 dlib-build/dlib/CMakeFiles/dlib.dir/sockets/sockets_kernel_2.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/dlib.dir/sockets/sockets_kernel_2.cpp.s"
-	cd /home/troels/Projects/hi/dlib-build/dlib && /usr/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/troels/Projects/hi/lib/dlib-19.13/dlib/sockets/sockets_kernel_2.cpp -o CMakeFiles/dlib.dir/sockets/sockets_kernel_2.cpp.s
+	cd /home/troels/Projects/hi/dlib-build/dlib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/troels/Projects/hi/lib/dlib-19.13/dlib/sockets/sockets_kernel_2.cpp -o CMakeFiles/dlib.dir/sockets/sockets_kernel_2.cpp.s
 
 dlib-build/dlib/CMakeFiles/dlib.dir/sockets/sockets_kernel_2.cpp.o.requires:
 
@@ -756,15 +756,15 @@ dlib-build/dlib/CMakeFiles/dlib.dir/sockets/sockets_kernel_2.cpp.o.provides.buil
 dlib-build/dlib/CMakeFiles/dlib.dir/sockstreambuf/sockstreambuf.cpp.o: dlib-build/dlib/CMakeFiles/dlib.dir/flags.make
 dlib-build/dlib/CMakeFiles/dlib.dir/sockstreambuf/sockstreambuf.cpp.o: lib/dlib-19.13/dlib/sockstreambuf/sockstreambuf.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/troels/Projects/hi/CMakeFiles --progress-num=$(CMAKE_PROGRESS_30) "Building CXX object dlib-build/dlib/CMakeFiles/dlib.dir/sockstreambuf/sockstreambuf.cpp.o"
-	cd /home/troels/Projects/hi/dlib-build/dlib && /usr/bin/g++-8  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/dlib.dir/sockstreambuf/sockstreambuf.cpp.o -c /home/troels/Projects/hi/lib/dlib-19.13/dlib/sockstreambuf/sockstreambuf.cpp
+	cd /home/troels/Projects/hi/dlib-build/dlib && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/dlib.dir/sockstreambuf/sockstreambuf.cpp.o -c /home/troels/Projects/hi/lib/dlib-19.13/dlib/sockstreambuf/sockstreambuf.cpp
 
 dlib-build/dlib/CMakeFiles/dlib.dir/sockstreambuf/sockstreambuf.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/dlib.dir/sockstreambuf/sockstreambuf.cpp.i"
-	cd /home/troels/Projects/hi/dlib-build/dlib && /usr/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/troels/Projects/hi/lib/dlib-19.13/dlib/sockstreambuf/sockstreambuf.cpp > CMakeFiles/dlib.dir/sockstreambuf/sockstreambuf.cpp.i
+	cd /home/troels/Projects/hi/dlib-build/dlib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/troels/Projects/hi/lib/dlib-19.13/dlib/sockstreambuf/sockstreambuf.cpp > CMakeFiles/dlib.dir/sockstreambuf/sockstreambuf.cpp.i
 
 dlib-build/dlib/CMakeFiles/dlib.dir/sockstreambuf/sockstreambuf.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/dlib.dir/sockstreambuf/sockstreambuf.cpp.s"
-	cd /home/troels/Projects/hi/dlib-build/dlib && /usr/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/troels/Projects/hi/lib/dlib-19.13/dlib/sockstreambuf/sockstreambuf.cpp -o CMakeFiles/dlib.dir/sockstreambuf/sockstreambuf.cpp.s
+	cd /home/troels/Projects/hi/dlib-build/dlib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/troels/Projects/hi/lib/dlib-19.13/dlib/sockstreambuf/sockstreambuf.cpp -o CMakeFiles/dlib.dir/sockstreambuf/sockstreambuf.cpp.s
 
 dlib-build/dlib/CMakeFiles/dlib.dir/sockstreambuf/sockstreambuf.cpp.o.requires:
 
@@ -780,15 +780,15 @@ dlib-build/dlib/CMakeFiles/dlib.dir/sockstreambuf/sockstreambuf.cpp.o.provides.b
 dlib-build/dlib/CMakeFiles/dlib.dir/sockstreambuf/sockstreambuf_unbuffered.cpp.o: dlib-build/dlib/CMakeFiles/dlib.dir/flags.make
 dlib-build/dlib/CMakeFiles/dlib.dir/sockstreambuf/sockstreambuf_unbuffered.cpp.o: lib/dlib-19.13/dlib/sockstreambuf/sockstreambuf_unbuffered.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/troels/Projects/hi/CMakeFiles --progress-num=$(CMAKE_PROGRESS_31) "Building CXX object dlib-build/dlib/CMakeFiles/dlib.dir/sockstreambuf/sockstreambuf_unbuffered.cpp.o"
-	cd /home/troels/Projects/hi/dlib-build/dlib && /usr/bin/g++-8  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/dlib.dir/sockstreambuf/sockstreambuf_unbuffered.cpp.o -c /home/troels/Projects/hi/lib/dlib-19.13/dlib/sockstreambuf/sockstreambuf_unbuffered.cpp
+	cd /home/troels/Projects/hi/dlib-build/dlib && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/dlib.dir/sockstreambuf/sockstreambuf_unbuffered.cpp.o -c /home/troels/Projects/hi/lib/dlib-19.13/dlib/sockstreambuf/sockstreambuf_unbuffered.cpp
 
 dlib-build/dlib/CMakeFiles/dlib.dir/sockstreambuf/sockstreambuf_unbuffered.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/dlib.dir/sockstreambuf/sockstreambuf_unbuffered.cpp.i"
-	cd /home/troels/Projects/hi/dlib-build/dlib && /usr/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/troels/Projects/hi/lib/dlib-19.13/dlib/sockstreambuf/sockstreambuf_unbuffered.cpp > CMakeFiles/dlib.dir/sockstreambuf/sockstreambuf_unbuffered.cpp.i
+	cd /home/troels/Projects/hi/dlib-build/dlib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/troels/Projects/hi/lib/dlib-19.13/dlib/sockstreambuf/sockstreambuf_unbuffered.cpp > CMakeFiles/dlib.dir/sockstreambuf/sockstreambuf_unbuffered.cpp.i
 
 dlib-build/dlib/CMakeFiles/dlib.dir/sockstreambuf/sockstreambuf_unbuffered.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/dlib.dir/sockstreambuf/sockstreambuf_unbuffered.cpp.s"
-	cd /home/troels/Projects/hi/dlib-build/dlib && /usr/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/troels/Projects/hi/lib/dlib-19.13/dlib/sockstreambuf/sockstreambuf_unbuffered.cpp -o CMakeFiles/dlib.dir/sockstreambuf/sockstreambuf_unbuffered.cpp.s
+	cd /home/troels/Projects/hi/dlib-build/dlib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/troels/Projects/hi/lib/dlib-19.13/dlib/sockstreambuf/sockstreambuf_unbuffered.cpp -o CMakeFiles/dlib.dir/sockstreambuf/sockstreambuf_unbuffered.cpp.s
 
 dlib-build/dlib/CMakeFiles/dlib.dir/sockstreambuf/sockstreambuf_unbuffered.cpp.o.requires:
 
@@ -804,15 +804,15 @@ dlib-build/dlib/CMakeFiles/dlib.dir/sockstreambuf/sockstreambuf_unbuffered.cpp.o
 dlib-build/dlib/CMakeFiles/dlib.dir/server/server_kernel.cpp.o: dlib-build/dlib/CMakeFiles/dlib.dir/flags.make
 dlib-build/dlib/CMakeFiles/dlib.dir/server/server_kernel.cpp.o: lib/dlib-19.13/dlib/server/server_kernel.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/troels/Projects/hi/CMakeFiles --progress-num=$(CMAKE_PROGRESS_32) "Building CXX object dlib-build/dlib/CMakeFiles/dlib.dir/server/server_kernel.cpp.o"
-	cd /home/troels/Projects/hi/dlib-build/dlib && /usr/bin/g++-8  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/dlib.dir/server/server_kernel.cpp.o -c /home/troels/Projects/hi/lib/dlib-19.13/dlib/server/server_kernel.cpp
+	cd /home/troels/Projects/hi/dlib-build/dlib && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/dlib.dir/server/server_kernel.cpp.o -c /home/troels/Projects/hi/lib/dlib-19.13/dlib/server/server_kernel.cpp
 
 dlib-build/dlib/CMakeFiles/dlib.dir/server/server_kernel.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/dlib.dir/server/server_kernel.cpp.i"
-	cd /home/troels/Projects/hi/dlib-build/dlib && /usr/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/troels/Projects/hi/lib/dlib-19.13/dlib/server/server_kernel.cpp > CMakeFiles/dlib.dir/server/server_kernel.cpp.i
+	cd /home/troels/Projects/hi/dlib-build/dlib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/troels/Projects/hi/lib/dlib-19.13/dlib/server/server_kernel.cpp > CMakeFiles/dlib.dir/server/server_kernel.cpp.i
 
 dlib-build/dlib/CMakeFiles/dlib.dir/server/server_kernel.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/dlib.dir/server/server_kernel.cpp.s"
-	cd /home/troels/Projects/hi/dlib-build/dlib && /usr/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/troels/Projects/hi/lib/dlib-19.13/dlib/server/server_kernel.cpp -o CMakeFiles/dlib.dir/server/server_kernel.cpp.s
+	cd /home/troels/Projects/hi/dlib-build/dlib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/troels/Projects/hi/lib/dlib-19.13/dlib/server/server_kernel.cpp -o CMakeFiles/dlib.dir/server/server_kernel.cpp.s
 
 dlib-build/dlib/CMakeFiles/dlib.dir/server/server_kernel.cpp.o.requires:
 
@@ -828,15 +828,15 @@ dlib-build/dlib/CMakeFiles/dlib.dir/server/server_kernel.cpp.o.provides.build: d
 dlib-build/dlib/CMakeFiles/dlib.dir/server/server_iostream.cpp.o: dlib-build/dlib/CMakeFiles/dlib.dir/flags.make
 dlib-build/dlib/CMakeFiles/dlib.dir/server/server_iostream.cpp.o: lib/dlib-19.13/dlib/server/server_iostream.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/troels/Projects/hi/CMakeFiles --progress-num=$(CMAKE_PROGRESS_33) "Building CXX object dlib-build/dlib/CMakeFiles/dlib.dir/server/server_iostream.cpp.o"
-	cd /home/troels/Projects/hi/dlib-build/dlib && /usr/bin/g++-8  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/dlib.dir/server/server_iostream.cpp.o -c /home/troels/Projects/hi/lib/dlib-19.13/dlib/server/server_iostream.cpp
+	cd /home/troels/Projects/hi/dlib-build/dlib && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/dlib.dir/server/server_iostream.cpp.o -c /home/troels/Projects/hi/lib/dlib-19.13/dlib/server/server_iostream.cpp
 
 dlib-build/dlib/CMakeFiles/dlib.dir/server/server_iostream.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/dlib.dir/server/server_iostream.cpp.i"
-	cd /home/troels/Projects/hi/dlib-build/dlib && /usr/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/troels/Projects/hi/lib/dlib-19.13/dlib/server/server_iostream.cpp > CMakeFiles/dlib.dir/server/server_iostream.cpp.i
+	cd /home/troels/Projects/hi/dlib-build/dlib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/troels/Projects/hi/lib/dlib-19.13/dlib/server/server_iostream.cpp > CMakeFiles/dlib.dir/server/server_iostream.cpp.i
 
 dlib-build/dlib/CMakeFiles/dlib.dir/server/server_iostream.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/dlib.dir/server/server_iostream.cpp.s"
-	cd /home/troels/Projects/hi/dlib-build/dlib && /usr/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/troels/Projects/hi/lib/dlib-19.13/dlib/server/server_iostream.cpp -o CMakeFiles/dlib.dir/server/server_iostream.cpp.s
+	cd /home/troels/Projects/hi/dlib-build/dlib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/troels/Projects/hi/lib/dlib-19.13/dlib/server/server_iostream.cpp -o CMakeFiles/dlib.dir/server/server_iostream.cpp.s
 
 dlib-build/dlib/CMakeFiles/dlib.dir/server/server_iostream.cpp.o.requires:
 
@@ -852,15 +852,15 @@ dlib-build/dlib/CMakeFiles/dlib.dir/server/server_iostream.cpp.o.provides.build:
 dlib-build/dlib/CMakeFiles/dlib.dir/server/server_http.cpp.o: dlib-build/dlib/CMakeFiles/dlib.dir/flags.make
 dlib-build/dlib/CMakeFiles/dlib.dir/server/server_http.cpp.o: lib/dlib-19.13/dlib/server/server_http.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/troels/Projects/hi/CMakeFiles --progress-num=$(CMAKE_PROGRESS_34) "Building CXX object dlib-build/dlib/CMakeFiles/dlib.dir/server/server_http.cpp.o"
-	cd /home/troels/Projects/hi/dlib-build/dlib && /usr/bin/g++-8  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/dlib.dir/server/server_http.cpp.o -c /home/troels/Projects/hi/lib/dlib-19.13/dlib/server/server_http.cpp
+	cd /home/troels/Projects/hi/dlib-build/dlib && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/dlib.dir/server/server_http.cpp.o -c /home/troels/Projects/hi/lib/dlib-19.13/dlib/server/server_http.cpp
 
 dlib-build/dlib/CMakeFiles/dlib.dir/server/server_http.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/dlib.dir/server/server_http.cpp.i"
-	cd /home/troels/Projects/hi/dlib-build/dlib && /usr/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/troels/Projects/hi/lib/dlib-19.13/dlib/server/server_http.cpp > CMakeFiles/dlib.dir/server/server_http.cpp.i
+	cd /home/troels/Projects/hi/dlib-build/dlib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/troels/Projects/hi/lib/dlib-19.13/dlib/server/server_http.cpp > CMakeFiles/dlib.dir/server/server_http.cpp.i
 
 dlib-build/dlib/CMakeFiles/dlib.dir/server/server_http.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/dlib.dir/server/server_http.cpp.s"
-	cd /home/troels/Projects/hi/dlib-build/dlib && /usr/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/troels/Projects/hi/lib/dlib-19.13/dlib/server/server_http.cpp -o CMakeFiles/dlib.dir/server/server_http.cpp.s
+	cd /home/troels/Projects/hi/dlib-build/dlib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/troels/Projects/hi/lib/dlib-19.13/dlib/server/server_http.cpp -o CMakeFiles/dlib.dir/server/server_http.cpp.s
 
 dlib-build/dlib/CMakeFiles/dlib.dir/server/server_http.cpp.o.requires:
 
@@ -876,15 +876,15 @@ dlib-build/dlib/CMakeFiles/dlib.dir/server/server_http.cpp.o.provides.build: dli
 dlib-build/dlib/CMakeFiles/dlib.dir/threads/multithreaded_object_extension.cpp.o: dlib-build/dlib/CMakeFiles/dlib.dir/flags.make
 dlib-build/dlib/CMakeFiles/dlib.dir/threads/multithreaded_object_extension.cpp.o: lib/dlib-19.13/dlib/threads/multithreaded_object_extension.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/troels/Projects/hi/CMakeFiles --progress-num=$(CMAKE_PROGRESS_35) "Building CXX object dlib-build/dlib/CMakeFiles/dlib.dir/threads/multithreaded_object_extension.cpp.o"
-	cd /home/troels/Projects/hi/dlib-build/dlib && /usr/bin/g++-8  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/dlib.dir/threads/multithreaded_object_extension.cpp.o -c /home/troels/Projects/hi/lib/dlib-19.13/dlib/threads/multithreaded_object_extension.cpp
+	cd /home/troels/Projects/hi/dlib-build/dlib && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/dlib.dir/threads/multithreaded_object_extension.cpp.o -c /home/troels/Projects/hi/lib/dlib-19.13/dlib/threads/multithreaded_object_extension.cpp
 
 dlib-build/dlib/CMakeFiles/dlib.dir/threads/multithreaded_object_extension.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/dlib.dir/threads/multithreaded_object_extension.cpp.i"
-	cd /home/troels/Projects/hi/dlib-build/dlib && /usr/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/troels/Projects/hi/lib/dlib-19.13/dlib/threads/multithreaded_object_extension.cpp > CMakeFiles/dlib.dir/threads/multithreaded_object_extension.cpp.i
+	cd /home/troels/Projects/hi/dlib-build/dlib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/troels/Projects/hi/lib/dlib-19.13/dlib/threads/multithreaded_object_extension.cpp > CMakeFiles/dlib.dir/threads/multithreaded_object_extension.cpp.i
 
 dlib-build/dlib/CMakeFiles/dlib.dir/threads/multithreaded_object_extension.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/dlib.dir/threads/multithreaded_object_extension.cpp.s"
-	cd /home/troels/Projects/hi/dlib-build/dlib && /usr/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/troels/Projects/hi/lib/dlib-19.13/dlib/threads/multithreaded_object_extension.cpp -o CMakeFiles/dlib.dir/threads/multithreaded_object_extension.cpp.s
+	cd /home/troels/Projects/hi/dlib-build/dlib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/troels/Projects/hi/lib/dlib-19.13/dlib/threads/multithreaded_object_extension.cpp -o CMakeFiles/dlib.dir/threads/multithreaded_object_extension.cpp.s
 
 dlib-build/dlib/CMakeFiles/dlib.dir/threads/multithreaded_object_extension.cpp.o.requires:
 
@@ -900,15 +900,15 @@ dlib-build/dlib/CMakeFiles/dlib.dir/threads/multithreaded_object_extension.cpp.o
 dlib-build/dlib/CMakeFiles/dlib.dir/threads/threaded_object_extension.cpp.o: dlib-build/dlib/CMakeFiles/dlib.dir/flags.make
 dlib-build/dlib/CMakeFiles/dlib.dir/threads/threaded_object_extension.cpp.o: lib/dlib-19.13/dlib/threads/threaded_object_extension.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/troels/Projects/hi/CMakeFiles --progress-num=$(CMAKE_PROGRESS_36) "Building CXX object dlib-build/dlib/CMakeFiles/dlib.dir/threads/threaded_object_extension.cpp.o"
-	cd /home/troels/Projects/hi/dlib-build/dlib && /usr/bin/g++-8  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/dlib.dir/threads/threaded_object_extension.cpp.o -c /home/troels/Projects/hi/lib/dlib-19.13/dlib/threads/threaded_object_extension.cpp
+	cd /home/troels/Projects/hi/dlib-build/dlib && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/dlib.dir/threads/threaded_object_extension.cpp.o -c /home/troels/Projects/hi/lib/dlib-19.13/dlib/threads/threaded_object_extension.cpp
 
 dlib-build/dlib/CMakeFiles/dlib.dir/threads/threaded_object_extension.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/dlib.dir/threads/threaded_object_extension.cpp.i"
-	cd /home/troels/Projects/hi/dlib-build/dlib && /usr/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/troels/Projects/hi/lib/dlib-19.13/dlib/threads/threaded_object_extension.cpp > CMakeFiles/dlib.dir/threads/threaded_object_extension.cpp.i
+	cd /home/troels/Projects/hi/dlib-build/dlib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/troels/Projects/hi/lib/dlib-19.13/dlib/threads/threaded_object_extension.cpp > CMakeFiles/dlib.dir/threads/threaded_object_extension.cpp.i
 
 dlib-build/dlib/CMakeFiles/dlib.dir/threads/threaded_object_extension.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/dlib.dir/threads/threaded_object_extension.cpp.s"
-	cd /home/troels/Projects/hi/dlib-build/dlib && /usr/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/troels/Projects/hi/lib/dlib-19.13/dlib/threads/threaded_object_extension.cpp -o CMakeFiles/dlib.dir/threads/threaded_object_extension.cpp.s
+	cd /home/troels/Projects/hi/dlib-build/dlib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/troels/Projects/hi/lib/dlib-19.13/dlib/threads/threaded_object_extension.cpp -o CMakeFiles/dlib.dir/threads/threaded_object_extension.cpp.s
 
 dlib-build/dlib/CMakeFiles/dlib.dir/threads/threaded_object_extension.cpp.o.requires:
 
@@ -924,15 +924,15 @@ dlib-build/dlib/CMakeFiles/dlib.dir/threads/threaded_object_extension.cpp.o.prov
 dlib-build/dlib/CMakeFiles/dlib.dir/threads/threads_kernel_1.cpp.o: dlib-build/dlib/CMakeFiles/dlib.dir/flags.make
 dlib-build/dlib/CMakeFiles/dlib.dir/threads/threads_kernel_1.cpp.o: lib/dlib-19.13/dlib/threads/threads_kernel_1.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/troels/Projects/hi/CMakeFiles --progress-num=$(CMAKE_PROGRESS_37) "Building CXX object dlib-build/dlib/CMakeFiles/dlib.dir/threads/threads_kernel_1.cpp.o"
-	cd /home/troels/Projects/hi/dlib-build/dlib && /usr/bin/g++-8  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/dlib.dir/threads/threads_kernel_1.cpp.o -c /home/troels/Projects/hi/lib/dlib-19.13/dlib/threads/threads_kernel_1.cpp
+	cd /home/troels/Projects/hi/dlib-build/dlib && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/dlib.dir/threads/threads_kernel_1.cpp.o -c /home/troels/Projects/hi/lib/dlib-19.13/dlib/threads/threads_kernel_1.cpp
 
 dlib-build/dlib/CMakeFiles/dlib.dir/threads/threads_kernel_1.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/dlib.dir/threads/threads_kernel_1.cpp.i"
-	cd /home/troels/Projects/hi/dlib-build/dlib && /usr/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/troels/Projects/hi/lib/dlib-19.13/dlib/threads/threads_kernel_1.cpp > CMakeFiles/dlib.dir/threads/threads_kernel_1.cpp.i
+	cd /home/troels/Projects/hi/dlib-build/dlib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/troels/Projects/hi/lib/dlib-19.13/dlib/threads/threads_kernel_1.cpp > CMakeFiles/dlib.dir/threads/threads_kernel_1.cpp.i
 
 dlib-build/dlib/CMakeFiles/dlib.dir/threads/threads_kernel_1.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/dlib.dir/threads/threads_kernel_1.cpp.s"
-	cd /home/troels/Projects/hi/dlib-build/dlib && /usr/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/troels/Projects/hi/lib/dlib-19.13/dlib/threads/threads_kernel_1.cpp -o CMakeFiles/dlib.dir/threads/threads_kernel_1.cpp.s
+	cd /home/troels/Projects/hi/dlib-build/dlib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/troels/Projects/hi/lib/dlib-19.13/dlib/threads/threads_kernel_1.cpp -o CMakeFiles/dlib.dir/threads/threads_kernel_1.cpp.s
 
 dlib-build/dlib/CMakeFiles/dlib.dir/threads/threads_kernel_1.cpp.o.requires:
 
@@ -948,15 +948,15 @@ dlib-build/dlib/CMakeFiles/dlib.dir/threads/threads_kernel_1.cpp.o.provides.buil
 dlib-build/dlib/CMakeFiles/dlib.dir/threads/threads_kernel_2.cpp.o: dlib-build/dlib/CMakeFiles/dlib.dir/flags.make
 dlib-build/dlib/CMakeFiles/dlib.dir/threads/threads_kernel_2.cpp.o: lib/dlib-19.13/dlib/threads/threads_kernel_2.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/troels/Projects/hi/CMakeFiles --progress-num=$(CMAKE_PROGRESS_38) "Building CXX object dlib-build/dlib/CMakeFiles/dlib.dir/threads/threads_kernel_2.cpp.o"
-	cd /home/troels/Projects/hi/dlib-build/dlib && /usr/bin/g++-8  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/dlib.dir/threads/threads_kernel_2.cpp.o -c /home/troels/Projects/hi/lib/dlib-19.13/dlib/threads/threads_kernel_2.cpp
+	cd /home/troels/Projects/hi/dlib-build/dlib && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/dlib.dir/threads/threads_kernel_2.cpp.o -c /home/troels/Projects/hi/lib/dlib-19.13/dlib/threads/threads_kernel_2.cpp
 
 dlib-build/dlib/CMakeFiles/dlib.dir/threads/threads_kernel_2.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/dlib.dir/threads/threads_kernel_2.cpp.i"
-	cd /home/troels/Projects/hi/dlib-build/dlib && /usr/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/troels/Projects/hi/lib/dlib-19.13/dlib/threads/threads_kernel_2.cpp > CMakeFiles/dlib.dir/threads/threads_kernel_2.cpp.i
+	cd /home/troels/Projects/hi/dlib-build/dlib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/troels/Projects/hi/lib/dlib-19.13/dlib/threads/threads_kernel_2.cpp > CMakeFiles/dlib.dir/threads/threads_kernel_2.cpp.i
 
 dlib-build/dlib/CMakeFiles/dlib.dir/threads/threads_kernel_2.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/dlib.dir/threads/threads_kernel_2.cpp.s"
-	cd /home/troels/Projects/hi/dlib-build/dlib && /usr/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/troels/Projects/hi/lib/dlib-19.13/dlib/threads/threads_kernel_2.cpp -o CMakeFiles/dlib.dir/threads/threads_kernel_2.cpp.s
+	cd /home/troels/Projects/hi/dlib-build/dlib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/troels/Projects/hi/lib/dlib-19.13/dlib/threads/threads_kernel_2.cpp -o CMakeFiles/dlib.dir/threads/threads_kernel_2.cpp.s
 
 dlib-build/dlib/CMakeFiles/dlib.dir/threads/threads_kernel_2.cpp.o.requires:
 
@@ -972,15 +972,15 @@ dlib-build/dlib/CMakeFiles/dlib.dir/threads/threads_kernel_2.cpp.o.provides.buil
 dlib-build/dlib/CMakeFiles/dlib.dir/threads/threads_kernel_shared.cpp.o: dlib-build/dlib/CMakeFiles/dlib.dir/flags.make
 dlib-build/dlib/CMakeFiles/dlib.dir/threads/threads_kernel_shared.cpp.o: lib/dlib-19.13/dlib/threads/threads_kernel_shared.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/troels/Projects/hi/CMakeFiles --progress-num=$(CMAKE_PROGRESS_39) "Building CXX object dlib-build/dlib/CMakeFiles/dlib.dir/threads/threads_kernel_shared.cpp.o"
-	cd /home/troels/Projects/hi/dlib-build/dlib && /usr/bin/g++-8  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/dlib.dir/threads/threads_kernel_shared.cpp.o -c /home/troels/Projects/hi/lib/dlib-19.13/dlib/threads/threads_kernel_shared.cpp
+	cd /home/troels/Projects/hi/dlib-build/dlib && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/dlib.dir/threads/threads_kernel_shared.cpp.o -c /home/troels/Projects/hi/lib/dlib-19.13/dlib/threads/threads_kernel_shared.cpp
 
 dlib-build/dlib/CMakeFiles/dlib.dir/threads/threads_kernel_shared.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/dlib.dir/threads/threads_kernel_shared.cpp.i"
-	cd /home/troels/Projects/hi/dlib-build/dlib && /usr/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/troels/Projects/hi/lib/dlib-19.13/dlib/threads/threads_kernel_shared.cpp > CMakeFiles/dlib.dir/threads/threads_kernel_shared.cpp.i
+	cd /home/troels/Projects/hi/dlib-build/dlib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/troels/Projects/hi/lib/dlib-19.13/dlib/threads/threads_kernel_shared.cpp > CMakeFiles/dlib.dir/threads/threads_kernel_shared.cpp.i
 
 dlib-build/dlib/CMakeFiles/dlib.dir/threads/threads_kernel_shared.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/dlib.dir/threads/threads_kernel_shared.cpp.s"
-	cd /home/troels/Projects/hi/dlib-build/dlib && /usr/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/troels/Projects/hi/lib/dlib-19.13/dlib/threads/threads_kernel_shared.cpp -o CMakeFiles/dlib.dir/threads/threads_kernel_shared.cpp.s
+	cd /home/troels/Projects/hi/dlib-build/dlib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/troels/Projects/hi/lib/dlib-19.13/dlib/threads/threads_kernel_shared.cpp -o CMakeFiles/dlib.dir/threads/threads_kernel_shared.cpp.s
 
 dlib-build/dlib/CMakeFiles/dlib.dir/threads/threads_kernel_shared.cpp.o.requires:
 
@@ -996,15 +996,15 @@ dlib-build/dlib/CMakeFiles/dlib.dir/threads/threads_kernel_shared.cpp.o.provides
 dlib-build/dlib/CMakeFiles/dlib.dir/threads/thread_pool_extension.cpp.o: dlib-build/dlib/CMakeFiles/dlib.dir/flags.make
 dlib-build/dlib/CMakeFiles/dlib.dir/threads/thread_pool_extension.cpp.o: lib/dlib-19.13/dlib/threads/thread_pool_extension.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/troels/Projects/hi/CMakeFiles --progress-num=$(CMAKE_PROGRESS_40) "Building CXX object dlib-build/dlib/CMakeFiles/dlib.dir/threads/thread_pool_extension.cpp.o"
-	cd /home/troels/Projects/hi/dlib-build/dlib && /usr/bin/g++-8  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/dlib.dir/threads/thread_pool_extension.cpp.o -c /home/troels/Projects/hi/lib/dlib-19.13/dlib/threads/thread_pool_extension.cpp
+	cd /home/troels/Projects/hi/dlib-build/dlib && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/dlib.dir/threads/thread_pool_extension.cpp.o -c /home/troels/Projects/hi/lib/dlib-19.13/dlib/threads/thread_pool_extension.cpp
 
 dlib-build/dlib/CMakeFiles/dlib.dir/threads/thread_pool_extension.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/dlib.dir/threads/thread_pool_extension.cpp.i"
-	cd /home/troels/Projects/hi/dlib-build/dlib && /usr/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/troels/Projects/hi/lib/dlib-19.13/dlib/threads/thread_pool_extension.cpp > CMakeFiles/dlib.dir/threads/thread_pool_extension.cpp.i
+	cd /home/troels/Projects/hi/dlib-build/dlib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/troels/Projects/hi/lib/dlib-19.13/dlib/threads/thread_pool_extension.cpp > CMakeFiles/dlib.dir/threads/thread_pool_extension.cpp.i
 
 dlib-build/dlib/CMakeFiles/dlib.dir/threads/thread_pool_extension.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/dlib.dir/threads/thread_pool_extension.cpp.s"
-	cd /home/troels/Projects/hi/dlib-build/dlib && /usr/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/troels/Projects/hi/lib/dlib-19.13/dlib/threads/thread_pool_extension.cpp -o CMakeFiles/dlib.dir/threads/thread_pool_extension.cpp.s
+	cd /home/troels/Projects/hi/dlib-build/dlib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/troels/Projects/hi/lib/dlib-19.13/dlib/threads/thread_pool_extension.cpp -o CMakeFiles/dlib.dir/threads/thread_pool_extension.cpp.s
 
 dlib-build/dlib/CMakeFiles/dlib.dir/threads/thread_pool_extension.cpp.o.requires:
 
@@ -1020,15 +1020,15 @@ dlib-build/dlib/CMakeFiles/dlib.dir/threads/thread_pool_extension.cpp.o.provides
 dlib-build/dlib/CMakeFiles/dlib.dir/threads/async.cpp.o: dlib-build/dlib/CMakeFiles/dlib.dir/flags.make
 dlib-build/dlib/CMakeFiles/dlib.dir/threads/async.cpp.o: lib/dlib-19.13/dlib/threads/async.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/troels/Projects/hi/CMakeFiles --progress-num=$(CMAKE_PROGRESS_41) "Building CXX object dlib-build/dlib/CMakeFiles/dlib.dir/threads/async.cpp.o"
-	cd /home/troels/Projects/hi/dlib-build/dlib && /usr/bin/g++-8  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/dlib.dir/threads/async.cpp.o -c /home/troels/Projects/hi/lib/dlib-19.13/dlib/threads/async.cpp
+	cd /home/troels/Projects/hi/dlib-build/dlib && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/dlib.dir/threads/async.cpp.o -c /home/troels/Projects/hi/lib/dlib-19.13/dlib/threads/async.cpp
 
 dlib-build/dlib/CMakeFiles/dlib.dir/threads/async.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/dlib.dir/threads/async.cpp.i"
-	cd /home/troels/Projects/hi/dlib-build/dlib && /usr/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/troels/Projects/hi/lib/dlib-19.13/dlib/threads/async.cpp > CMakeFiles/dlib.dir/threads/async.cpp.i
+	cd /home/troels/Projects/hi/dlib-build/dlib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/troels/Projects/hi/lib/dlib-19.13/dlib/threads/async.cpp > CMakeFiles/dlib.dir/threads/async.cpp.i
 
 dlib-build/dlib/CMakeFiles/dlib.dir/threads/async.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/dlib.dir/threads/async.cpp.s"
-	cd /home/troels/Projects/hi/dlib-build/dlib && /usr/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/troels/Projects/hi/lib/dlib-19.13/dlib/threads/async.cpp -o CMakeFiles/dlib.dir/threads/async.cpp.s
+	cd /home/troels/Projects/hi/dlib-build/dlib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/troels/Projects/hi/lib/dlib-19.13/dlib/threads/async.cpp -o CMakeFiles/dlib.dir/threads/async.cpp.s
 
 dlib-build/dlib/CMakeFiles/dlib.dir/threads/async.cpp.o.requires:
 
@@ -1044,15 +1044,15 @@ dlib-build/dlib/CMakeFiles/dlib.dir/threads/async.cpp.o.provides.build: dlib-bui
 dlib-build/dlib/CMakeFiles/dlib.dir/timer/timer.cpp.o: dlib-build/dlib/CMakeFiles/dlib.dir/flags.make
 dlib-build/dlib/CMakeFiles/dlib.dir/timer/timer.cpp.o: lib/dlib-19.13/dlib/timer/timer.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/troels/Projects/hi/CMakeFiles --progress-num=$(CMAKE_PROGRESS_42) "Building CXX object dlib-build/dlib/CMakeFiles/dlib.dir/timer/timer.cpp.o"
-	cd /home/troels/Projects/hi/dlib-build/dlib && /usr/bin/g++-8  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/dlib.dir/timer/timer.cpp.o -c /home/troels/Projects/hi/lib/dlib-19.13/dlib/timer/timer.cpp
+	cd /home/troels/Projects/hi/dlib-build/dlib && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/dlib.dir/timer/timer.cpp.o -c /home/troels/Projects/hi/lib/dlib-19.13/dlib/timer/timer.cpp
 
 dlib-build/dlib/CMakeFiles/dlib.dir/timer/timer.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/dlib.dir/timer/timer.cpp.i"
-	cd /home/troels/Projects/hi/dlib-build/dlib && /usr/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/troels/Projects/hi/lib/dlib-19.13/dlib/timer/timer.cpp > CMakeFiles/dlib.dir/timer/timer.cpp.i
+	cd /home/troels/Projects/hi/dlib-build/dlib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/troels/Projects/hi/lib/dlib-19.13/dlib/timer/timer.cpp > CMakeFiles/dlib.dir/timer/timer.cpp.i
 
 dlib-build/dlib/CMakeFiles/dlib.dir/timer/timer.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/dlib.dir/timer/timer.cpp.s"
-	cd /home/troels/Projects/hi/dlib-build/dlib && /usr/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/troels/Projects/hi/lib/dlib-19.13/dlib/timer/timer.cpp -o CMakeFiles/dlib.dir/timer/timer.cpp.s
+	cd /home/troels/Projects/hi/dlib-build/dlib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/troels/Projects/hi/lib/dlib-19.13/dlib/timer/timer.cpp -o CMakeFiles/dlib.dir/timer/timer.cpp.s
 
 dlib-build/dlib/CMakeFiles/dlib.dir/timer/timer.cpp.o.requires:
 
@@ -1068,15 +1068,15 @@ dlib-build/dlib/CMakeFiles/dlib.dir/timer/timer.cpp.o.provides.build: dlib-build
 dlib-build/dlib/CMakeFiles/dlib.dir/stack_trace.cpp.o: dlib-build/dlib/CMakeFiles/dlib.dir/flags.make
 dlib-build/dlib/CMakeFiles/dlib.dir/stack_trace.cpp.o: lib/dlib-19.13/dlib/stack_trace.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/troels/Projects/hi/CMakeFiles --progress-num=$(CMAKE_PROGRESS_43) "Building CXX object dlib-build/dlib/CMakeFiles/dlib.dir/stack_trace.cpp.o"
-	cd /home/troels/Projects/hi/dlib-build/dlib && /usr/bin/g++-8  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/dlib.dir/stack_trace.cpp.o -c /home/troels/Projects/hi/lib/dlib-19.13/dlib/stack_trace.cpp
+	cd /home/troels/Projects/hi/dlib-build/dlib && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/dlib.dir/stack_trace.cpp.o -c /home/troels/Projects/hi/lib/dlib-19.13/dlib/stack_trace.cpp
 
 dlib-build/dlib/CMakeFiles/dlib.dir/stack_trace.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/dlib.dir/stack_trace.cpp.i"
-	cd /home/troels/Projects/hi/dlib-build/dlib && /usr/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/troels/Projects/hi/lib/dlib-19.13/dlib/stack_trace.cpp > CMakeFiles/dlib.dir/stack_trace.cpp.i
+	cd /home/troels/Projects/hi/dlib-build/dlib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/troels/Projects/hi/lib/dlib-19.13/dlib/stack_trace.cpp > CMakeFiles/dlib.dir/stack_trace.cpp.i
 
 dlib-build/dlib/CMakeFiles/dlib.dir/stack_trace.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/dlib.dir/stack_trace.cpp.s"
-	cd /home/troels/Projects/hi/dlib-build/dlib && /usr/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/troels/Projects/hi/lib/dlib-19.13/dlib/stack_trace.cpp -o CMakeFiles/dlib.dir/stack_trace.cpp.s
+	cd /home/troels/Projects/hi/dlib-build/dlib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/troels/Projects/hi/lib/dlib-19.13/dlib/stack_trace.cpp -o CMakeFiles/dlib.dir/stack_trace.cpp.s
 
 dlib-build/dlib/CMakeFiles/dlib.dir/stack_trace.cpp.o.requires:
 
@@ -1092,15 +1092,15 @@ dlib-build/dlib/CMakeFiles/dlib.dir/stack_trace.cpp.o.provides.build: dlib-build
 dlib-build/dlib/CMakeFiles/dlib.dir/cuda/cpu_dlib.cpp.o: dlib-build/dlib/CMakeFiles/dlib.dir/flags.make
 dlib-build/dlib/CMakeFiles/dlib.dir/cuda/cpu_dlib.cpp.o: lib/dlib-19.13/dlib/cuda/cpu_dlib.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/troels/Projects/hi/CMakeFiles --progress-num=$(CMAKE_PROGRESS_44) "Building CXX object dlib-build/dlib/CMakeFiles/dlib.dir/cuda/cpu_dlib.cpp.o"
-	cd /home/troels/Projects/hi/dlib-build/dlib && /usr/bin/g++-8  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/dlib.dir/cuda/cpu_dlib.cpp.o -c /home/troels/Projects/hi/lib/dlib-19.13/dlib/cuda/cpu_dlib.cpp
+	cd /home/troels/Projects/hi/dlib-build/dlib && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/dlib.dir/cuda/cpu_dlib.cpp.o -c /home/troels/Projects/hi/lib/dlib-19.13/dlib/cuda/cpu_dlib.cpp
 
 dlib-build/dlib/CMakeFiles/dlib.dir/cuda/cpu_dlib.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/dlib.dir/cuda/cpu_dlib.cpp.i"
-	cd /home/troels/Projects/hi/dlib-build/dlib && /usr/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/troels/Projects/hi/lib/dlib-19.13/dlib/cuda/cpu_dlib.cpp > CMakeFiles/dlib.dir/cuda/cpu_dlib.cpp.i
+	cd /home/troels/Projects/hi/dlib-build/dlib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/troels/Projects/hi/lib/dlib-19.13/dlib/cuda/cpu_dlib.cpp > CMakeFiles/dlib.dir/cuda/cpu_dlib.cpp.i
 
 dlib-build/dlib/CMakeFiles/dlib.dir/cuda/cpu_dlib.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/dlib.dir/cuda/cpu_dlib.cpp.s"
-	cd /home/troels/Projects/hi/dlib-build/dlib && /usr/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/troels/Projects/hi/lib/dlib-19.13/dlib/cuda/cpu_dlib.cpp -o CMakeFiles/dlib.dir/cuda/cpu_dlib.cpp.s
+	cd /home/troels/Projects/hi/dlib-build/dlib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/troels/Projects/hi/lib/dlib-19.13/dlib/cuda/cpu_dlib.cpp -o CMakeFiles/dlib.dir/cuda/cpu_dlib.cpp.s
 
 dlib-build/dlib/CMakeFiles/dlib.dir/cuda/cpu_dlib.cpp.o.requires:
 
@@ -1116,15 +1116,15 @@ dlib-build/dlib/CMakeFiles/dlib.dir/cuda/cpu_dlib.cpp.o.provides.build: dlib-bui
 dlib-build/dlib/CMakeFiles/dlib.dir/cuda/tensor_tools.cpp.o: dlib-build/dlib/CMakeFiles/dlib.dir/flags.make
 dlib-build/dlib/CMakeFiles/dlib.dir/cuda/tensor_tools.cpp.o: lib/dlib-19.13/dlib/cuda/tensor_tools.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/troels/Projects/hi/CMakeFiles --progress-num=$(CMAKE_PROGRESS_45) "Building CXX object dlib-build/dlib/CMakeFiles/dlib.dir/cuda/tensor_tools.cpp.o"
-	cd /home/troels/Projects/hi/dlib-build/dlib && /usr/bin/g++-8  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/dlib.dir/cuda/tensor_tools.cpp.o -c /home/troels/Projects/hi/lib/dlib-19.13/dlib/cuda/tensor_tools.cpp
+	cd /home/troels/Projects/hi/dlib-build/dlib && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/dlib.dir/cuda/tensor_tools.cpp.o -c /home/troels/Projects/hi/lib/dlib-19.13/dlib/cuda/tensor_tools.cpp
 
 dlib-build/dlib/CMakeFiles/dlib.dir/cuda/tensor_tools.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/dlib.dir/cuda/tensor_tools.cpp.i"
-	cd /home/troels/Projects/hi/dlib-build/dlib && /usr/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/troels/Projects/hi/lib/dlib-19.13/dlib/cuda/tensor_tools.cpp > CMakeFiles/dlib.dir/cuda/tensor_tools.cpp.i
+	cd /home/troels/Projects/hi/dlib-build/dlib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/troels/Projects/hi/lib/dlib-19.13/dlib/cuda/tensor_tools.cpp > CMakeFiles/dlib.dir/cuda/tensor_tools.cpp.i
 
 dlib-build/dlib/CMakeFiles/dlib.dir/cuda/tensor_tools.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/dlib.dir/cuda/tensor_tools.cpp.s"
-	cd /home/troels/Projects/hi/dlib-build/dlib && /usr/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/troels/Projects/hi/lib/dlib-19.13/dlib/cuda/tensor_tools.cpp -o CMakeFiles/dlib.dir/cuda/tensor_tools.cpp.s
+	cd /home/troels/Projects/hi/dlib-build/dlib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/troels/Projects/hi/lib/dlib-19.13/dlib/cuda/tensor_tools.cpp -o CMakeFiles/dlib.dir/cuda/tensor_tools.cpp.s
 
 dlib-build/dlib/CMakeFiles/dlib.dir/cuda/tensor_tools.cpp.o.requires:
 
@@ -1140,15 +1140,15 @@ dlib-build/dlib/CMakeFiles/dlib.dir/cuda/tensor_tools.cpp.o.provides.build: dlib
 dlib-build/dlib/CMakeFiles/dlib.dir/gui_widgets/fonts.cpp.o: dlib-build/dlib/CMakeFiles/dlib.dir/flags.make
 dlib-build/dlib/CMakeFiles/dlib.dir/gui_widgets/fonts.cpp.o: lib/dlib-19.13/dlib/gui_widgets/fonts.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/troels/Projects/hi/CMakeFiles --progress-num=$(CMAKE_PROGRESS_46) "Building CXX object dlib-build/dlib/CMakeFiles/dlib.dir/gui_widgets/fonts.cpp.o"
-	cd /home/troels/Projects/hi/dlib-build/dlib && /usr/bin/g++-8  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/dlib.dir/gui_widgets/fonts.cpp.o -c /home/troels/Projects/hi/lib/dlib-19.13/dlib/gui_widgets/fonts.cpp
+	cd /home/troels/Projects/hi/dlib-build/dlib && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/dlib.dir/gui_widgets/fonts.cpp.o -c /home/troels/Projects/hi/lib/dlib-19.13/dlib/gui_widgets/fonts.cpp
 
 dlib-build/dlib/CMakeFiles/dlib.dir/gui_widgets/fonts.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/dlib.dir/gui_widgets/fonts.cpp.i"
-	cd /home/troels/Projects/hi/dlib-build/dlib && /usr/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/troels/Projects/hi/lib/dlib-19.13/dlib/gui_widgets/fonts.cpp > CMakeFiles/dlib.dir/gui_widgets/fonts.cpp.i
+	cd /home/troels/Projects/hi/dlib-build/dlib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/troels/Projects/hi/lib/dlib-19.13/dlib/gui_widgets/fonts.cpp > CMakeFiles/dlib.dir/gui_widgets/fonts.cpp.i
 
 dlib-build/dlib/CMakeFiles/dlib.dir/gui_widgets/fonts.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/dlib.dir/gui_widgets/fonts.cpp.s"
-	cd /home/troels/Projects/hi/dlib-build/dlib && /usr/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/troels/Projects/hi/lib/dlib-19.13/dlib/gui_widgets/fonts.cpp -o CMakeFiles/dlib.dir/gui_widgets/fonts.cpp.s
+	cd /home/troels/Projects/hi/dlib-build/dlib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/troels/Projects/hi/lib/dlib-19.13/dlib/gui_widgets/fonts.cpp -o CMakeFiles/dlib.dir/gui_widgets/fonts.cpp.s
 
 dlib-build/dlib/CMakeFiles/dlib.dir/gui_widgets/fonts.cpp.o.requires:
 
@@ -1164,15 +1164,15 @@ dlib-build/dlib/CMakeFiles/dlib.dir/gui_widgets/fonts.cpp.o.provides.build: dlib
 dlib-build/dlib/CMakeFiles/dlib.dir/gui_widgets/widgets.cpp.o: dlib-build/dlib/CMakeFiles/dlib.dir/flags.make
 dlib-build/dlib/CMakeFiles/dlib.dir/gui_widgets/widgets.cpp.o: lib/dlib-19.13/dlib/gui_widgets/widgets.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/troels/Projects/hi/CMakeFiles --progress-num=$(CMAKE_PROGRESS_47) "Building CXX object dlib-build/dlib/CMakeFiles/dlib.dir/gui_widgets/widgets.cpp.o"
-	cd /home/troels/Projects/hi/dlib-build/dlib && /usr/bin/g++-8  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/dlib.dir/gui_widgets/widgets.cpp.o -c /home/troels/Projects/hi/lib/dlib-19.13/dlib/gui_widgets/widgets.cpp
+	cd /home/troels/Projects/hi/dlib-build/dlib && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/dlib.dir/gui_widgets/widgets.cpp.o -c /home/troels/Projects/hi/lib/dlib-19.13/dlib/gui_widgets/widgets.cpp
 
 dlib-build/dlib/CMakeFiles/dlib.dir/gui_widgets/widgets.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/dlib.dir/gui_widgets/widgets.cpp.i"
-	cd /home/troels/Projects/hi/dlib-build/dlib && /usr/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/troels/Projects/hi/lib/dlib-19.13/dlib/gui_widgets/widgets.cpp > CMakeFiles/dlib.dir/gui_widgets/widgets.cpp.i
+	cd /home/troels/Projects/hi/dlib-build/dlib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/troels/Projects/hi/lib/dlib-19.13/dlib/gui_widgets/widgets.cpp > CMakeFiles/dlib.dir/gui_widgets/widgets.cpp.i
 
 dlib-build/dlib/CMakeFiles/dlib.dir/gui_widgets/widgets.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/dlib.dir/gui_widgets/widgets.cpp.s"
-	cd /home/troels/Projects/hi/dlib-build/dlib && /usr/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/troels/Projects/hi/lib/dlib-19.13/dlib/gui_widgets/widgets.cpp -o CMakeFiles/dlib.dir/gui_widgets/widgets.cpp.s
+	cd /home/troels/Projects/hi/dlib-build/dlib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/troels/Projects/hi/lib/dlib-19.13/dlib/gui_widgets/widgets.cpp -o CMakeFiles/dlib.dir/gui_widgets/widgets.cpp.s
 
 dlib-build/dlib/CMakeFiles/dlib.dir/gui_widgets/widgets.cpp.o.requires:
 
@@ -1188,15 +1188,15 @@ dlib-build/dlib/CMakeFiles/dlib.dir/gui_widgets/widgets.cpp.o.provides.build: dl
 dlib-build/dlib/CMakeFiles/dlib.dir/gui_widgets/drawable.cpp.o: dlib-build/dlib/CMakeFiles/dlib.dir/flags.make
 dlib-build/dlib/CMakeFiles/dlib.dir/gui_widgets/drawable.cpp.o: lib/dlib-19.13/dlib/gui_widgets/drawable.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/troels/Projects/hi/CMakeFiles --progress-num=$(CMAKE_PROGRESS_48) "Building CXX object dlib-build/dlib/CMakeFiles/dlib.dir/gui_widgets/drawable.cpp.o"
-	cd /home/troels/Projects/hi/dlib-build/dlib && /usr/bin/g++-8  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/dlib.dir/gui_widgets/drawable.cpp.o -c /home/troels/Projects/hi/lib/dlib-19.13/dlib/gui_widgets/drawable.cpp
+	cd /home/troels/Projects/hi/dlib-build/dlib && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/dlib.dir/gui_widgets/drawable.cpp.o -c /home/troels/Projects/hi/lib/dlib-19.13/dlib/gui_widgets/drawable.cpp
 
 dlib-build/dlib/CMakeFiles/dlib.dir/gui_widgets/drawable.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/dlib.dir/gui_widgets/drawable.cpp.i"
-	cd /home/troels/Projects/hi/dlib-build/dlib && /usr/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/troels/Projects/hi/lib/dlib-19.13/dlib/gui_widgets/drawable.cpp > CMakeFiles/dlib.dir/gui_widgets/drawable.cpp.i
+	cd /home/troels/Projects/hi/dlib-build/dlib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/troels/Projects/hi/lib/dlib-19.13/dlib/gui_widgets/drawable.cpp > CMakeFiles/dlib.dir/gui_widgets/drawable.cpp.i
 
 dlib-build/dlib/CMakeFiles/dlib.dir/gui_widgets/drawable.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/dlib.dir/gui_widgets/drawable.cpp.s"
-	cd /home/troels/Projects/hi/dlib-build/dlib && /usr/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/troels/Projects/hi/lib/dlib-19.13/dlib/gui_widgets/drawable.cpp -o CMakeFiles/dlib.dir/gui_widgets/drawable.cpp.s
+	cd /home/troels/Projects/hi/dlib-build/dlib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/troels/Projects/hi/lib/dlib-19.13/dlib/gui_widgets/drawable.cpp -o CMakeFiles/dlib.dir/gui_widgets/drawable.cpp.s
 
 dlib-build/dlib/CMakeFiles/dlib.dir/gui_widgets/drawable.cpp.o.requires:
 
@@ -1212,15 +1212,15 @@ dlib-build/dlib/CMakeFiles/dlib.dir/gui_widgets/drawable.cpp.o.provides.build: d
 dlib-build/dlib/CMakeFiles/dlib.dir/gui_widgets/canvas_drawing.cpp.o: dlib-build/dlib/CMakeFiles/dlib.dir/flags.make
 dlib-build/dlib/CMakeFiles/dlib.dir/gui_widgets/canvas_drawing.cpp.o: lib/dlib-19.13/dlib/gui_widgets/canvas_drawing.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/troels/Projects/hi/CMakeFiles --progress-num=$(CMAKE_PROGRESS_49) "Building CXX object dlib-build/dlib/CMakeFiles/dlib.dir/gui_widgets/canvas_drawing.cpp.o"
-	cd /home/troels/Projects/hi/dlib-build/dlib && /usr/bin/g++-8  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/dlib.dir/gui_widgets/canvas_drawing.cpp.o -c /home/troels/Projects/hi/lib/dlib-19.13/dlib/gui_widgets/canvas_drawing.cpp
+	cd /home/troels/Projects/hi/dlib-build/dlib && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/dlib.dir/gui_widgets/canvas_drawing.cpp.o -c /home/troels/Projects/hi/lib/dlib-19.13/dlib/gui_widgets/canvas_drawing.cpp
 
 dlib-build/dlib/CMakeFiles/dlib.dir/gui_widgets/canvas_drawing.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/dlib.dir/gui_widgets/canvas_drawing.cpp.i"
-	cd /home/troels/Projects/hi/dlib-build/dlib && /usr/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/troels/Projects/hi/lib/dlib-19.13/dlib/gui_widgets/canvas_drawing.cpp > CMakeFiles/dlib.dir/gui_widgets/canvas_drawing.cpp.i
+	cd /home/troels/Projects/hi/dlib-build/dlib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/troels/Projects/hi/lib/dlib-19.13/dlib/gui_widgets/canvas_drawing.cpp > CMakeFiles/dlib.dir/gui_widgets/canvas_drawing.cpp.i
 
 dlib-build/dlib/CMakeFiles/dlib.dir/gui_widgets/canvas_drawing.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/dlib.dir/gui_widgets/canvas_drawing.cpp.s"
-	cd /home/troels/Projects/hi/dlib-build/dlib && /usr/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/troels/Projects/hi/lib/dlib-19.13/dlib/gui_widgets/canvas_drawing.cpp -o CMakeFiles/dlib.dir/gui_widgets/canvas_drawing.cpp.s
+	cd /home/troels/Projects/hi/dlib-build/dlib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/troels/Projects/hi/lib/dlib-19.13/dlib/gui_widgets/canvas_drawing.cpp -o CMakeFiles/dlib.dir/gui_widgets/canvas_drawing.cpp.s
 
 dlib-build/dlib/CMakeFiles/dlib.dir/gui_widgets/canvas_drawing.cpp.o.requires:
 
@@ -1236,15 +1236,15 @@ dlib-build/dlib/CMakeFiles/dlib.dir/gui_widgets/canvas_drawing.cpp.o.provides.bu
 dlib-build/dlib/CMakeFiles/dlib.dir/gui_widgets/style.cpp.o: dlib-build/dlib/CMakeFiles/dlib.dir/flags.make
 dlib-build/dlib/CMakeFiles/dlib.dir/gui_widgets/style.cpp.o: lib/dlib-19.13/dlib/gui_widgets/style.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/troels/Projects/hi/CMakeFiles --progress-num=$(CMAKE_PROGRESS_50) "Building CXX object dlib-build/dlib/CMakeFiles/dlib.dir/gui_widgets/style.cpp.o"
-	cd /home/troels/Projects/hi/dlib-build/dlib && /usr/bin/g++-8  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/dlib.dir/gui_widgets/style.cpp.o -c /home/troels/Projects/hi/lib/dlib-19.13/dlib/gui_widgets/style.cpp
+	cd /home/troels/Projects/hi/dlib-build/dlib && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/dlib.dir/gui_widgets/style.cpp.o -c /home/troels/Projects/hi/lib/dlib-19.13/dlib/gui_widgets/style.cpp
 
 dlib-build/dlib/CMakeFiles/dlib.dir/gui_widgets/style.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/dlib.dir/gui_widgets/style.cpp.i"
-	cd /home/troels/Projects/hi/dlib-build/dlib && /usr/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/troels/Projects/hi/lib/dlib-19.13/dlib/gui_widgets/style.cpp > CMakeFiles/dlib.dir/gui_widgets/style.cpp.i
+	cd /home/troels/Projects/hi/dlib-build/dlib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/troels/Projects/hi/lib/dlib-19.13/dlib/gui_widgets/style.cpp > CMakeFiles/dlib.dir/gui_widgets/style.cpp.i
 
 dlib-build/dlib/CMakeFiles/dlib.dir/gui_widgets/style.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/dlib.dir/gui_widgets/style.cpp.s"
-	cd /home/troels/Projects/hi/dlib-build/dlib && /usr/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/troels/Projects/hi/lib/dlib-19.13/dlib/gui_widgets/style.cpp -o CMakeFiles/dlib.dir/gui_widgets/style.cpp.s
+	cd /home/troels/Projects/hi/dlib-build/dlib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/troels/Projects/hi/lib/dlib-19.13/dlib/gui_widgets/style.cpp -o CMakeFiles/dlib.dir/gui_widgets/style.cpp.s
 
 dlib-build/dlib/CMakeFiles/dlib.dir/gui_widgets/style.cpp.o.requires:
 
@@ -1260,15 +1260,15 @@ dlib-build/dlib/CMakeFiles/dlib.dir/gui_widgets/style.cpp.o.provides.build: dlib
 dlib-build/dlib/CMakeFiles/dlib.dir/gui_widgets/base_widgets.cpp.o: dlib-build/dlib/CMakeFiles/dlib.dir/flags.make
 dlib-build/dlib/CMakeFiles/dlib.dir/gui_widgets/base_widgets.cpp.o: lib/dlib-19.13/dlib/gui_widgets/base_widgets.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/troels/Projects/hi/CMakeFiles --progress-num=$(CMAKE_PROGRESS_51) "Building CXX object dlib-build/dlib/CMakeFiles/dlib.dir/gui_widgets/base_widgets.cpp.o"
-	cd /home/troels/Projects/hi/dlib-build/dlib && /usr/bin/g++-8  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/dlib.dir/gui_widgets/base_widgets.cpp.o -c /home/troels/Projects/hi/lib/dlib-19.13/dlib/gui_widgets/base_widgets.cpp
+	cd /home/troels/Projects/hi/dlib-build/dlib && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/dlib.dir/gui_widgets/base_widgets.cpp.o -c /home/troels/Projects/hi/lib/dlib-19.13/dlib/gui_widgets/base_widgets.cpp
 
 dlib-build/dlib/CMakeFiles/dlib.dir/gui_widgets/base_widgets.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/dlib.dir/gui_widgets/base_widgets.cpp.i"
-	cd /home/troels/Projects/hi/dlib-build/dlib && /usr/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/troels/Projects/hi/lib/dlib-19.13/dlib/gui_widgets/base_widgets.cpp > CMakeFiles/dlib.dir/gui_widgets/base_widgets.cpp.i
+	cd /home/troels/Projects/hi/dlib-build/dlib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/troels/Projects/hi/lib/dlib-19.13/dlib/gui_widgets/base_widgets.cpp > CMakeFiles/dlib.dir/gui_widgets/base_widgets.cpp.i
 
 dlib-build/dlib/CMakeFiles/dlib.dir/gui_widgets/base_widgets.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/dlib.dir/gui_widgets/base_widgets.cpp.s"
-	cd /home/troels/Projects/hi/dlib-build/dlib && /usr/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/troels/Projects/hi/lib/dlib-19.13/dlib/gui_widgets/base_widgets.cpp -o CMakeFiles/dlib.dir/gui_widgets/base_widgets.cpp.s
+	cd /home/troels/Projects/hi/dlib-build/dlib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/troels/Projects/hi/lib/dlib-19.13/dlib/gui_widgets/base_widgets.cpp -o CMakeFiles/dlib.dir/gui_widgets/base_widgets.cpp.s
 
 dlib-build/dlib/CMakeFiles/dlib.dir/gui_widgets/base_widgets.cpp.o.requires:
 
@@ -1284,15 +1284,15 @@ dlib-build/dlib/CMakeFiles/dlib.dir/gui_widgets/base_widgets.cpp.o.provides.buil
 dlib-build/dlib/CMakeFiles/dlib.dir/gui_core/gui_core_kernel_1.cpp.o: dlib-build/dlib/CMakeFiles/dlib.dir/flags.make
 dlib-build/dlib/CMakeFiles/dlib.dir/gui_core/gui_core_kernel_1.cpp.o: lib/dlib-19.13/dlib/gui_core/gui_core_kernel_1.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/troels/Projects/hi/CMakeFiles --progress-num=$(CMAKE_PROGRESS_52) "Building CXX object dlib-build/dlib/CMakeFiles/dlib.dir/gui_core/gui_core_kernel_1.cpp.o"
-	cd /home/troels/Projects/hi/dlib-build/dlib && /usr/bin/g++-8  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/dlib.dir/gui_core/gui_core_kernel_1.cpp.o -c /home/troels/Projects/hi/lib/dlib-19.13/dlib/gui_core/gui_core_kernel_1.cpp
+	cd /home/troels/Projects/hi/dlib-build/dlib && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/dlib.dir/gui_core/gui_core_kernel_1.cpp.o -c /home/troels/Projects/hi/lib/dlib-19.13/dlib/gui_core/gui_core_kernel_1.cpp
 
 dlib-build/dlib/CMakeFiles/dlib.dir/gui_core/gui_core_kernel_1.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/dlib.dir/gui_core/gui_core_kernel_1.cpp.i"
-	cd /home/troels/Projects/hi/dlib-build/dlib && /usr/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/troels/Projects/hi/lib/dlib-19.13/dlib/gui_core/gui_core_kernel_1.cpp > CMakeFiles/dlib.dir/gui_core/gui_core_kernel_1.cpp.i
+	cd /home/troels/Projects/hi/dlib-build/dlib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/troels/Projects/hi/lib/dlib-19.13/dlib/gui_core/gui_core_kernel_1.cpp > CMakeFiles/dlib.dir/gui_core/gui_core_kernel_1.cpp.i
 
 dlib-build/dlib/CMakeFiles/dlib.dir/gui_core/gui_core_kernel_1.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/dlib.dir/gui_core/gui_core_kernel_1.cpp.s"
-	cd /home/troels/Projects/hi/dlib-build/dlib && /usr/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/troels/Projects/hi/lib/dlib-19.13/dlib/gui_core/gui_core_kernel_1.cpp -o CMakeFiles/dlib.dir/gui_core/gui_core_kernel_1.cpp.s
+	cd /home/troels/Projects/hi/dlib-build/dlib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/troels/Projects/hi/lib/dlib-19.13/dlib/gui_core/gui_core_kernel_1.cpp -o CMakeFiles/dlib.dir/gui_core/gui_core_kernel_1.cpp.s
 
 dlib-build/dlib/CMakeFiles/dlib.dir/gui_core/gui_core_kernel_1.cpp.o.requires:
 
@@ -1308,15 +1308,15 @@ dlib-build/dlib/CMakeFiles/dlib.dir/gui_core/gui_core_kernel_1.cpp.o.provides.bu
 dlib-build/dlib/CMakeFiles/dlib.dir/gui_core/gui_core_kernel_2.cpp.o: dlib-build/dlib/CMakeFiles/dlib.dir/flags.make
 dlib-build/dlib/CMakeFiles/dlib.dir/gui_core/gui_core_kernel_2.cpp.o: lib/dlib-19.13/dlib/gui_core/gui_core_kernel_2.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/troels/Projects/hi/CMakeFiles --progress-num=$(CMAKE_PROGRESS_53) "Building CXX object dlib-build/dlib/CMakeFiles/dlib.dir/gui_core/gui_core_kernel_2.cpp.o"
-	cd /home/troels/Projects/hi/dlib-build/dlib && /usr/bin/g++-8  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/dlib.dir/gui_core/gui_core_kernel_2.cpp.o -c /home/troels/Projects/hi/lib/dlib-19.13/dlib/gui_core/gui_core_kernel_2.cpp
+	cd /home/troels/Projects/hi/dlib-build/dlib && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/dlib.dir/gui_core/gui_core_kernel_2.cpp.o -c /home/troels/Projects/hi/lib/dlib-19.13/dlib/gui_core/gui_core_kernel_2.cpp
 
 dlib-build/dlib/CMakeFiles/dlib.dir/gui_core/gui_core_kernel_2.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/dlib.dir/gui_core/gui_core_kernel_2.cpp.i"
-	cd /home/troels/Projects/hi/dlib-build/dlib && /usr/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/troels/Projects/hi/lib/dlib-19.13/dlib/gui_core/gui_core_kernel_2.cpp > CMakeFiles/dlib.dir/gui_core/gui_core_kernel_2.cpp.i
+	cd /home/troels/Projects/hi/dlib-build/dlib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/troels/Projects/hi/lib/dlib-19.13/dlib/gui_core/gui_core_kernel_2.cpp > CMakeFiles/dlib.dir/gui_core/gui_core_kernel_2.cpp.i
 
 dlib-build/dlib/CMakeFiles/dlib.dir/gui_core/gui_core_kernel_2.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/dlib.dir/gui_core/gui_core_kernel_2.cpp.s"
-	cd /home/troels/Projects/hi/dlib-build/dlib && /usr/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/troels/Projects/hi/lib/dlib-19.13/dlib/gui_core/gui_core_kernel_2.cpp -o CMakeFiles/dlib.dir/gui_core/gui_core_kernel_2.cpp.s
+	cd /home/troels/Projects/hi/dlib-build/dlib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/troels/Projects/hi/lib/dlib-19.13/dlib/gui_core/gui_core_kernel_2.cpp -o CMakeFiles/dlib.dir/gui_core/gui_core_kernel_2.cpp.s
 
 dlib-build/dlib/CMakeFiles/dlib.dir/gui_core/gui_core_kernel_2.cpp.o.requires:
 
@@ -1332,15 +1332,15 @@ dlib-build/dlib/CMakeFiles/dlib.dir/gui_core/gui_core_kernel_2.cpp.o.provides.bu
 dlib-build/dlib/CMakeFiles/dlib.dir/image_loader/png_loader.cpp.o: dlib-build/dlib/CMakeFiles/dlib.dir/flags.make
 dlib-build/dlib/CMakeFiles/dlib.dir/image_loader/png_loader.cpp.o: lib/dlib-19.13/dlib/image_loader/png_loader.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/troels/Projects/hi/CMakeFiles --progress-num=$(CMAKE_PROGRESS_54) "Building CXX object dlib-build/dlib/CMakeFiles/dlib.dir/image_loader/png_loader.cpp.o"
-	cd /home/troels/Projects/hi/dlib-build/dlib && /usr/bin/g++-8  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/dlib.dir/image_loader/png_loader.cpp.o -c /home/troels/Projects/hi/lib/dlib-19.13/dlib/image_loader/png_loader.cpp
+	cd /home/troels/Projects/hi/dlib-build/dlib && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/dlib.dir/image_loader/png_loader.cpp.o -c /home/troels/Projects/hi/lib/dlib-19.13/dlib/image_loader/png_loader.cpp
 
 dlib-build/dlib/CMakeFiles/dlib.dir/image_loader/png_loader.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/dlib.dir/image_loader/png_loader.cpp.i"
-	cd /home/troels/Projects/hi/dlib-build/dlib && /usr/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/troels/Projects/hi/lib/dlib-19.13/dlib/image_loader/png_loader.cpp > CMakeFiles/dlib.dir/image_loader/png_loader.cpp.i
+	cd /home/troels/Projects/hi/dlib-build/dlib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/troels/Projects/hi/lib/dlib-19.13/dlib/image_loader/png_loader.cpp > CMakeFiles/dlib.dir/image_loader/png_loader.cpp.i
 
 dlib-build/dlib/CMakeFiles/dlib.dir/image_loader/png_loader.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/dlib.dir/image_loader/png_loader.cpp.s"
-	cd /home/troels/Projects/hi/dlib-build/dlib && /usr/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/troels/Projects/hi/lib/dlib-19.13/dlib/image_loader/png_loader.cpp -o CMakeFiles/dlib.dir/image_loader/png_loader.cpp.s
+	cd /home/troels/Projects/hi/dlib-build/dlib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/troels/Projects/hi/lib/dlib-19.13/dlib/image_loader/png_loader.cpp -o CMakeFiles/dlib.dir/image_loader/png_loader.cpp.s
 
 dlib-build/dlib/CMakeFiles/dlib.dir/image_loader/png_loader.cpp.o.requires:
 
@@ -1356,15 +1356,15 @@ dlib-build/dlib/CMakeFiles/dlib.dir/image_loader/png_loader.cpp.o.provides.build
 dlib-build/dlib/CMakeFiles/dlib.dir/image_saver/save_png.cpp.o: dlib-build/dlib/CMakeFiles/dlib.dir/flags.make
 dlib-build/dlib/CMakeFiles/dlib.dir/image_saver/save_png.cpp.o: lib/dlib-19.13/dlib/image_saver/save_png.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/troels/Projects/hi/CMakeFiles --progress-num=$(CMAKE_PROGRESS_55) "Building CXX object dlib-build/dlib/CMakeFiles/dlib.dir/image_saver/save_png.cpp.o"
-	cd /home/troels/Projects/hi/dlib-build/dlib && /usr/bin/g++-8  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/dlib.dir/image_saver/save_png.cpp.o -c /home/troels/Projects/hi/lib/dlib-19.13/dlib/image_saver/save_png.cpp
+	cd /home/troels/Projects/hi/dlib-build/dlib && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/dlib.dir/image_saver/save_png.cpp.o -c /home/troels/Projects/hi/lib/dlib-19.13/dlib/image_saver/save_png.cpp
 
 dlib-build/dlib/CMakeFiles/dlib.dir/image_saver/save_png.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/dlib.dir/image_saver/save_png.cpp.i"
-	cd /home/troels/Projects/hi/dlib-build/dlib && /usr/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/troels/Projects/hi/lib/dlib-19.13/dlib/image_saver/save_png.cpp > CMakeFiles/dlib.dir/image_saver/save_png.cpp.i
+	cd /home/troels/Projects/hi/dlib-build/dlib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/troels/Projects/hi/lib/dlib-19.13/dlib/image_saver/save_png.cpp > CMakeFiles/dlib.dir/image_saver/save_png.cpp.i
 
 dlib-build/dlib/CMakeFiles/dlib.dir/image_saver/save_png.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/dlib.dir/image_saver/save_png.cpp.s"
-	cd /home/troels/Projects/hi/dlib-build/dlib && /usr/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/troels/Projects/hi/lib/dlib-19.13/dlib/image_saver/save_png.cpp -o CMakeFiles/dlib.dir/image_saver/save_png.cpp.s
+	cd /home/troels/Projects/hi/dlib-build/dlib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/troels/Projects/hi/lib/dlib-19.13/dlib/image_saver/save_png.cpp -o CMakeFiles/dlib.dir/image_saver/save_png.cpp.s
 
 dlib-build/dlib/CMakeFiles/dlib.dir/image_saver/save_png.cpp.o.requires:
 
@@ -1380,15 +1380,15 @@ dlib-build/dlib/CMakeFiles/dlib.dir/image_saver/save_png.cpp.o.provides.build: d
 dlib-build/dlib/CMakeFiles/dlib.dir/image_loader/jpeg_loader.cpp.o: dlib-build/dlib/CMakeFiles/dlib.dir/flags.make
 dlib-build/dlib/CMakeFiles/dlib.dir/image_loader/jpeg_loader.cpp.o: lib/dlib-19.13/dlib/image_loader/jpeg_loader.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/troels/Projects/hi/CMakeFiles --progress-num=$(CMAKE_PROGRESS_56) "Building CXX object dlib-build/dlib/CMakeFiles/dlib.dir/image_loader/jpeg_loader.cpp.o"
-	cd /home/troels/Projects/hi/dlib-build/dlib && /usr/bin/g++-8  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/dlib.dir/image_loader/jpeg_loader.cpp.o -c /home/troels/Projects/hi/lib/dlib-19.13/dlib/image_loader/jpeg_loader.cpp
+	cd /home/troels/Projects/hi/dlib-build/dlib && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/dlib.dir/image_loader/jpeg_loader.cpp.o -c /home/troels/Projects/hi/lib/dlib-19.13/dlib/image_loader/jpeg_loader.cpp
 
 dlib-build/dlib/CMakeFiles/dlib.dir/image_loader/jpeg_loader.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/dlib.dir/image_loader/jpeg_loader.cpp.i"
-	cd /home/troels/Projects/hi/dlib-build/dlib && /usr/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/troels/Projects/hi/lib/dlib-19.13/dlib/image_loader/jpeg_loader.cpp > CMakeFiles/dlib.dir/image_loader/jpeg_loader.cpp.i
+	cd /home/troels/Projects/hi/dlib-build/dlib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/troels/Projects/hi/lib/dlib-19.13/dlib/image_loader/jpeg_loader.cpp > CMakeFiles/dlib.dir/image_loader/jpeg_loader.cpp.i
 
 dlib-build/dlib/CMakeFiles/dlib.dir/image_loader/jpeg_loader.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/dlib.dir/image_loader/jpeg_loader.cpp.s"
-	cd /home/troels/Projects/hi/dlib-build/dlib && /usr/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/troels/Projects/hi/lib/dlib-19.13/dlib/image_loader/jpeg_loader.cpp -o CMakeFiles/dlib.dir/image_loader/jpeg_loader.cpp.s
+	cd /home/troels/Projects/hi/dlib-build/dlib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/troels/Projects/hi/lib/dlib-19.13/dlib/image_loader/jpeg_loader.cpp -o CMakeFiles/dlib.dir/image_loader/jpeg_loader.cpp.s
 
 dlib-build/dlib/CMakeFiles/dlib.dir/image_loader/jpeg_loader.cpp.o.requires:
 
@@ -1404,15 +1404,15 @@ dlib-build/dlib/CMakeFiles/dlib.dir/image_loader/jpeg_loader.cpp.o.provides.buil
 dlib-build/dlib/CMakeFiles/dlib.dir/image_saver/save_jpeg.cpp.o: dlib-build/dlib/CMakeFiles/dlib.dir/flags.make
 dlib-build/dlib/CMakeFiles/dlib.dir/image_saver/save_jpeg.cpp.o: lib/dlib-19.13/dlib/image_saver/save_jpeg.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/troels/Projects/hi/CMakeFiles --progress-num=$(CMAKE_PROGRESS_57) "Building CXX object dlib-build/dlib/CMakeFiles/dlib.dir/image_saver/save_jpeg.cpp.o"
-	cd /home/troels/Projects/hi/dlib-build/dlib && /usr/bin/g++-8  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/dlib.dir/image_saver/save_jpeg.cpp.o -c /home/troels/Projects/hi/lib/dlib-19.13/dlib/image_saver/save_jpeg.cpp
+	cd /home/troels/Projects/hi/dlib-build/dlib && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/dlib.dir/image_saver/save_jpeg.cpp.o -c /home/troels/Projects/hi/lib/dlib-19.13/dlib/image_saver/save_jpeg.cpp
 
 dlib-build/dlib/CMakeFiles/dlib.dir/image_saver/save_jpeg.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/dlib.dir/image_saver/save_jpeg.cpp.i"
-	cd /home/troels/Projects/hi/dlib-build/dlib && /usr/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/troels/Projects/hi/lib/dlib-19.13/dlib/image_saver/save_jpeg.cpp > CMakeFiles/dlib.dir/image_saver/save_jpeg.cpp.i
+	cd /home/troels/Projects/hi/dlib-build/dlib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/troels/Projects/hi/lib/dlib-19.13/dlib/image_saver/save_jpeg.cpp > CMakeFiles/dlib.dir/image_saver/save_jpeg.cpp.i
 
 dlib-build/dlib/CMakeFiles/dlib.dir/image_saver/save_jpeg.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/dlib.dir/image_saver/save_jpeg.cpp.s"
-	cd /home/troels/Projects/hi/dlib-build/dlib && /usr/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/troels/Projects/hi/lib/dlib-19.13/dlib/image_saver/save_jpeg.cpp -o CMakeFiles/dlib.dir/image_saver/save_jpeg.cpp.s
+	cd /home/troels/Projects/hi/dlib-build/dlib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/troels/Projects/hi/lib/dlib-19.13/dlib/image_saver/save_jpeg.cpp -o CMakeFiles/dlib.dir/image_saver/save_jpeg.cpp.s
 
 dlib-build/dlib/CMakeFiles/dlib.dir/image_saver/save_jpeg.cpp.o.requires:
 

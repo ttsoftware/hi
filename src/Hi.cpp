@@ -18,7 +18,7 @@ Hi::Hi() {
     detector = get_frontal_face_detector();
 
     // We will also use a face landmarking model to align faces to a standard pose:  (see face_landmark_detection_ex.cpp for an introduction)
-    deserialize("data/models/shape_predictor_68_face_landmarks.dat") >> sp;
+    deserialize("data/models/shape_predictor_68_face_landmarks.dat") >> shape_corrector;
 
     // And finally we load the DNN responsible for face recognition.
     deserialize("data/models/dlib_face_recognition_resnet_model_v1.dat") >> net;
@@ -35,6 +35,21 @@ std::vector<matrix<rgb_pixel>> Hi::jitter(matrix<rgb_pixel> &img, int rounds) {
     return crops;
 }
 
+matrix<rgb_pixel> Hi::findFace(matrix<rgb_pixel> &img) {
+    // Run the face detector on the image, and for each face extract a
+    // copy that has been normalized to 150x150 pixels in size and appropriately rotated
+    // and centered.
+    matrix<rgb_pixel> face_chip;
+
+    auto faces = detector(img);
+    if (!faces.empty()) {
+        rectangle face = faces[0];
+        extract_image_chip(img, get_face_chip_details(shape_corrector(img, face), 150, 0.2), face_chip);
+    }
+
+    return face_chip;
+}
+
 std::vector<matrix<rgb_pixel>> Hi::findFaces(matrix<rgb_pixel> &img) {
     // Run the face detector on the image, and for each face extract a
     // copy that has been normalized to 150x150 pixels in size and appropriately rotated
@@ -42,7 +57,7 @@ std::vector<matrix<rgb_pixel>> Hi::findFaces(matrix<rgb_pixel> &img) {
     std::vector<matrix<rgb_pixel>> faces;
     for (rectangle face : detector(img)) {
         matrix<rgb_pixel> face_chip;
-        extract_image_chip(img, get_face_chip_details(sp(img, face), 150, 0.25), face_chip);
+        extract_image_chip(img, get_face_chip_details(shape_corrector(img, face), 150, 0.2), face_chip);
         faces.push_back(move(face_chip));
     }
 
@@ -85,25 +100,19 @@ bool Hi::contains(std::vector<matrix<float, 0, 1>> face_descriptors,
                   matrix<float, 0, 1> face_reference,
                   float confidence_threshold) {
 
-    bool has_face = false;
+    bool has_reference_face = false;
     for (const auto &face_descriptor : face_descriptors) {
         if (length(face_reference - face_descriptor) < confidence_threshold) {
-            has_face = true;
+            has_reference_face = true;
             break;
         }
     }
 
-    return has_face;
+    return has_reference_face;
 }
 
-std::vector<matrix<float, 0, 1>> Hi::getDescriptors(string img_location) {
-    matrix<rgb_pixel> img;
-    load_image(img, img_location);
+std::vector<matrix<float, 0, 1>> Hi::getDescriptors(matrix<rgb_pixel> &face) {
     // Convert each face image in faces into a 128D std::vector.
-    return getDescriptors(img);
-}
-
-std::vector<matrix<float, 0, 1>> Hi::getDescriptors(matrix<rgb_pixel> &img) {
-    // Convert each face image in faces into a 128D std::vector.
-    return net(findFaces(img));
+    const std::vector<matrix<rgb_pixel>> faces(1, face);
+    return net(faces);
 }

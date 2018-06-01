@@ -1,11 +1,17 @@
 #include <iostream>
 #include <experimental/filesystem>
 #include <chrono>
+
+#include <dlib/opencv.h>
+#include <dlib/opencv/cv_image.h>
+#include <dlib/image_processing/generic_image.h>
+#include <dlib/image_transforms/equalize_histogram.h>
 #include <dlib/gui_widgets.h>
 
 #include "Hi.h"
 #include "HiCamera.h"
 
+using namespace dlib;
 using namespace std;
 using namespace std::chrono;
 
@@ -23,45 +29,25 @@ int main() try {
     auto troels_descriptor = hi.loadDescriptor("data/face_descriptors/troels.dat");
     auto time2 = (duration_cast<milliseconds>(system_clock::now().time_since_epoch())).count();
 
-    cout << "Loaded Troels face descriptor in " << time2 - time1 << " ms" << endl;
+    cout << "Loaded reference face descriptor in " << time2 - time1 << " ms" << endl;
+
+    auto face = HiCamera::captureFace(hi, 0, 10);
 
     auto time3 = (duration_cast<milliseconds>(system_clock::now().time_since_epoch())).count();
 
-    auto frames = HiCamera::capture(0, 5);
+    cout << "Capturing and finding a face in " << time3 - time2 << " ms." << endl;
 
-    // find first face in all frames
-    std::vector<matrix<rgb_pixel>> faces;
-    for (auto frame : frames) {
-        auto found_faces = hi.findFaces(frame);
-        if (!found_faces.empty()) { // only add frame if a face was found
-            faces.emplace_back(found_faces[0]);
-            break;
-        }
-    }
-
-    if (faces.empty()) return 1;
+    if (face.size() == 0) return 11;
 
     auto time4 = (duration_cast<milliseconds>(system_clock::now().time_since_epoch())).count();
 
-    cout << "Capturing and finding " << faces.size() << " faces in " << time4 - time3 << " ms." << endl;
-
-    auto descriptors = hi.getDescriptors(faces[0]);
+    auto descriptors = hi.getDescriptors(face);
+    bool result = hi.contains(descriptors, troels_descriptor, 0.5);
 
     auto time5 = (duration_cast<milliseconds>(system_clock::now().time_since_epoch())).count();
-
-    cout << "Creating faces descriptors in " << time5 - time4 << " ms." << endl;
-
-    auto result = hi.contains(descriptors, troels_descriptor, 0.5);
-
-    auto time6 = (duration_cast<milliseconds>(system_clock::now().time_since_epoch())).count();
-
-    if (result) {
-        cout << "Troels is contained in frames" << endl;
-    } else {
-        cout << "Troels is not contained in frames" << endl;
-    }
-
-    cout << "Comparison took " << time6 - time5 << " ms." << endl;
+    cout << "Creating face descriptors in " << time5 - time4 << " ms." << endl;
+    cout << (result ? "Success" : "Failure") << endl;
+    cout << "Total time " << (time5 - time0) / 1000 << " s." << endl;
 
     return 0;
 }
@@ -98,7 +84,7 @@ void test() {
     */
 
     // initialize neural networks
-    auto hi = Hi();
+    /*auto hi = Hi();
 
     auto troels_descriptor = hi.loadDescriptor("data/face_descriptors/troels.dat");
 
@@ -124,5 +110,5 @@ void test() {
 
             cout << "Comparison took " << time1 - time0 << " ms." << endl;
         }
-    }
+    }*/
 }
