@@ -20,10 +20,6 @@ std::vector<matrix<rgb_pixel>> HiCamera::capture(int captureDeviceID, int numFra
     VideoCapture videoCapture(captureDeviceID); // open the default camera
     if (!videoCapture.isOpened()) throw runtime_error("Could not open camera.");
 
-    // try as small as possible
-    videoCapture.set(CV_CAP_PROP_FRAME_WIDTH, 320);
-    videoCapture.set(CV_CAP_PROP_FRAME_HEIGHT, 240);
-
     std::vector<matrix<rgb_pixel>> frames;
 
     for (size_t i = 0; i < numFrames; i++) {

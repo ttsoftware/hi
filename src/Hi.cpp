@@ -71,17 +71,18 @@ std::vector<rectangle> Hi::findFaceLocations(matrix<rgb_pixel> &img) {
 matrix<float, 0, 1> Hi::createDescriptor(string img_location, int num_jitters) {
     matrix<rgb_pixel> img;
     load_image(img, img_location);
+    return createDescriptor(findFace(img));
+}
 
-    std::vector<matrix<rgb_pixel>> faces = findFaces(img);
-
-    if (faces.size() == 1) {
+matrix<float, 0, 1> Hi::createDescriptor(matrix<rgb_pixel> face, int num_jitters) {
+    if (face.size() > 0) {
         // Use DNN to convert each face image in faces into a 128D std::vector.
         // In this 128D std::vector space, images from the same person will be close to each other
         // but std::vectors from different people will be far apart.  So we can use these std::vectors to
         // identify if a pair of images are from the same person or from different people.
-        return mean(mat(net(jitter(faces[0], num_jitters))));
+        return mean(mat(net(jitter(face, num_jitters))));
     }
-    throw runtime_error("Invalid number of faces in image.");
+    throw runtime_error("Cannot create descriptor from faceless matrix.");
 }
 
 void Hi::storeDescriptor(matrix<float, 0, 1> face_descriptor, string filepath) {

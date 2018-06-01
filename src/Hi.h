@@ -57,6 +57,14 @@ public:
     matrix<float, 0, 1> createDescriptor(string img_location, int num_jitters = 100);
 
     /**
+     * Creates a new detailed face descriptor from image matrix. Assumes only one face in image matrix.
+     *
+     * @param face face matrix to create descriptor of
+     * @return matrix<float, 0, 1>
+     */
+    matrix<float, 0, 1> createDescriptor(matrix<rgb_pixel> face, int num_jitters = 100);
+
+    /**
      * Stores a face descriptor matrix in a serialized form
      *
      * @param face_descriptor face descriptor matrix

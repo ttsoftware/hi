@@ -1,6 +1,9 @@
 #include <iostream>
 #include <experimental/filesystem>
 #include <chrono>
+#include <iterator>
+#include <vector>
+#include <thread>
 
 #include <dlib/opencv.h>
 #include <dlib/opencv/cv_image.h>
@@ -13,20 +16,21 @@
 
 using namespace dlib;
 using namespace std;
+using namespace std::this_thread;
 using namespace std::chrono;
 
-int main() try {
+// init time
+auto time0 = (duration_cast<milliseconds>(system_clock::now().time_since_epoch())).count();
 
-    // init time
-    auto time0 = (duration_cast<milliseconds>(system_clock::now().time_since_epoch())).count();
+// initialize neural networks
+auto hi = Hi();
+auto time1 = (duration_cast<milliseconds>(system_clock::now().time_since_epoch())).count();
 
-    // initialize neural networks
-    auto hi = Hi();
-    auto time1 = (duration_cast<milliseconds>(system_clock::now().time_since_epoch())).count();
+int recognize(const string &reference_descriptor_name) try {
 
     cout << "Loaded neural networks in " << time1 - time0 << " ms" << endl;
 
-    auto troels_descriptor = hi.loadDescriptor("data/face_descriptors/troels.dat");
+    auto troels_descriptor = hi.loadDescriptor("data/face_descriptors/" + reference_descriptor_name + ".dat");
     auto time2 = (duration_cast<milliseconds>(system_clock::now().time_since_epoch())).count();
 
     cout << "Loaded reference face descriptor in " << time2 - time1 << " ms" << endl;
@@ -35,9 +39,9 @@ int main() try {
 
     auto time3 = (duration_cast<milliseconds>(system_clock::now().time_since_epoch())).count();
 
-    cout << "Capturing and finding a face in " << time3 - time2 << " ms." << endl;
-
     if (face.size() == 0) return 11;
+
+    cout << "Capturing and finding a face in " << time3 - time2 << " ms." << endl;
 
     auto time4 = (duration_cast<milliseconds>(system_clock::now().time_since_epoch())).count();
 
@@ -53,62 +57,53 @@ int main() try {
 }
 catch (std::exception &e) {
     cout << e.what() << endl;
+    return 1;
 }
 
-void test() {
+int main(int argc, char **argv) {
+    if (argc == 1) {
+        // start daemon
+        return 1;
+    }
+    if (argc == 2) {
+        // recognize face
+        return recognize(string(argv[1]));
+    }
+    if (argc == 3) {
+        // add a face
+        if (string(argv[1]).compare("add") == 0) {
 
-    /*
-    std::vector<pair<matrix<rgb_pixel>, rectangle>> framesFace;
-     for (auto frame : frames) {
-        auto face_rectangles = hi.findFaceLocations(frame);
-        if (!face_rectangles.empty()) { // only add frame if a face was found
-            framesFace.emplace_back(frame, face_rectangles[0]);
+            cout << "Capturing face please sit still and stare directly into the camera." << endl;
+            sleep_until(system_clock::now() + seconds(1));
+            cout << "3" << endl;
+            sleep_until(system_clock::now() + seconds(1));
+            cout << "2" << endl;
+            sleep_until(system_clock::now() + seconds(1));
+            cout << "1" << endl;
+            sleep_until(system_clock::now() + seconds(1));
+
+            auto frames = HiCamera::capture(0, 15);
+
+            cout << "Captured face..." << endl;
+
+            bool has_face = false;
+            for (auto frame : frames) {
+                auto face = hi.findFace(frame);
+                if (face.size() > 0) {
+                    cout << "Creating unique face descriptor vector..." << endl;
+                    hi.storeDescriptor(hi.createDescriptor(face), "data/face_descriptors/" + string(argv[2]) + ".dat");
+                    has_face = true;
+                    break;
+                }
+            }
+            if (!has_face) {
+                cout << "Could not find a face in the captured frames." << endl;
+                return 1;
+            }
+            cout << "Done!" << endl;
+        } else {
         }
     }
-    image_window win;
-    while (true) {
-        for (auto frameFace : framesFace) {
-            win.set_image(frameFace.first);
-            win.clear_overlay();
-            win.add_overlay(frameFace.second);
 
-            usleep(static_cast<__useconds_t>(1e5));
-        }
-    }*/
-
-    /*
-    auto descriptor = hi.createDescriptor("data/faces/troels.png", 100);
-    cout << "Found a face descriptor." << endl;
-    hi.storeDescriptor(descriptor, "data/face_descriptors/troels.dat");
-    return 0;
-    */
-
-    // initialize neural networks
-    /*auto hi = Hi();
-
-    auto troels_descriptor = hi.loadDescriptor("data/face_descriptors/troels.dat");
-
-    auto testfolder = std::experimental::filesystem::u8path("data/faces/test");
-    for (auto &path : std::experimental::filesystem::directory_iterator(testfolder)) {
-
-        if (path.path().has_extension()) { // don't compare directories
-
-            auto time0 = (duration_cast<milliseconds>(system_clock::now().time_since_epoch())).count();
-
-            cout << "\nComparing with " << path << endl;
-
-            auto descriptors = hi.getDescriptors(path.path().string());
-            auto result = hi.contains(descriptors, troels_descriptor, 0.5);
-
-            if (result) {
-                cout << "Troels is contained in " << path << endl;
-            } else {
-                cout << "Troels is not contained in " << path << endl;
-            }
-
-            auto time1 = (duration_cast<milliseconds>(system_clock::now().time_since_epoch())).count();
-
-            cout << "Comparison took " << time1 - time0 << " ms." << endl;
-        }
-    }*/
+    return 1;
 }
