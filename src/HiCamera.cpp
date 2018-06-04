@@ -47,19 +47,19 @@ matrix<rgb_pixel> HiCamera::captureFace(Hi &hi, int captureDeviceID, int maxFram
     videoCapture.set(CV_CAP_PROP_FRAME_WIDTH, 320);
     videoCapture.set(CV_CAP_PROP_FRAME_HEIGHT, 240);
 
+    Mat frame;
     matrix<rgb_pixel> face;
+    matrix<rgb_pixel> img_matrix;
 
     for (size_t i = 0; i < maxFrames; i++) {
         if (i % 2 == 0) continue; // only capture every other frame
 
-        Mat frame;
         videoCapture >> frame; // get a new frame from camera
 
         cv_image<bgr_pixel> img(frame);
-        matrix<rgb_pixel> matrix;
-        assign_image(matrix, img);
+        assign_image(img_matrix, img);
 
-        auto found_face = hi.findFace(matrix);
+        auto found_face = hi.findFace(img_matrix);
         if (found_face.size() != 0) { // only add frame if a face was found
             face = found_face;
             break;

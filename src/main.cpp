@@ -28,12 +28,9 @@ auto time0 = (duration_cast<milliseconds>(system_clock::now().time_since_epoch()
 auto hi = Hi();
 auto time1 = (duration_cast<milliseconds>(system_clock::now().time_since_epoch())).count();
 
-int recognize(const string &reference_descriptor_path) {
+int recognize(const matrix<float, 0, 1> &reference_descriptor) {
 
-    auto troels_descriptor = hi.loadDescriptor(reference_descriptor_path);
     auto time2 = (duration_cast<milliseconds>(system_clock::now().time_since_epoch())).count();
-
-    cout << "Loaded reference face descriptor in " << time2 - time1 << " ms" << endl;
 
     auto face = HiCamera::captureFace(hi, 0, 10);
 
@@ -46,11 +43,11 @@ int recognize(const string &reference_descriptor_path) {
     auto time4 = (duration_cast<milliseconds>(system_clock::now().time_since_epoch())).count();
 
     auto descriptors = hi.getDescriptors(face);
-    bool result = hi.contains(descriptors, troels_descriptor, 0.5);
+    bool result = hi.contains(descriptors, reference_descriptor, 0.6);
 
     auto time5 = (duration_cast<milliseconds>(system_clock::now().time_since_epoch())).count();
 
-    cout << "Creating face descriptors in " << time5 - time4 << " ms." << endl;
+    cout << "Creating and comparing face descriptors in " << time5 - time4 << " ms." << endl;
     cout << (result ? "Success" : "Failure") << endl;
     cout << "Auth time " << (time5 - time2) / 1000 << " s." << endl;
 
@@ -66,28 +63,35 @@ int main(int argc, char **argv) try {
         pid_t child_pid = fork();
 
         if (child_pid == 0) {
-            // open pipe and wait forever
+            // load reference descriptors
+            std::vector<matrix<float, 0, 1>> descriptors;
+            auto descriptor_folder = std::experimental::filesystem::u8path("data/face_descriptors");
+            for (auto &path : std::experimental::filesystem::directory_iterator(descriptor_folder)) {
+                descriptors.push_back(hi.loadDescriptor(path.path().string()));
+            }
 
+            // open pipe and wait forever
             const char *fifo = "/tmp/hi_fifo";
             mkfifo(fifo, 0666);
             ifstream fifo_stream(fifo);
             fifo_stream.ignore();
 
+            char* buffer[16];
+
             string command;
-            auto descriptor_folder = std::experimental::filesystem::u8path("data/face_descriptors");
             while (true) {
                 fifo_stream >> command;
                 if (command.compare("auth")) {
                     // authenticate against existing stored descriptors
-                    for (auto &path : std::experimental::filesystem::directory_iterator(descriptor_folder)) {
-                        if (recognize(path.path().string()) == 0) break;
+                    for (auto &descriptor : descriptors) {
+                        if (recognize(descriptor) == 0) break;
                     }
                 }
 
                 // clear fifo for next command
-                /*char* buffer[16];
                 auto fd = fopen(fifo, "r");
-                fread(buffer, 1, 15, fd);*/
+                fread(buffer, 1, 15, fd);
+                fclose(fd);
             }
         } else {
             cout << "Successfully started Hi daemon on pid " << child_pid << endl;
@@ -97,7 +101,7 @@ int main(int argc, char **argv) try {
     }
     if (argc == 2) {
         // recognize face
-        return recognize(string(argv[1]));
+        return recognize(hi.loadDescriptor(string(argv[1])));
     }
     if (argc == 3) {
         // add a face
