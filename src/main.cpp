@@ -30,26 +30,11 @@ auto time1 = (duration_cast<milliseconds>(system_clock::now().time_since_epoch()
 
 int recognize(const matrix<float, 0, 1> &reference_descriptor) {
 
-    auto time2 = (duration_cast<milliseconds>(system_clock::now().time_since_epoch())).count();
-
     auto face = HiCamera::captureFace(hi, 0, 10);
-
-    auto time3 = (duration_cast<milliseconds>(system_clock::now().time_since_epoch())).count();
-
     if (face.size() == 0) return 11;
-
-    cout << "Capturing and finding a face in " << time3 - time2 << " ms." << endl;
-
-    auto time4 = (duration_cast<milliseconds>(system_clock::now().time_since_epoch())).count();
 
     auto descriptors = hi.getDescriptors(face);
     bool result = hi.contains(descriptors, reference_descriptor, 0.6);
-
-    auto time5 = (duration_cast<milliseconds>(system_clock::now().time_since_epoch())).count();
-
-    cout << "Creating and comparing face descriptors in " << time5 - time4 << " ms." << endl;
-    cout << (result ? "Success" : "Failure") << endl;
-    cout << "Auth time " << (time5 - time2) / 1000 << " s." << endl;
 
     return result ? 0 : 1;
 }
