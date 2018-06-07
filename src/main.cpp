@@ -30,7 +30,7 @@ auto time1 = (duration_cast<milliseconds>(system_clock::now().time_since_epoch()
 
 int recognize(const matrix<float, 0, 1> &reference_descriptor) {
 
-    auto face = HiCamera::captureFace(hi, 0, 10);
+    auto face = HiCamera::captureFace(&hi, 0, 10);
     if (face.size() == 0) return 11;
 
     auto descriptors = hi.getDescriptors(face);

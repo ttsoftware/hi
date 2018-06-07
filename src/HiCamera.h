@@ -21,11 +21,12 @@ public:
     /**
      * Capture up to maxFrames using device captureDeviceID, untill a face is found
      *
+     * @param hi
      * @param captureDeviceID
      * @param maxFrames
      * @return std::vector<matrix<rgb_pixel>>
      */
-    static matrix<rgb_pixel> captureFace(Hi &hi, int captureDeviceID = 0, int maxFrames = 30);
+    static matrix<rgb_pixel> captureFace(Hi *hi, int captureDeviceID = 0, int maxFrames = 30);
 };
 
 

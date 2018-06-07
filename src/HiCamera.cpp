@@ -17,20 +17,18 @@ using namespace std;
 
 std::vector<matrix<rgb_pixel>> HiCamera::capture(int captureDeviceID, int numFrames) {
 
+    Mat frame;
+    matrix<rgb_pixel> img_matrix;
+    std::vector<matrix<rgb_pixel>> frames;
+
     VideoCapture videoCapture(captureDeviceID); // open the default camera
     if (!videoCapture.isOpened()) throw runtime_error("Could not open camera.");
 
-    std::vector<matrix<rgb_pixel>> frames;
-
     for (size_t i = 0; i < numFrames; i++) {
-        Mat frame;
         videoCapture >> frame; // get a new frame from camera
-
-        cv_image<bgr_pixel> img(frame);
-        matrix<rgb_pixel> matrix;
-        assign_image(matrix, img);
-
-        frames.push_back(matrix);
+        // convert frame to rgb_pixel matrix
+        assign_image(img_matrix, cv_image<bgr_pixel>(frame));
+        frames.push_back(img_matrix);
     }
 
     videoCapture.release();
@@ -38,7 +36,11 @@ std::vector<matrix<rgb_pixel>> HiCamera::capture(int captureDeviceID, int numFra
     return frames;
 }
 
-matrix<rgb_pixel> HiCamera::captureFace(Hi &hi, int captureDeviceID, int maxFrames) {
+matrix<rgb_pixel> HiCamera::captureFace(Hi *hi, int captureDeviceID, int maxFrames) {
+
+    Mat frame;
+    matrix<rgb_pixel> face;
+    matrix<rgb_pixel> img_matrix;
 
     VideoCapture videoCapture(captureDeviceID); // open the default camera
     if (!videoCapture.isOpened()) throw runtime_error("Could not open camera.");
@@ -47,19 +49,15 @@ matrix<rgb_pixel> HiCamera::captureFace(Hi &hi, int captureDeviceID, int maxFram
     videoCapture.set(CV_CAP_PROP_FRAME_WIDTH, 320);
     videoCapture.set(CV_CAP_PROP_FRAME_HEIGHT, 240);
 
-    Mat frame;
-    matrix<rgb_pixel> face;
-    matrix<rgb_pixel> img_matrix;
-
     for (size_t i = 0; i < maxFrames; i++) {
         if (i % 2 == 0) continue; // only capture every other frame
 
         videoCapture >> frame; // get a new frame from camera
 
-        cv_image<bgr_pixel> img(frame);
-        assign_image(img_matrix, img);
+        // convert frame to rgb_pixel matrix
+        assign_image(img_matrix, cv_image<bgr_pixel>(frame));
 
-        auto found_face = hi.findFace(img_matrix);
+        auto found_face = hi->findFace(img_matrix);
         if (found_face.size() != 0) { // only add frame if a face was found
             face = found_face;
             break;
