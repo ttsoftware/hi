@@ -31,12 +31,12 @@ auto time1 = (duration_cast<milliseconds>(system_clock::now().time_since_epoch()
 int recognize(const matrix<float, 0, 1> &reference_descriptor) {
 
     auto face = HiCamera::captureFace(&hi, 0, 10);
-    if (face.size() == 0) return 11;
+    if (face.size() == 0) return 10;
 
     auto descriptors = hi.getDescriptors(face);
     bool result = hi.contains(descriptors, reference_descriptor, 0.6);
 
-    return result ? 0 : 1;
+    return result ? 0 : 11;
 }
 
 int main(int argc, char **argv) try {
@@ -58,18 +58,19 @@ int main(int argc, char **argv) try {
             // open pipe and wait forever
             const char *fifo = "/tmp/hi_fifo";
             mkfifo(fifo, 0666);
-            ifstream fifo_stream(fifo);
-            fifo_stream.ignore();
+            ifstream fifo_istream(fifo);
+            ofstream fifo_ostream(fifo);
+            fifo_istream.ignore();
 
             char* buffer[16];
 
             string command;
             while (true) {
-                fifo_stream >> command;
+                fifo_istream >> command;
                 if (command.compare("auth")) {
                     // authenticate against existing stored descriptors
                     for (auto &descriptor : descriptors) {
-                        if (recognize(descriptor) == 0) break;
+                        fifo_ostream << recognize(descriptor);
                     }
                 }
 

@@ -21,16 +21,20 @@ def doAuth(pamh):
         sys.exit(0)
 
     # Run compare as python3 subprocess to circumvent python version and import issues
-    status = subprocess.call(["python3", os.path.dirname(os.path.abspath(__file__)) + "/compare.py", pamh.get_user()])
+    os.system('echo "auth" >> "/tmp/hi_fifo"')
 
-    # Status 10 means we couldn't find any face models
+    fifo = open("/tmp/hi_fifo", "r")
+    status = int(fifo.readline(1))
+    fifo.close()
+
+    # Status 10 means we couldn't capture a face
     if status == 10:
         if config.get("core", "suppress_unknown") != "true":
-            pamh.conversation(pamh.Message(pamh.PAM_ERROR_MSG, "No face model known"))
+            pamh.conversation(pamh.Message(pamh.PAM_ERROR_MSG, "No face found"))
         return pamh.PAM_USER_UNKNOWN
     # Status 11 means we exceded the maximum retry count
     if status == 11:
-        pamh.conversation(pamh.Message(pamh.PAM_ERROR_MSG, "Face detection timeout reached"))
+        pamh.conversation(pamh.Message(pamh.PAM_ERROR_MSG, "Face authentication failed"))
         return pamh.PAM_AUTH_ERR
     # Status 0 is a successful exit
     if status == 0:
