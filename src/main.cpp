@@ -58,14 +58,13 @@ int main(int argc, char **argv) try {
             // open pipe and wait forever
             const char *fifo = "/tmp/hi_fifo";
             mkfifo(fifo, 0666);
-            ifstream fifo_istream(fifo);
-            ofstream fifo_ostream(fifo);
-            fifo_istream.ignore();
-
-            char* buffer[16];
 
             string command;
             while (true) {
+                ifstream fifo_istream(fifo, std::ofstream::in);
+                ofstream fifo_ostream(fifo, std::ofstream::out);
+                fifo_istream.ignore();
+
                 fifo_istream >> command;
                 if (command.compare("auth")) {
                     // authenticate against existing stored descriptors
@@ -74,10 +73,8 @@ int main(int argc, char **argv) try {
                     }
                 }
 
-                // clear fifo for next command
-                auto fd = fopen(fifo, "r");
-                fread(buffer, 1, 15, fd);
-                fclose(fd);
+                fifo_istream.close();
+                fifo_ostream.close();
             }
         } else {
             cout << "Successfully started Hi daemon on pid " << child_pid << endl;
