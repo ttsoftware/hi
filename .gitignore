@@ -44,3 +44,9 @@ cmake_install.cmake
 /hi.cbp
 /dlib-build/
 /data/face_descriptors/*.dat
+/build/bin
+/build/CMakeFiles
+/build/dlib-build
+/build/cmake_install.cmake
+/build/CMakeCache.txt
+/build/Makefile

@@ -57,7 +57,7 @@ devices = os.listdir("/dev")
 # Loop though all devices
 for dev in devices:
     # Only use the video devices
-    if (dev[:5] == "video"):
+    if dev[:5] == "video":
         time.sleep(.5)
 
         # The full path to the device is the default name
