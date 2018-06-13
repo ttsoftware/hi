@@ -72,3 +72,4 @@ def pam_sm_close_session(pamh, flags, argv):
 def pam_sm_setcred(pamh, flags, argv):
     """We don't need set any credentials, so return true"""
     return pamh.PAM_SUCCESS
+

@@ -21,13 +21,13 @@ import signal
 if "upgrade" in sys.argv:
     # Try to copy the config file as a backup
     try:
-        subprocess.call(["cp /lib/security/howdy/config.ini /tmp/howdy_config_backup_v" + sys.argv[2] + ".ini"],
+        subprocess.call(["cp /lib/security/hi/config.ini /tmp/hi_config_backup_v" + sys.argv[2] + ".ini"],
                         shell=True)
 
         # Let the user know so he knows where to look on a failed install
-        print("Backup of Howdy config file created in /tmp/howdy_config_backup_v" + sys.argv[2] + ".ini")
+        print("Backup of hi config file created in /tmp/hi_config_backup_v" + sys.argv[2] + ".ini")
     except e:
-        print("Could not make an backup of old Howdy config file")
+        print("Could not make an backup of old hi config file")
 
     # Don't continue setup when we're just upgrading
     sys.exit(0)
@@ -42,11 +42,11 @@ picked = -1
 print(col(1) + "Starting IR camera check...\n" + col(0))
 
 # If prompting has been disabled, skip camera check
-if "HOWDY_NO_PROMPT" in os.environ:
+if "hi_NO_PROMPT" in os.environ:
     print(col(2) + "AUTOMATED INSTALL, YOU WILL NOT BE ASKED FOR INPUT AND CHECKS WILL BE SKIPPED" + col(0))
 
     # Write the default device to disk and exit
-    with open("/tmp/howdy_picked_device", "w") as out_file:
+    with open("/tmp/hi_picked_device", "w") as out_file:
         out_file.write("0")
 
     sys.exit(0)
@@ -104,7 +104,7 @@ if picked == -1:
     sys.exit(23)
 
 # Write the result to disk so postinst can have a look at it
-with open("/tmp/howdy_picked_device", "w") as out_file:
+with open("/tmp/hi_picked_device", "w") as out_file:
     out_file.write(str(picked))
 
 # Add a line break

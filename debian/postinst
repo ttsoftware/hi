@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-# Installation script to install howdy
+# Installation script to install hi
 # Executed after primary apt install
 
 def col(id):
@@ -10,15 +10,11 @@ def col(id):
     return "\033[0m"
 
 
+import fileinput
+import os
 # Import required modules
 import subprocess
-import time
 import sys
-import os
-import re
-import signal
-import fileinput
-import urllib.parse
 
 # Don't run unless we need to configure the install
 # Will also happen on upgrade but we will catch that later on
@@ -33,24 +29,24 @@ def log(text):
 
 def handleStatus(status):
     """Abort if a command fails"""
-    if (status != 0):
+    if status != 0:
         print(col(3) + "Error while running last command" + col(0))
         sys.exit(1)
 
 
 # We're not in fresh configuration mode so don't continue the setup
-if not os.path.exists("/tmp/howdy_picked_device"):
+if not os.path.exists("/tmp/hi_picked_device"):
     # Check if we have an older config we can restore
     if len(sys.argv) > 2:
-        if os.path.exists("/tmp/howdy_config_backup_v" + sys.argv[2] + ".ini"):
+        if os.path.exists("/tmp/hi_config_backup_v" + sys.argv[2] + ".ini"):
             # Get the config parser
             import configparser
 
             # Load th old and new config files
             oldConf = configparser.ConfigParser()
-            oldConf.read("/tmp/howdy_config_backup_v" + sys.argv[2] + ".ini")
+            oldConf.read("/tmp/hi_config_backup_v" + sys.argv[2] + ".ini")
             newConf = configparser.ConfigParser()
-            newConf.read("/lib/security/howdy/config.ini")
+            newConf.read("/lib/security/hi/config.ini")
 
             # Go through every setting in the old config and apply it to the new file
             for section in oldConf.sections():
@@ -63,78 +59,46 @@ if not os.path.exists("/tmp/howdy_picked_device"):
                         newConf.set(section, key, value)
 
             # Write it all to file
-            with open("/lib/security/howdy/config.ini", "w") as configfile:
+            with open("/lib/security/hi/config.ini", "w") as configfile:
                 newConf.write(configfile)
 
     sys.exit(0)
 
 # Open the temporary file containing the device ID
-in_file = open("/tmp/howdy_picked_device", "r")
+in_file = open("/tmp/hi_picked_device", "r")
 # Load it in, it should be a string
 picked = in_file.read()
 in_file.close()
 
 # Remove the temporary file
-subprocess.call(["rm /tmp/howdy_picked_device"], shell=True)
+subprocess.call(["rm /tmp/hi_picked_device"], shell=True)
 
 log("Upgrading pip to the latest version")
 
 # Update pip
 handleStatus(subprocess.call(["pip3 install --upgrade pip"], shell=True))
 
-log("Cloning dlib")
-
-# Clone the dlib git to /tmp, but only the last commit
-handleStatus(
-    subprocess.call(["git", "clone", "--depth", "1", "https://github.com/davisking/dlib.git", "/tmp/dlib_clone"]))
-
-log("Building dlib")
-
-# Start the build without GPU
-handleStatus(
-    subprocess.call(["cd /tmp/dlib_clone/; python3 setup.py install --yes USE_AVX_INSTRUCTIONS --no DLIB_USE_CUDA"],
-                    shell=True))
-
-log("Cleaning up dlib")
-
-# Remove the no longer needed git clone
-handleStatus(subprocess.call(["rm", "-rf", "/tmp/dlib_clone"]))
-print("Temporary dlib files removed")
-
-log("Installing python dependencies")
-
-# Install face_recognition though pip
-handleStatus(subprocess.call(
-    ["pip3", "install", "--cache-dir", "/tmp/pip_howdy", "face_recognition_models==0.3.0", "Click>=6.0", "numpy",
-     "Pillow"]))
-
-log("Installing face_recognition")
-
-# Install face_recognition though pip
-handleStatus(
-    subprocess.call(["pip3", "install", "--cache-dir", "/tmp/pip_howdy", "--no-deps", "face_recognition==1.2.2"]))
-
-log("Configuring howdy")
+log("Configuring hi")
 
 # Manually change the camera id to the one picked
-for line in fileinput.input(["/lib/security/howdy/config.ini"], inplace=1):
+for line in fileinput.input(["/lib/security/hi/config.ini"], inplace=1):
     print(line.replace("device_id = 1", "device_id = " + picked), end="")
 
-# Secure the howdy folder
-handleStatus(subprocess.call(["chmod 600 -R /lib/security/howdy/"], shell=True))
+# Secure the hi folder
+handleStatus(subprocess.call(["chmod 600 -R /lib/security/hi/"], shell=True))
 
 # Allow anyone to execute the python CLI
-handleStatus(subprocess.call(["chmod 755 /lib/security/howdy"], shell=True))
-handleStatus(subprocess.call(["chmod 744 /lib/security/howdy/cli.py"], shell=True))
-handleStatus(subprocess.call(["chmod 744 -R /lib/security/howdy/cli"], shell=True))
+handleStatus(subprocess.call(["chmod 755 /lib/security/hi"], shell=True))
+handleStatus(subprocess.call(["chmod 744 /lib/security/hi/cli.py"], shell=True))
+handleStatus(subprocess.call(["chmod 744 -R /lib/security/hi/cli"], shell=True))
 print("Permissions set")
 
-# Make the CLI executable as howdy
-handleStatus(subprocess.call(["ln -s /lib/security/howdy/cli.py /usr/local/bin/howdy"], shell=True))
-handleStatus(subprocess.call(["chmod +x /usr/local/bin/howdy"], shell=True))
-print("Howdy command installed")
+# Make the CLI executable as hi
+handleStatus(subprocess.call(["ln -s /lib/security/hi/cli.py /usr/local/bin/hi"], shell=True))
+handleStatus(subprocess.call(["chmod +x /usr/local/bin/hi"], shell=True))
+print("hi command installed")
 
-log("Adding howdy as PAM module")
+log("Adding hi as PAM module")
 
 # Will be filled with the actual output lines
 outlines = []
@@ -161,8 +125,8 @@ with open("/etc/pam.d/common-auth") as fp:
             # If it's not a comment and we haven't inserted yet
             if not inserted:
                 # Set both the comment and the linking line
-                line_comment = "# Howdy IR face recognition\n"
-                line_link = "auth	sufficient			pam_python.so /lib/security/howdy/pam.py\n\n"
+                line_comment = "# hi IR face recognition\n"
+                line_link = "auth	sufficient			pam_python.so /lib/security/hi/pam.py\n\n"
 
                 # Add them to the output without any markup
                 outlines.append(line_comment)
@@ -189,7 +153,7 @@ for line in printlines:
 print("\033[33m" + ">>> END OF /etc/pam.d/common-auth" + "\033[0m" + "\n")
 
 # Do not prompt for a yes if we're in no promt mode
-if "HOWDY_NO_PROMPT" not in os.environ:
+if "hi_NO_PROMPT" not in os.environ:
     # Ask the user if this change is okay
     print("Lines will be insterted in /etc/pam.d/common-auth as shown above")
     ans = input("Apply this change? [y/N]: ")
@@ -211,7 +175,7 @@ common_auth.close()
 # used though, and the following lines are data gathering
 # No data is ever uploaded without permission
 
-if "HOWDY_NO_PROMPT" not in os.environ:
+if "hi_NO_PROMPT" not in os.environ:
     # List all video devices
     diag_out = "Video devices [IR=" + picked + "]\n"
     diag_out += "```\n"
@@ -228,17 +192,17 @@ if "HOWDY_NO_PROMPT" not in os.environ:
     diag_out += "Udevadm\n"
     diag_out += "```\n"
     diag_out += subprocess.check_output([
-                                            'udevadm info -r --query=all -n /dev/video' + picked + ' | grep -i "ID_BUS\|ID_MODEL_ID\|ID_VENDOR_ID\|ID_V4L_PRODUCT\|ID_MODEL"'],
-                                        shell=True).decode("utf-8")
+        'udevadm info -r --query=all -n /dev/video' + picked + ' | grep -i "ID_BUS\|ID_MODEL_ID\|ID_VENDOR_ID\|ID_V4L_PRODUCT\|ID_MODEL"'],
+        shell=True).decode("utf-8")
     diag_out += "```"
 
     # Print it all as a clickable link to a new github issue
-    print(
-                "https://github.com/Boltgolt/howdy-reports/issues/new?title=Post-installation%20camera%20information&body=" + urllib.parse.quote_plus(
-            diag_out) + "\n")
+    # print(
+    #            "https://github.com/Boltgolt/howdy-reports/issues/new?title=Post-installation%20camera%20information&body=" + urllib.parse.quote_plus(
+    #        diag_out) + "\n")
 
 # Let the user know what to do with the link
 print("Installation complete.")
-print(col(
-    2) + "If you want to help the development, please use the link above to post some camera-related information to github!" + col(
-    0))
+# print(col(
+# 2) + "If you want to help the development, please use the link above to post some camera-related information to github!" + col(
+# 0))
