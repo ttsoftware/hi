@@ -1,2 +1,2 @@
-src/. lib/security/hi
+build/bin/. lib/security/hi
 autocomplete/. usr/share/bash-completion/completions
