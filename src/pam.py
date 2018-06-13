@@ -27,6 +27,9 @@ def doAuth(pamh):
     status = int(fifo.readline(1))
     fifo.close()
 
+    print status
+    exit(status)
+
     # Status 10 means we couldn't capture a face
     if status == 10:
         if config.get("core", "suppress_unknown") != "true":
@@ -52,6 +55,9 @@ def doAuth(pamh):
     # Otherwise, we can't discribe what happend but it wasn't successful
     pamh.conversation(pamh.Message(pamh.PAM_ERROR_MSG, "Unknown error: " + str(status)))
     return pamh.PAM_SYSTEM_ERR
+
+
+doAuth(None)
 
 
 def pam_sm_authenticate(pamh, flags, args):
