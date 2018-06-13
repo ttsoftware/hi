@@ -2,6 +2,7 @@
 # Executed on deinstallation
 # Completely remove hi from the system
 
+
 def col(id):
     """Add color escape sequences"""
     if id == 1: return "\033[32m"

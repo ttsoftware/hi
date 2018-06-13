@@ -27,7 +27,7 @@ def log(text):
     print("\n>>> " + col(1) + text + col(0) + "\n")
 
 
-def handleStatus(status):
+def handle_status(status):
     """Abort if a command fails"""
     if status != 0:
         print(col(3) + "Error while running last command" + col(0))
@@ -76,7 +76,7 @@ subprocess.call(["rm /tmp/hi_picked_device"], shell=True)
 log("Upgrading pip to the latest version")
 
 # Update pip
-handleStatus(subprocess.call(["pip3 install --upgrade pip"], shell=True))
+handle_status(subprocess.call(["pip3 install --upgrade pip"], shell=True))
 
 log("Configuring hi")
 
@@ -85,17 +85,17 @@ for line in fileinput.input(["/lib/security/hi/config.ini"], inplace=1):
     print(line.replace("device_id = 1", "device_id = " + picked), end="")
 
 # Secure the hi folder
-handleStatus(subprocess.call(["chmod 600 -R /lib/security/hi/"], shell=True))
+handle_status(subprocess.call(["chmod 600 -R /lib/security/hi/"], shell=True))
 
 # Allow anyone to execute the python CLI
-handleStatus(subprocess.call(["chmod 755 /lib/security/hi"], shell=True))
-handleStatus(subprocess.call(["chmod 744 /lib/security/hi/cli.py"], shell=True))
-handleStatus(subprocess.call(["chmod 744 -R /lib/security/hi/cli"], shell=True))
+handle_status(subprocess.call(["chmod 755 /lib/security/hi"], shell=True))
+handle_status(subprocess.call(["chmod 744 /lib/security/hi/cli.py"], shell=True))
+handle_status(subprocess.call(["chmod 744 -R /lib/security/hi/cli"], shell=True))
 print("Permissions set")
 
 # Make the CLI executable as hi
-handleStatus(subprocess.call(["ln -s /lib/security/hi/cli.py /usr/local/bin/hi"], shell=True))
-handleStatus(subprocess.call(["chmod +x /usr/local/bin/hi"], shell=True))
+handle_status(subprocess.call(["ln -s /lib/security/hi/cli.py /usr/local/bin/hi"], shell=True))
+handle_status(subprocess.call(["chmod +x /usr/local/bin/hi"], shell=True))
 print("hi command installed")
 
 log("Adding hi as PAM module")
@@ -159,7 +159,7 @@ if "hi_NO_PROMPT" not in os.environ:
     ans = input("Apply this change? [y/N]: ")
 
     # Abort the whole thing if it's not
-    if (ans.lower() != "y"):
+    if ans.lower() != "y":
         print("Interpreting as a \"NO\", aborting")
         sys.exit(1)
 
