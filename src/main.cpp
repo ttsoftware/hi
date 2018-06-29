@@ -7,6 +7,8 @@
 #include <fstream>
 #include <experimental/filesystem>
 
+#include <sys/stat.h>
+
 #include <dlib/opencv.h>
 #include <dlib/opencv/cv_image.h>
 #include <dlib/image_processing/generic_image.h>
@@ -21,20 +23,23 @@ using namespace std;
 using namespace std::this_thread;
 using namespace std::chrono;
 
+// config dir
+auto hi_path = ((string)getenv("HOME")) + "/.hi";
+
 // init time
 auto time0 = (duration_cast<milliseconds>(system_clock::now().time_since_epoch())).count();
 
 // initialize neural networks
-auto hi = Hi();
+auto hi = Hi(hi_path);
 auto time1 = (duration_cast<milliseconds>(system_clock::now().time_since_epoch())).count();
 
 int recognize(const matrix<float, 0, 1> &reference_descriptor) {
 
-    auto face = HiCamera::captureFace(&hi, 0, 10);
+    auto face = HiCamera::captureFace(&hi, 1, 3);
     if (face.size() == 0) return 10;
 
     auto descriptors = hi.getDescriptors(face);
-    bool result = hi.contains(descriptors, reference_descriptor, 0.6);
+    bool result = hi.contains(descriptors, reference_descriptor, 0.35);
 
     return result ? 0 : 11;
 }
@@ -48,9 +53,16 @@ int main(int argc, char **argv) try {
         pid_t child_pid = fork();
 
         if (child_pid == 0) {
+            // create config folders if not exist
+            struct stat sb;
+            if (stat(hi_path.c_str(), &sb) == -1) {
+                system(("mkdir -p " + hi_path + "/models").c_str());
+                system(("mkdir -p " + hi_path + "/face_descriptors").c_str());
+            }
+
             // load reference descriptors
             std::vector<matrix<float, 0, 1>> descriptors;
-            auto descriptor_folder = std::experimental::filesystem::u8path("data/face_descriptors");
+            auto descriptor_folder = std::experimental::filesystem::u8path(hi_path + "/face_descriptors");
             for (auto &path : std::experimental::filesystem::directory_iterator(descriptor_folder)) {
                 descriptors.push_back(hi.loadDescriptor(path.path().string()));
             }
@@ -61,20 +73,19 @@ int main(int argc, char **argv) try {
 
             string command;
             while (true) {
+                //ofstream fifo_ostream(fifo, std::ofstream::out);
                 ifstream fifo_istream(fifo, std::ofstream::in);
-                ofstream fifo_ostream(fifo, std::ofstream::out);
                 fifo_istream.ignore();
 
                 fifo_istream >> command;
                 if (command.compare("auth")) {
                     // authenticate against existing stored descriptors
                     for (auto &descriptor : descriptors) {
-                        fifo_ostream << recognize(descriptor);
+                        auto result = recognize(descriptor);
+                        cout << result << endl;
+                        //fifo_ostream << result;
                     }
                 }
-
-                fifo_istream.close();
-                fifo_ostream.close();
             }
         } else {
             cout << "Successfully started Hi daemon on pid " << child_pid << endl;
@@ -99,7 +110,7 @@ int main(int argc, char **argv) try {
             cout << "1" << endl;
             sleep_until(system_clock::now() + seconds(1));
 
-            auto frames = HiCamera::capture(0, 15);
+            auto frames = HiCamera::capture(1, 15);
 
             cout << "Captured face..." << endl;
 
@@ -108,7 +119,7 @@ int main(int argc, char **argv) try {
                 auto face = hi.findFace(frame);
                 if (face.size() > 0) {
                     cout << "Creating unique face descriptor vector..." << endl;
-                    hi.storeDescriptor(hi.createDescriptor(face), "data/face_descriptors/" + string(argv[2]) + ".dat");
+                    hi.storeDescriptor(hi.createDescriptor(face), hi_path + "/face_descriptors/" + string(argv[2]) + ".dat");
                     has_face = true;
                     break;
                 }

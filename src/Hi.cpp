@@ -12,16 +12,16 @@
 using namespace dlib;
 using namespace std;
 
-Hi::Hi() {
+Hi::Hi(std::string hi_path) {
     // The first thing we are going to do is load all our models.  First, since we need to
     // find faces in the image we will need a face detector:
     detector = get_frontal_face_detector();
 
     // We will also use a face landmarking model to align faces to a standard pose:  (see face_landmark_detection_ex.cpp for an introduction)
-    deserialize("data/models/shape_predictor_68_face_landmarks.dat") >> shape_corrector;
+    deserialize(hi_path + "/models/shape_predictor_68_face_landmarks.dat") >> shape_corrector;
 
     // And finally we load the DNN responsible for face recognition.
-    deserialize("data/models/dlib_face_recognition_resnet_model_v1.dat") >> net;
+    deserialize(hi_path + "/models/dlib_face_recognition_resnet_model_v1.dat") >> net;
 }
 
 std::vector<matrix<rgb_pixel>> Hi::jitter(matrix<rgb_pixel> &img, int rounds) {

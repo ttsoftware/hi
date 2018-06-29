@@ -14,7 +14,7 @@ using namespace std;
 
 class Hi {
 public:
-    Hi();
+    Hi(std::string hi_path);
 
     /**
      * Returns a list of faces and their corresponding matrices found in image
