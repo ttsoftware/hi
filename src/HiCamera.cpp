@@ -50,8 +50,6 @@ matrix<rgb_pixel> HiCamera::captureFace(Hi *hi, int captureDeviceID, int maxFram
     videoCapture.set(CV_CAP_PROP_FRAME_HEIGHT, 240);
 
     for (size_t i = 0; i < maxFrames; i++) {
-        if (i % 2 == 0) continue; // only capture every other frame
-
         videoCapture >> frame; // get a new frame from camera
 
         // convert frame to rgb_pixel matrix

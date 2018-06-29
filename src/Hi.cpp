@@ -44,7 +44,7 @@ matrix<rgb_pixel> Hi::findFace(matrix<rgb_pixel> &img) {
     auto faces = detector(img);
     if (!faces.empty()) {
         rectangle face = faces[0];
-        extract_image_chip(img, get_face_chip_details(shape_corrector(img, face), 150, 0.2), face_chip);
+        extract_image_chip(img, get_face_chip_details(shape_corrector(img, face), 150, 0.25), face_chip);
     }
 
     return face_chip;
@@ -57,7 +57,7 @@ std::vector<matrix<rgb_pixel>> Hi::findFaces(matrix<rgb_pixel> &img) {
     std::vector<matrix<rgb_pixel>> faces;
     for (rectangle face : detector(img)) {
         matrix<rgb_pixel> face_chip;
-        extract_image_chip(img, get_face_chip_details(shape_corrector(img, face), 150, 0.2), face_chip);
+        extract_image_chip(img, get_face_chip_details(shape_corrector(img, face), 150, 0.25), face_chip);
         faces.push_back(move(face_chip));
     }
 

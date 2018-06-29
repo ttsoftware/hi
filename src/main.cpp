@@ -23,6 +23,7 @@ using namespace std;
 using namespace std::this_thread;
 using namespace std::chrono;
 
+auto CAPTURE_DEVICE = 1;
 // config dir
 auto hi_path = ((string)getenv("HOME")) + "/.hi";
 
@@ -35,7 +36,7 @@ auto time1 = (duration_cast<milliseconds>(system_clock::now().time_since_epoch()
 
 int recognize(const matrix<float, 0, 1> &reference_descriptor) {
 
-    auto face = HiCamera::captureFace(&hi, 1, 3);
+    auto face = HiCamera::captureFace(&hi, CAPTURE_DEVICE, 3);
     if (face.size() == 0) return 10;
 
     auto descriptors = hi.getDescriptors(face);
@@ -68,24 +69,26 @@ int main(int argc, char **argv) try {
             }
 
             // open pipe and wait forever
-            const char *fifo = "/tmp/hi_fifo";
-            mkfifo(fifo, 0666);
+            const char *fifo_in = "/tmp/hi_fifo_in";
+            const char *fifo_out = "/tmp/hi_fifo_out";
+            mkfifo(fifo_in, 0666);
+            mkfifo(fifo_out, 0666);
 
             string command;
             while (true) {
-                //ofstream fifo_ostream(fifo, std::ofstream::out);
-                ifstream fifo_istream(fifo, std::ofstream::in);
+                ofstream fifo_ostream(fifo_out, std::ofstream::out);
+                ifstream fifo_istream(fifo_in, std::ofstream::in);
                 fifo_istream.ignore();
 
                 fifo_istream >> command;
                 if (command.compare("auth")) {
                     // authenticate against existing stored descriptors
                     for (auto &descriptor : descriptors) {
-                        auto result = recognize(descriptor);
-                        cout << result << endl;
-                        //fifo_ostream << result;
+                        fifo_ostream << recognize(descriptor);
                     }
                 }
+
+                fifo_ostream.close();
             }
         } else {
             cout << "Successfully started Hi daemon on pid " << child_pid << endl;
@@ -110,7 +113,7 @@ int main(int argc, char **argv) try {
             cout << "1" << endl;
             sleep_until(system_clock::now() + seconds(1));
 
-            auto frames = HiCamera::capture(1, 15);
+            auto frames = HiCamera::capture(CAPTURE_DEVICE, 15);
 
             cout << "Captured face..." << endl;
 
