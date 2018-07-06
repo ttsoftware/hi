@@ -22,14 +22,14 @@ void test() {
     /*
     auto descriptor = hi.createDescriptor("data/faces/troels.png", 100);
     cout << "Found a face descriptor." << endl;
-    hi.storeDescriptor(descriptor, "data/face_descriptors/troels.dat");
+    hi.storeDescriptor(descriptor, "data/face-descriptors/troels.dat");
     return 0;
     */
 
     // initialize neural networks
     /*auto hi = Hi();
 
-    auto troels_descriptor = hi.loadDescriptor("data/face_descriptors/troels.dat");
+    auto troels_descriptor = hi.loadDescriptor("data/face-descriptors/troels.dat");
 
     auto testfolder = std::experimental::filesystem::u8path("data/faces/test");
     for (auto &path : std::experimental::filesystem::directory_iterator(testfolder)) {

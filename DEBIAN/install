@@ -1,0 +1,6 @@
+build/bin/. lib/security/hi
+src/pam.py lib/security/hi/
+src/config.ini lib/security/hi/
+data/face-descriptors/. lib/security/hi/face-descriptors
+data/models/. lib/security/hi/models
+autocomplete/. usr/share/bash-completion/completions

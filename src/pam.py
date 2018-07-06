@@ -20,10 +20,10 @@ def doAuth(pamh):
     if config.get("core", "disabled") == "true":
         sys.exit(0)
 
-    # Run compare as python3 subprocess to circumvent python version and import issues
-    os.system('echo "auth" >> "/tmp/hi_fifo"')
+    # Communicate with Daemon to initiate auth
+    os.system('echo "auth" >> "/tmp/hi_fifo_in"')
 
-    fifo = open("/tmp/hi_fifo", "r")
+    fifo = open("/tmp/hi_fifo_out", "r")
     status = int(fifo.readline(1))
     fifo.close()
 

@@ -43,7 +43,7 @@ cmake_install.cmake
 /hi
 /hi.cbp
 /dlib-build/
-/data/face_descriptors/*.dat
+/data/face-descriptors/*.dat
 /build/bin
 /build/CMakeFiles
 /build/dlib-build

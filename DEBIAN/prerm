@@ -21,7 +21,7 @@ if "remove" not in sys.argv and "purge" not in sys.argv:
     sys.exit(0)
 
 # Don't try running this if it's already gome
-if not os.path.exists("/lib/security/hi/cli"):
+if not os.path.exists("/lib/security/hi"):
     sys.exit(0)
 
 # Remove files and symlinks

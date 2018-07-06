@@ -89,12 +89,10 @@ handle_status(subprocess.call(["chmod 600 -R /lib/security/hi/"], shell=True))
 
 # Allow anyone to execute the python CLI
 handle_status(subprocess.call(["chmod 755 /lib/security/hi"], shell=True))
-handle_status(subprocess.call(["chmod 744 /lib/security/hi/cli.py"], shell=True))
-handle_status(subprocess.call(["chmod 744 -R /lib/security/hi/cli"], shell=True))
 print("Permissions set")
 
 # Make the CLI executable as hi
-handle_status(subprocess.call(["ln -s /lib/security/hi/cli.py /usr/local/bin/hi"], shell=True))
+handle_status(subprocess.call(["ln -s /lib/security/hi/hi /usr/local/bin/hi"], shell=True))
 handle_status(subprocess.call(["chmod +x /usr/local/bin/hi"], shell=True))
 print("hi command installed")
 

@@ -25,6 +25,7 @@ using namespace std::chrono;
 
 auto CAPTURE_DEVICE = 1;
 // config dir
+// auto hi_path = "/lib/security/hi";
 auto hi_path = ((string)getenv("HOME")) + "/.hi";
 
 // init time
@@ -58,12 +59,12 @@ int main(int argc, char **argv) try {
             struct stat sb;
             if (stat(hi_path.c_str(), &sb) == -1) {
                 system(("mkdir -p " + hi_path + "/models").c_str());
-                system(("mkdir -p " + hi_path + "/face_descriptors").c_str());
+                system(("mkdir -p " + hi_path + "/face-descriptors").c_str());
             }
 
             // load reference descriptors
             std::vector<matrix<float, 0, 1>> descriptors;
-            auto descriptor_folder = std::experimental::filesystem::u8path(hi_path + "/face_descriptors");
+            auto descriptor_folder = std::experimental::filesystem::u8path(hi_path + "/face-descriptors");
             for (auto &path : std::experimental::filesystem::directory_iterator(descriptor_folder)) {
                 descriptors.push_back(hi.loadDescriptor(path.path().string()));
             }
@@ -122,7 +123,7 @@ int main(int argc, char **argv) try {
                 auto face = hi.findFace(frame);
                 if (face.size() > 0) {
                     cout << "Creating unique face descriptor vector..." << endl;
-                    hi.storeDescriptor(hi.createDescriptor(face), hi_path + "/face_descriptors/" + string(argv[2]) + ".dat");
+                    hi.storeDescriptor(hi.createDescriptor(face), hi_path + "/face-descriptors/" + string(argv[2]) + ".dat");
                     has_face = true;
                     break;
                 }
