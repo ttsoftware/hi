@@ -25,8 +25,8 @@ using namespace std::chrono;
 
 auto CAPTURE_DEVICE = 1;
 // config dir
-// auto hi_path = "/lib/security/hi";
-auto hi_path = ((string)getenv("HOME")) + "/.hi";
+auto hi_path = (string)"/lib/security/hi";
+// auto hi_path = ((string)getenv("HOME")) + "/.hi";
 
 // init time
 auto time0 = (duration_cast<milliseconds>(system_clock::now().time_since_epoch())).count();
